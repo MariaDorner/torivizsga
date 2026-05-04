@@ -64,7 +64,7 @@ function buildTopic9Content(){
   <div class="info-card">
     <h3>⛰️ Gellért püspök vértanúsága</h3>
     <p><strong>Gellért</strong> velencei szerzetes volt, akit István király Imre herceg tanítójának kért fel. István halála után a lázadó pogányok rátámadtak a keresztény papokra. 1046-ban Gellért püspök a Duna partján tartott kíséretével, amikor a feldühödött tömeg elfogta.</p>
-    <p style="margin-top:10px;">A lázadók a <strong>Kelen-hegy</strong> sziklás csúcsára hurcolták az idős püspököt, belső éles szögekkel kivert hordóba zárták, majd a meredek tetőről <strong>letaszították a mélybe</strong>. A hordó hatalmas robajjal zuhant egészen a Duna vizéig. Ezt a magas, meredek hegyet a vértanú püspök emlékére azóta is <strong>Gellért-hegynek</strong> nevezzük.</p>
+    <p style="margin-top:10px;">A lázadók a <strong>Kelen-hegy</strong> sziklás csúcsára hurcolták az idős püspököt, belülről éles szögekkel kivert hordóba, majd a meredek tetőről <strong>letaszították a mélybe</strong>. A hordó hatalmas robajjal zuhant egészen a Duna vizéig. Másik megközelítés szerint kocsihoz kötötték és lelökték a sziklafalon bele a Dunába. Ezt a magas, meredek hegyet a vértanú püspök emlékére azóta is <strong>Gellért-hegynek</strong> nevezzük.</p>
   </div>
 
   <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
@@ -73,7 +73,7 @@ function buildTopic9Content(){
       <li>🦅 <strong>Emese álma:</strong> Turulmadár → Álmos neve → Árpád és a honfoglalás</li>
       <li>🐎 <strong>Fehér ló mondája:</strong> Föld-víz-fű csere → Szvatopluk becsapva → Kárpát-medence megszerzése</li>
       <li>🎺 <strong>Lehel kürtje:</strong> Lech-mezei vereség → Lehel kürttel megöli a császárt → „Szolgám leszel a másvilágon"</li>
-      <li>🏊 <strong>Búvár Kund:</strong> 1051 – Pozsony ostroma → fúróval kilyukasztja a hajókat → Henrik visszavonul</li>
+      <li>🏊 <strong>Búvár Kund:</strong> 1052 – Pozsony ostroma → fúróval kilyukasztja a hajókat → Henrik visszavonul</li>
       <li>🏔️ <strong>Vértes hegység:</strong> 1051 – Henrik éheztetése → eldobált vértek → hegység neve</li>
       <li>⚔️ <strong>Kemény Simon:</strong> 1442 – páncélcsere Hunyadival → önfeláldozás → győzelem Szebennél</li>
       <li>👑 <strong>Szent László:</strong> 1077–1095 – kemény törvények, Horvátország, szentek avatása, 1192: ő is szent</li>
