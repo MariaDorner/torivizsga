@@ -19,6 +19,10 @@ function buildTopic9Content(){
 
   <div class="info-card">
     <h3>🎺 Lehel kürtje – A bosszúálló kapitány</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:160px;">
+      <img src="images/lehel kürtje.jpg" alt="Lehel kürtje" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Lehel kürtje</p>
+    </div>
     <p>Konrád császár idején a magyarok Augsburg városát akarták elfoglalni, de <strong>Ulrik püspök</strong> és a sváb urak vitézül ellenálltak. A német sereg rajtaütött a vigyázatlan magyarokon, és a <strong>Lech folyónál</strong> megszorítva fogságba ejtette <strong>Lehel</strong> és <strong>Bulcsú</strong> kapitányokat.</p>
     <p style="margin-top:10px;">A császár kérdezte, miért oly kegyetlenek a keresztényekkel. Lehel így felelt: <em>„Mi vagyunk a magasságos Istennek bosszúállása, Ő küldött rátok ostorul."</em></p>
     <p style="margin-top:10px;">Amikor választhatott halálnemet, Lehel előbb a kürtjét kérte. Odavitték – és ő a kürttel <strong>homlokon vágta a császárt</strong>, aki egyetlen csapástól meghalt. Lehel azt mondta: <em>„Előttem jársz, és szolgám leszel a másvilágon!"</em> – mert a magyarok hite szerint, akit megölsz, az neked szolgál a túlvilágon.</p>
@@ -45,26 +49,42 @@ function buildTopic9Content(){
 
   <div class="info-card">
     <h3>👑 Szent László – A lovagkirály mondája</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:150px;">
+      <img src="images/Szent László.jpg" alt="Szent László" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">I. (Szent) László király</p>
+    </div>
     <p><strong>I. (Szent) László</strong> (1077–1095) a magyar állam megszilárdítója, kiváló hadvezér és mélyen vallásos király volt. Kemény törvényeivel helyreállította a közbiztonságot, 1091-ben Horvátországot a Magyar Királysághoz csatolta, és több püspökséget alapított (Nagyvárad, Zágráb). 1083-ban elérte az első magyar szentek – István, Imre és Gellért – felavatását. Maga is 1192-ben lett szent.</p>
     <p style="margin-top:10px;">A legenda szerint jóval halála után, amikor tatárok pusztítottak Erdélyben, a kimerült székely harcosok az égre emelt tekintettel fohászkodtak a nagy királyhoz. Ekkor a porfelhőből egy <strong>hatalmas, koronás lovag</strong> jelent meg, és megállíthatatlanul verte szét az ellenséget. A foglyul ejtett tatárok remegve mesélték: egy <strong>óriási, sebezhetetlen vitéz</strong> vezette a magyarokat, fölötte Szűz Mária lebegett. Aznap a nagyváradi templomban László szobra <strong>verítékezett</strong>, fegyvere csorba volt és vértől csöpögött.</p>
   </div>
 
   <div class="info-card">
     <h3>✝️ Szent Imre – A fehér liliom hercege</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:150px;">
+      <img src="images/Szent Imre.jpg" alt="Szent Imre" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Szent Imre herceg</p>
+    </div>
     <p><strong>Szent Imre</strong> István király egyetlen trónörököse volt. Tanítója a kor egyik legműveltebb embere, <strong>Gellért püspök</strong> volt. Apja személyesen írt neki útmutatót: az <strong>Intelmeket</strong>. Imre erős katonává és művelt herceggé nőtt, ám 1031-ben egy vadkanvadászaton tragikusan elhunyt. 1083-ban szentté avatták.</p>
     <p style="margin-top:10px;">A leghíresebb monda szerint Imre éjjel a veszprémi templomban imádkozva megkérdezte Istent, mivel szerezhetne neki legnagyobb örömet. Ekkor ragyogó égi fény töltötte el a templomot, és egy hang azt súgta: a legjobb ajándék a <strong>teljes testi és lelki tisztaság</strong>. Imre titkos fogadalmat tett. Bár megnősült, feleségével testvérként éltek. Ezért ábrázolják mindig egy szál <strong>fehér liliommal</strong> – az ártatlanság jelképével.</p>
   </div>
 
   <div class="info-card">
     <h3>🌸 Szent Margit – A királylány, aki lemondott a trónról</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:150px;">
+      <img src="images/Arpadhazi_szent_margit.jpg" alt="Árpád-házi Szent Margit" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Árpád-házi Szent Margit</p>
+    </div>
     <p>A tatárjárás idején IV. Béla és felesége fogadalmat tett: ha Isten megmenti Magyarországot, a születendő gyermeküket az egyháznak ajánlják. A tatárok kivonultak – és a kis Margitot apácának adták. Apja pedig a <strong>Nyulak szigetén</strong> kolostort építtetett neki (ma: Margit-sziget).</p>
     <p style="margin-top:10px;">Bár igazi királylány volt, a legnehezebb munkákat végezte: rongyokban járt, mosott, takarított, ápolta a betegeket. Európa leghatalmasabb királyai – köztük a cseh király – feleségül akarták venni, apja is megengedte volna a fogadalom felbontását. Margit <strong>minden kérőt visszautasított</strong>, hű maradt fogadalmához. 1943-ban szentté avatták.</p>
   </div>
 
   <div class="info-card">
     <h3>⛰️ Gellért püspök vértanúsága</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:150px;">
+      <img src="images/Szent Gellért.jpg" alt="Szent Gellért püspök" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Szent Gellért püspök</p>
+    </div>
     <p><strong>Gellért</strong> velencei szerzetes volt, akit István király Imre herceg tanítójának kért fel. István halála után a lázadó pogányok rátámadtak a keresztény papokra. 1046-ban Gellért püspök a Duna partján tartott kíséretével, amikor a feldühödött tömeg elfogta.</p>
-    <p style="margin-top:10px;">A lázadók a <strong>Kelen-hegy</strong> sziklás csúcsára hurcolták az idős püspököt, belső éles szögekkel kivert hordóba zárták, majd a meredek tetőről <strong>letaszították a mélybe</strong>. A hordó hatalmas robajjal zuhant egészen a Duna vizéig. Ezt a magas, meredek hegyet a vértanú püspök emlékére azóta is <strong>Gellért-hegynek</strong> nevezzük.</p>
+    <p style="margin-top:10px;">A lázadók a <strong>Kelen-hegy</strong> sziklás csúcsára hurcolták az idős püspököt, belülről éles szögekkel kivert hordóba, majd a meredek tetőről <strong>letaszították a mélybe</strong>. A hordó hatalmas robajjal zuhant egészen a Duna vizéig. Másik megközelítés szerint kocsihoz kötötték és lelökték a sziklafalon bele a Dunába. Ezt a magas, meredek hegyet a vértanú püspök emlékére azóta is <strong>Gellért-hegynek</strong> nevezzük.</p>
   </div>
 
   <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
@@ -73,7 +93,7 @@ function buildTopic9Content(){
       <li>🦅 <strong>Emese álma:</strong> Turulmadár → Álmos neve → Árpád és a honfoglalás</li>
       <li>🐎 <strong>Fehér ló mondája:</strong> Föld-víz-fű csere → Szvatopluk becsapva → Kárpát-medence megszerzése</li>
       <li>🎺 <strong>Lehel kürtje:</strong> Lech-mezei vereség → Lehel kürttel megöli a császárt → „Szolgám leszel a másvilágon"</li>
-      <li>🏊 <strong>Búvár Kund:</strong> 1051 – Pozsony ostroma → fúróval kilyukasztja a hajókat → Henrik visszavonul</li>
+      <li>🏊 <strong>Búvár Kund:</strong> 1052 – Pozsony ostroma → fúróval kilyukasztja a hajókat → Henrik visszavonul</li>
       <li>🏔️ <strong>Vértes hegység:</strong> 1051 – Henrik éheztetése → eldobált vértek → hegység neve</li>
       <li>⚔️ <strong>Kemény Simon:</strong> 1442 – páncélcsere Hunyadival → önfeláldozás → győzelem Szebennél</li>
       <li>👑 <strong>Szent László:</strong> 1077–1095 – kemény törvények, Horvátország, szentek avatása, 1192: ő is szent</li>

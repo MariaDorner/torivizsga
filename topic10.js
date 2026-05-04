@@ -54,7 +54,7 @@ function buildTopic10Content(){
     <ul style="margin-top:8px;padding-left:20px;">
       <li><strong>Bartolomeu Dias (1487):</strong> Ő volt az első európai, aki elérte Afrika legdélebbi pontját, a Jóreménység fokát. (Afrika megkerülhető)</li>
       <li><strong>Vasco da Gama (1498):</strong> Afrika megkerülésével, a tengeren keresztül jutott el Indiába. Ezzel a portugálok közvetlen kapcsolatba kerültek a fűszerpiaccal.</li>
-      <li><strong>Kolumbusz Kristóf (1492):</strong> A spanyol királynő támogatásával nyugat felé indult. Október 12-én érte el a Bahama-szigeteket (Amerika), de haláláig azt hitte, Indiában jár. Ezért nevezte az őslakosokat indiánoknak. A felfedezéshez használt hajói: Nina, Pinta, Santa Maria. Kolumbusznak ezen kívül még további két útja volt az új kontinensre. (A mai Kolumbia név adója)</li>
+      <li><strong>Kolumbusz Kristóf (1492):</strong> A spanyol királynő támogatásával nyugat felé indult. Október 12-én érte el a Bahama-szigeteket (Amerika), de haláláig azt hitte, Indiában jár. Ezért nevezte az őslakosokat indiánoknak. A felfedezéshez használt hajói: Nina, Pinta, Santa Maria. Kolumbusznak ezen kívül még további három útja volt az új kontinensre. (A mai Kolumbia név adója)</li>
       <li><strong>Amerigo Vespucci:</strong> Ő volt az, aki felismerte, hogy amit Kolumbusz talált, az nem India, hanem egy új kontinens. Róla nevezték el a földrészt Amerikának.</li>
       <li><strong>Magellán (1519–1522):</strong> Először kísérelte meg a Föld körülhajózását. Bár ő maga a Fülöp-szigeteken életét vesztette a bennszülöttekkel vívott harcban, egyik hajója (a Victoria) visszatért Spanyolországba, bizonyítva, hogy a Föld körbehajózható.</li>
     </ul>
