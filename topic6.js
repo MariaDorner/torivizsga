@@ -7,7 +7,7 @@ function buildTopic6Content(){
 
   <div class="info-card">
     <h3>🌙 Az Oszmán Birodalom születése és terjeszkedése</h3>
-    <p>A 14. század elején Kis-Ázsiában élő török törzseket egy <strong>Oszmán</strong> nevű vezér egyesítette. Róla nevezték el az új államot, az Oszmán Birodalmat, valamint az uralkodó dinasztiát is. Ez a feltörekvő katonaállam gyorsan terjeszkedni kezdett a Bizánci Birodalom rovására.</p>
+    <p>A 13–14. század fordulóján Kis-Ázsiában élő török törzseket egy <strong>Oszmán</strong> nevű vezér egyesítette. Róla nevezték el az új államot, az Oszmán Birodalmat, valamint az uralkodó dinasztiát is. Ez a feltörekvő katonaállam gyorsan terjeszkedni kezdett a Bizánci Birodalom rovására.</p>
     <p style="margin-top:12px;"><strong>Az európai előrenyomulás</strong></p>
     <p>A török csapatok hamarosan átkeltek Európába, ahol kihasználták a balkáni népek belső megosztottságát. Az előrenyomulás üteme rendkívül gyors volt:</p>
     <ul style="margin-top:8px;padding-left:20px;">
@@ -79,7 +79,7 @@ function buildTopic6Content(){
       <img src="images/topic6_img2.png" alt="Nándorfehérvár" style="max-width:100%;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.18);border:3px solid #1d4ed8;">
       <p style="font-size:.82rem;color:var(--muted);margin-top:6px;font-style:italic;">Nándorfehérvár – „Magyarország kapuja" (rekonstrukciós ábrázolás)</p>
     </div>
-    <p>II. Mohamed szultán 1456 nyarán Nándorfehérvár, a „Magyarország kapujának" tartott vár elfoglalására indult egy hatalmas, kb. <strong>100 ezer fős</strong> sereggel.</p>
+    <p>II. Mohamed szultán 1456 nyarán Nándorfehérvár, a „Magyarország kapujának" tartott vár elfoglalására indult egy hatalmas, kb. <strong>100 ezer fős</strong> sereggel. A vár azért volt kulcsfontosságú, mert a Duna és a Száva összefolyásánál állt: ha elesik, a török hadsereg előtt egyenes út nyílt volna a magyar Alföld és Buda felé.</p>
     <p style="margin-top:12px;"><strong>Az összecsapás menete</strong></p>
     <ul style="margin-top:8px;padding-left:20px;">
       <li><strong>A védelem:</strong> A várat Szilágyi Mihály védte 7 ezer katonával. Hunyadi 12 ezer fős seregével közeledett, míg Kapisztrán János, a ferences szerzetes, kb. 25-30 ezer lelkes, de képzetlen keresztes parasztot gyűjtött össze.</li>
@@ -93,10 +93,10 @@ function buildTopic6Content(){
     </div>
     <p style="margin-top:12px;"><strong>Következmények</strong></p>
     <p>A győzelem <strong>65 évre</strong> megállította a török terjeszkedést Magyarország felé. A diadal emlékére a pápa elrendelte a déli harangszót, amely eredetileg a harcosokért való imára szólított fel, de a köztudatban a győzelem jelképévé vált.</p>
-    <p style="margin-top:10px;">Hunyadi János nem sokkal a diadal után, <strong>1456. augusztus 11-én</strong> hunyt el a táborban pusztító pestisjárvány következtében. Gyulafehérváron temették el. Halála után kisebbik fia, Mátyás, rövidesen a Magyar Királyság uralkodója lesz. Idősebb fia nem lesz ilyen szerencsés. Lászlót 1457-ben a király lefejezteti.</p>
+    <p style="margin-top:10px;">Hunyadi János nem sokkal a diadal után, <strong>1456. augusztus 11-én</strong> hunyt el a táborban pusztító pestisjárvány következtében. Gyulafehérváron temették el. Idősebb fiát, <strong>Hunyadi Lászlót</strong> 1457-ben V. László király lefejeztette. Kisebbik fia, <strong>Mátyás</strong> azonban szerencsésebb sorsra jutott: rövidesen Magyarország királya lett.</p>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);border:2px solid #86EFAC;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
       <li>🌙 <strong>A török fenyegetés:</strong> Cél Európa meghódítása – 1389: Rigómező, 1453: Konstantinápoly eleste. Hadsereg: szpáhik (lovasok) + janicsárok (kiképzett gyalogosok)</li>
@@ -105,7 +105,7 @@ function buildTopic6Content(){
       <li>🏔️ <strong>1443–1444 – Hosszú hadjárat:</strong> Sikeres téli betörés a Balkánra, egészen Szófiáig</li>
       <li>💀 <strong>1444 – Várna:</strong> Vereség – a segítség elmarad, I. Ulászló király elesik a csatában</li>
       <li>🔔 <strong>1456 – Nándorfehérvári diadal:</strong> Szilágyi Mihály (várvédő) + Hunyadi (fősereg) + Kapisztrán János (keresztesek) → hajózár áttörése → török vereség → 65 évi béke</li>
-      <li>😢 <strong>Hunyadi halála:</strong> 1456. aug. 11. – pestisjárvány a táborban. Idősebb fia (László) kivégzik, kisebbik fia (Mátyás) később király lesz</li>
+      <li>😢 <strong>Hunyadi halála:</strong> 1456. aug. 11. – pestisjárvány a táborban. Idősebb fiát, Hunyadi Lászlót kivégezték, kisebbik fia (Mátyás) később király lesz</li>
     </ul>
   </div>
 `;
@@ -246,10 +246,10 @@ function showResult6(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=8){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1456</strong></div>`;
+  if(score>=10){
+    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>kormányzó</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 8/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 12</div>
@@ -260,18 +260,18 @@ function showResult6(){
 }
 function buildTopic6Concepts(){
   const concepts=[
-    {c:'purple',e:'🌙',t:'Oszmán Birodalom',d:"Kis-Ázsiából terjeszkedő török állam, amelyet Oszmán vezér alapított a 14. században. Célja Európa meghódítása volt, legfőbb fegyverei a janicsárok és a szpáhik voltak."},
+    {c:'purple',e:'🌙',t:'Oszmán Török Birodalom',d:"A 13. század végén I. Oszmán által alapított, Kis-Ázsiából kiinduló iszlám birodalom hatalma csúcsát I. Szulejmán uralkodása (1520–1566) alatt érte el. Katonai sikereit elsősorban kiválóan szervezett haderejének, a janicsár gyalogságnak és a szpáhi lovasságnak köszönhette."},
     {c:'amber',e:'⚔️',t:'Janicsár',d:"Az oszmán hadsereg legjobban kiképzett gyalogos katonái. Főként balkáni keresztény gyerekekből nevelték őket. Fegyelmezettségük és harci tudásuk félelmetes volt."},
     {c:'teal',e:'🐎',t:'Szpáhi',d:"Oszmán lovaskatona, aki szultáni birtok (timár) fejében katonáskodott. A szpáhik alkották az oszmán hadsereg lovasságát."},
     {c:'rose',e:'🛡️',t:'Szekérvár',d:"Hunyadi János által is alkalmazott harci taktika: szekereket kötöttek össze lánccal védelmi sánc gyanánt, mögé rejtve a tüzérséget és a gyalogságot."},
     {c:'blue',e:'👑',t:'Kormányzó',d:"Az 1446–1453 között betöltött tisztség, amelyet Hunyadi János viselt. A kiskorú V. László helyett ő irányította az országot. A király jogköréhez hasonló hatalommal rendelkezett."},
     {c:'green',e:'🏆',t:'Hosszú hadjárat',d:"Az 1443–44-es téli hadjárat a Balkánra, amelyen Hunyadi egészen Szófiáig nyomult előre. Európai hírnevet szerzett, de végül utánpótlás hiányában visszavonultak."},
-    {c:'purple',e:'💀',t:'Várnai csata (1444)',d:"Súlyos vereség a törökkel szemben. A keresztény sereg megszegte a törökkel kötött békét, de a genovaiak pénzért szállították át a szultán seregét. I. Ulászló király életét vesztette."},
+    {c:'purple',e:'💀',t:'Várnai csata (1444)',d:"Súlyos magyar vereség a törökökkel szemben. A keresztény sereg felrúgta a korábban kötött békét, a szultán főseregét pedig a genovaiak pénzért szállították át Európába. A csatában I. Ulászló király is életét vesztette."},
     {c:'amber',e:'🔔',t:'Nándorfehérvár',d:"Stratégiai fontosságú vár a Duna és Száva összefolyásánál, Magyarország kapuja. 1456-ban itt győzte le Hunyadi a hatalmas oszmán sereget."},
     {c:'teal',e:'⛪',t:'Kapisztrán János',d:"Ferences szerzetes, aki 25-30 ezer keresztes parasztot gyűjtött össze a nándorfehérvári ostrom idején. A hit katonái döntő szerepet játszottak a győzelemben."},
     {c:'rose',e:'🛡️',t:'Szilágyi Mihály',d:"Hunyadi sógora, aki 7 ezer katonával védte Nándorfehérvár várát az ostrom idején. Később Hunyadi Mátyás trónra jutásában is kulcsszerepet játszott."},
     {c:'blue',e:'🕌',t:'Rigómező (1389)',d:"A szerbek döntő veresége a törökökkel szemben, amely után Szerbia oszmán befolyás alá került. Ezzel a török közvetlen szomszédja lett a Magyar Királyságnak."},
-    {c:'green',e:'🕌',t:'Konstantinápoly eleste (1453)',d:"II. Mohamed szultán elfoglalta a Bizánci Birodalom fővárosát, Konstantinápolyt. Ez jelképesen a középkor végét is jelenti, és fokozta a Magyar Királyságra nehezedő török nyomást."}
+    {c:'green',e:'🕌',t:'Konstantinápoly eleste (1453)',d:"II. Mohamed szultán elfoglalta a Bizánci Birodalom fővárosát, Konstantinápolyt, a mai Isztambult. Ezzel a győzelemmel a város az Oszmán Birodalom új fővárosává vált, és végleg megszűnt a Keletrómai Birodalom."}
   ];
   return `<h2 style=font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--purple);margin-bottom:16px;>💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
   <div class=concepts-grid>${concepts.map(c=>`

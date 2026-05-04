@@ -2,7 +2,7 @@
 function buildTopic3Concepts(){
   const concepts=[
     {c:'purple',e:'👑',t:'IV. Béla',d:'Magyar király 1235–1270 között. Apja, II. András politikájával szakítva visszavette az eladományozott királyi birtokokat, ami konfliktushoz vezetett a nemesekkel. A tatárjárás után reformjaival újjáépítette az országot – ezért nevezi az utókor a "második honalapítónak".'},
-    {c:'amber',e:'🗺️',t:'Julianus barát',d:'Domonkos rendi szerzetes, aki 1235-ben megtalálta az őshazában maradt magyarokat a Volga mentén (Magna Hungaria). 1237-es második útján már csak a pusztítás hírét hozta, és Batu kán fenyegető levelét adta át IV. Bélának.'},
+    {c:'amber',e:'🗺️',t:'Julianus barát',d:'Domonkos rendi szerzetes, aki 1236-ban megtalálta az őshazában maradt magyarokat a Volga mentén (Magna Hungaria). 1237-es második útján már csak a pusztítás hírét hozta, és Batu kán fenyegető levelét adta át IV. Bélának.'},
     {c:'teal',e:'🏹',t:'Kunok',d:'Nomád lovasnép, akiket IV. Béla 1239-ben fogadott be a tatárok elől menekülve. Vezérük Kötöny volt. A pesti tömeg meggyilkolta Kötönyt, mire a kunok kivonultak az országból – Béla így elvesztette legfontosabb szövetségesét.'},
     {c:'rose',e:'👤',t:'Batu kán',d:'A mongol (tatár) fősereg vezére, Dzsingisz kán unokája. Az ő serege törte be a Vereckei-hágón 1241-ben, és vívta meg a muhi csatát. 1242 tavaszán – részben Ögödej nagykán halála miatt – kivonult Magyarországról.'},
     {c:'blue',e:'⚔️',t:'Muhi csata (1241. ápr. 11.)',d:'A tatárjárás döntő ütközete a Sajó folyó mentén. A magyarok szekérvárat építettek, de a tatárok éjszaka átkeltek a folyón és bekerítették a tábort. A vereség megsemmisítő volt: szinte a teljes magyar haderő elpusztult.'},
@@ -68,7 +68,7 @@ function buildTopic3Content(){
     <div class="timeline" style="margin-top:16px;">
       <div class="tl-item">
         <div class="tl-dot purple"></div>
-        <div class="tl-year">1235</div>
+        <div class="tl-year">1236</div>
         <div class="tl-title">Julianus barát első útja</div>
         <div class="tl-desc">A domonkos szerzetes megtalálta az őshazában maradt magyarokat a Volga mentén (Magna Hungaria). Tőlük hallott először a mongolok hódításairól.</div>
       </div>
@@ -109,6 +109,7 @@ function buildTopic3Content(){
       <li>A vereség megsemmisítő volt: szinte a teljes magyar haderő elpusztult, érsekek és püspökök is életüket vesztették.</li>
     </ul></div>
     <p style="margin-top:12px;">IV. Béla elmenekült: előbb az osztrák herceghez ment (aki megzsarolta), majd az Adria-tenger partjára, <strong>Trau (Trogir)</strong> várába vonult vissza. A tatárok 1241–42 telén a befagyott Dunán átkelve a Dunántúlt is lerohanták. Csak a jól védhető <strong>kővárak</strong> (pl. Esztergom, Székesfehérvár, Pannonhalma) tudtak ellenállni.</p>
+    <div class="highlight-box" style="margin-top:8px;">🔍 <strong>Érdekesség:</strong> Esztergom városa leégett és elpusztult a tatárok kezén – de a folyó fölé magasodó <strong>várhegy erődje</strong> sikeresen visszaverte az ostromot. Ez is megmutatta, hogy a kőből épített, jól védhető vár és a nyílt város között hatalmas különbség van.</div>
     <div class="highlight-box">💀 A pusztítás óriási volt: a lakosság <strong>15–25%-a</strong> meghalt, falvak százai égtek le, és éhínség követte a dúlást.</div>
   </div>
 
@@ -144,7 +145,7 @@ function buildTopic3Content(){
     <p>A 13. század második felében a királyi hatalom rohamosan gyengült. Trónharcok törtek ki – IV. Béla és saját fia, V. István között. Az évtizedekig tartó belviszály alatt a bárói réteg tovább erősödött, és az adományozások révén kiterjedt birtokokra tett szert. IV. Béla utódai már nem tudták megakadályozni a <strong>királyi vármegyerendszer szétesését</strong> és a bárók önkényeskedését.</p>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);border:2px solid #86EFAC;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
       <li>👑 <strong>IV. Béla célja:</strong> királyi hatalom visszaállítása → nemesek ellenállása</li>
@@ -170,7 +171,7 @@ const topic3={
 };
 // ===== TOPIC 3 QUIZ =====
 const questions3=[
-  {q:'Mikor halt meg Imre herceg?',a:['1031','1038','1000','1025'],correct:0},
+  {q:'Mi volt a tatárok 1242-es váratlan kivonulásának legvalószínűbb oka?',a:['A magyar sereg egy döntő csatában visszaverte a tatárokat.','Meghalt Ögödej nagykán, és Batu kánnak haza kellett térnie az utódlási gyűlésre.','IV. Béla megadta a tatároknak a kért sarcot.','Az összes kővár egyszerre visszaverte a támadókat.'],correct:1},
   {q:'Melyik szerzetes hozott elsőként hírt a keletről közeledő mongol (tatár) veszélyről?',a:['Gellért püspök','Julianus barát','Capistranói János','Anonymus'],correct:1},
   {q:'Milyen lovas nomád népet fogadott be IV. Béla a tatárjárás előtt, hogy segítsenek a védekezésben?',a:['besenyőket','avarokat','kunokat','jászokat'],correct:2},
   {q:'Miért vonultak ki a kunok az országból, még a tatárok érkezése előtt?',a:['Mert nem kaptak elég legelőt.','Mert a pesti tömeg megölte a vezérüket, Kötönyt.','Mert megijedtek a tatárok létszámától.','Mert a király végül elűzte őket.'],correct:1},

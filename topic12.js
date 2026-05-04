@@ -179,7 +179,7 @@ function buildTopic12Content(){
     <div style="font-size:11px;color:#8898bb;margin-top:8px;">+ ~4% egyéb (papság, katonaság, zsidóság stb.)</div>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);border:2px solid #86EFAC;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
       <li>📜 <strong>Pragmatica Sanctio (1723):</strong> III. Károly törvénye – nőág is örökölhet; a birodalom feloszthatatlan és elválaszthatatlan</li>
@@ -327,10 +327,10 @@ function showResult12(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=9){
+  if(score>=11){
     unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1741</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 9/13 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 11/13 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 13</div>
@@ -342,18 +342,17 @@ function showResult12(){
 
 function buildTopic12Concepts(){
   const concepts=[
-    {c:'purple',e:'📜',t:'Pragmatica Sanctio',d:"III. Károly 1723-as törvénye, amelyet a magyar rendek is elfogadtak. Kimondta: a Habsburg-ház leányai is örökölhetik a trónt, és a birodalom feloszthatatlan egységet alkot."},
+    {c:'purple',e:'📜',t:'Pragmatica Sanctio',d:"A Pragmatica Sanctio III. Károly által az 1722-1723-as országgyűlésen elfogadtatott törvény, amely szabályozta és törvényesítette a Habsburg-ház nőági örökösödését a magyar trónon. A dokumentum kimondta, hogy a Habsburg Birodalom és a Magyar Királyság területei \u201efeloszthatatlanul és elválaszthatatlanul\u201d kapcsolódnak egymáshoz."},
     {c:'amber',e:'💡',t:'Felvilágosult abszolutizmus',d:"18. századi kormányzati forma: az uralkodó megtartja teljhatalmát (abszolutizmus), de a felvilágosodás eszméire támaszkodva reformokkal javítja az ország helyzetét. Jelszava: az állam első szolgája."},
     {c:'teal',e:'👸',t:'Vitam et sanguinem!',d:"»Életünket és vérünket!« – a magyar nemesség kiáltása az 1741-es pozsonyi országgyűlésen. Mária Terézia kétségbeesett segítségkérésére válaszolták, és 60 ezer katonát ajánlottak fel."},
-    {c:'rose',e:'💰',t:'Kettős vámrendelet',d:"Mária Terézia 1754-es rendelete: belső vámhatárt hozott létre Magyarország és az örökös tartományok között. Magyarország az árukat drágán kapta és olcsón adta el – a birodalom éléskamrája lett."},
+    {c:'rose',e:'💰',t:'Kettős vámrendelet',d:"Mária Terézia 1754-es kettős vámrendelete két vámhatárt húzott fel: egyet az egész Habsburg Birodalom köré, egyet pedig a birodalmon belül, Magyarország és az osztrák területek közé. A szabályozás azt a célt szolgálta, hogy a magyarok olcsó mezőgazdasági termékeket (például gabonát és húst) szállítsanak a birodalom többi részébe, cserébe pedig onnan származó iparcikkeket vásároljanak. Emiatt a munkamegosztás miatt Magyarország sokáig az osztrák és cseh területek éléskamrája maradt, a hazai ipar pedig hosszú ideig nem tudott megfelelően fejlődni."},
     {c:'blue',e:'📋',t:'Urbárium',d:"Mária Terézia 1767-es rendelete, amely szabályozta a jobbágy és a földesúr viszonyát. Maximálta a robotot: heti 1 nap iga- vagy 2 nap gyalogrobot. Ezzel védte az adófizető jobbágyot."},
-    {c:'green',e:'🎓',t:'Ratio Educationis',d:"Mária Terézia 1777-es rendelete: egységes, államilag felügyelt iskolarendszert hozott létre a népiskolától az egyetemig. Kötelező tantárgy lett a történelem és a természettudomány."},
-    {c:'purple',e:'🎩',t:'Kalapos király',d:"II. József gúnyneve, mert nem koronáztatta meg magát magyar királlyá – így nem kellett felesküdnie a magyar alkotmányra. A Szent Koronát Bécsbe vitette, a magyarok kalpaggal ábrázolták."},
-    {c:'amber',e:'🕊️',t:'Türelmi rendelet',d:"II. József 1781-es rendelete: szabadabb vallásgyakorlást biztosított a protestánsoknak és görögkeletieknek, és megnyitotta előttük az állami hivatalokat. Ez az egyetlen rendelet, amelyet nem vont vissza."},
+    {c:'green',e:'🎓',t:'Ratio Educationis',d:"Az 1777-ben Mária Terézia által kiadott Ratio Educationis a magyarországi oktatásügyet átfogóan szabályozó, a felvilágosult abszolutizmus szellemében született királyi rendelet volt. Az uralkodói utasítás a történelem során először vonta állami ellenőrzés alá az iskolaügyet, egységes intézményrendszert és tantervet hozva létre, amely a hasznos, gyakorlati ismeretek oktatását szorgalmazta. Bár az előírások egy modern rendszer alapjait fektették le, a rendelet a gyakorlatban nem vagy csak részlegesen valósult meg."},
+    {c:'purple',e:'🎩',t:'Kalapos király',d:"II. József gúnyneve, mert nem koronáztatta meg magát magyar királlyá – így nem kellett felesküdnie a magyar alkotmányra."},
+    {c:'amber',e:'🕊️',t:'Türelmi rendelet',d:"II. József 1781-es rendelete: szabadabb vallásgyakorlást biztosított a protestánsoknak és görögkeletieknek, és megnyitotta előttük az állami hivatalokat. Ez az egyik rendelete a három közül, amelyet nem vont vissza a nevezetes tollvonással."},
     {c:'teal',e:'📝',t:'Nyelvrendelet',d:"II. József 1784-es rendelete: a latint és a helyi nyelveket felváltva a németet tette az állam hivatalos nyelvévé. Ez hatalmas felháborodást váltott ki, és akaratlanul elindította a magyar nemzeti ébredést."},
     {c:'rose',e:'🌱',t:'Jobbágyrendelet',d:"II. József 1785-es rendelete: megszüntette a röghöz kötést. A jobbágyok szabadon költözhettek, házasodhattak és tanulhattak mesterséget. Ez az egyik legfontosabb rendelet, amelyet meghagyott."},
-    {c:'blue',e:'↩️',t:'Nevezetes tollvonás',d:"1790-ben halálos ágyán II. József visszavonta szinte összes rendeletét – csak a türelmi rendelet, a jobbágyrendelet és az alsópapságra vonatkozó intézkedések maradtak érvényben."},
-    {c:'green',e:'🌍',t:'Betelepítés',d:"A 18. században az elnéptelenedett Magyarországra főleg sváb (német) telepeseket hívtak be. A szervezett betelepítés célja a gazdaság fellendítése volt; ennek köszönhető, hogy a magyarság kisebbségbe (35%) szorult saját hazájában."}
+    {c:'blue',e:'↩️',t:'Nevezetes tollvonás',d:"1790-ben halálos ágyán II. József visszavonta szinte összes rendeletét – csak a türelmi rendelet, a jobbágyrendelet és az alsópapságra vonatkozó intézkedések maradtak érvényben."}
   ];
   return `<h2 style=font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--purple);margin-bottom:16px;>💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
   <div class=concepts-grid>${concepts.map(c=>`

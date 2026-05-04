@@ -14,7 +14,7 @@ function buildTopic7Content(){
     <h3>👑 Út a trónig: Hunyadi László tragédiája és Mátyás megválasztása (1456–1458)</h3>
     <p>Hunyadi János, a nándorfehérvári hős 1456-os halála után hatalmas vagyona és befolyása két fiára, Lászlóra és Mátyásra szállt. Az ország irányításáért harc kezdődött a Hunyadi-család és V. László király támogatói, főként Cillei Ulrik között.</p>
     <p style="margin-top:10px;">A konfliktus akkor mérgesedett el, amikor Hunyadi László Nándorfehérváron megölette Cillei Ulrikot. Bár a király először büntetlenséget ígért, később mégis elfogatta a Hunyadi testvéreket. Hunyadi Lászlót <strong>1457-ben Budán lefejezték</strong>, a fiatal Mátyást pedig fogolyként Bécsbe, majd Prágába vitték.</p>
-    <p style="margin-top:10px;">V. László váratlan halála után a magyar rendek <strong>1458 januárjában a Duna jegén</strong> Hunyadi Mátyást választották királlyá. Ő volt az első olyan uralkodó, aki nem rokoni úton, hanem választás útján került a trónra. Mátyásnak először ki kellett szabadulnia a prágai fogságból (Podjebrád György cseh kormányzó lányát, Katalint eljegyezve szabadult), majd meg kellett küzdenie a hatalmát korlátozni akaró bárókkal. Mivel a Szent Korona III. Frigyes császárnál volt, Mátyást kezdetben csak ünnepélyesen trónra ültették, a valódi koronázásra csak évekkel később került sor.</p>
+    <p style="margin-top:10px;">V. László váratlan halála után a magyar rendek <strong>1458 januárjában a Duna jegén</strong> Hunyadi Mátyást választották királlyá. Ő volt az első olyan uralkodó, aki nem rokoni úton, hanem választás útján került a trónra. Mátyásnak először ki kellett szabadulnia a prágai fogságból (Podjebrád György cseh kormányzó lányát, Katalint eljegyezve szabadult), majd meg kellett küzdenie a hatalmát korlátozni akaró bárókkal. Mivel a Szent Korona III. Frigyes császárnál volt, Mátyást kezdetben csak ünnepélyesen trónra ültették, a valódi koronázásra csak <strong>1464-ben</strong> került sor.</p>
   </div>
 
   <div class="info-card">
@@ -94,7 +94,7 @@ function buildTopic7Content(){
     <p style="margin-top:10px;">Mátyás <strong>1490-es halála</strong> után azonban a bárók nem Corvin Jánost, hanem a gyengébb kezű II. Ulászlót választották királlyá. Mátyás központosított rendszere és a Fekete Sereg hamarosan összeomlott. Az utókor emlékezetében azonban ő maradt az „Igazságos" király, akinek haláláról azt tartják: <em>„Meghalt Mátyás, oda az igazság!"</em></p>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);border:2px solid #86EFAC;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
       <li>👑 <strong>Trónra kerülés (1458):</strong> Testvérét, Hunyadi Lászlót kivégzik, Mátyást Prágában fogják – de a Duna jegén a rendek megválasztják királynak</li>
@@ -250,10 +250,10 @@ function showResult7(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=9){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1490</strong></div>`;
+  if(score>=10){
+    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>corvinák</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 9/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 12</div>
@@ -264,18 +264,15 @@ function showResult7(){
 }
 function buildTopic7Concepts(){
   const concepts=[
-    {c:'purple',e:'👑',t:'Reneszánsz',d:"Olaszországból induló kulturális mozgalom (14–16. sz.), amely az ókori görög–római hagyományok újraélesztésére törekedett. Mátyás udvarában ez az építészeten, irodalmon és tudományon keresztül nyilvánult meg."},
+    {c:'purple',e:'👑',t:'Reneszánsz',d:"A reneszánsz a 14–16. században Észak-Itáliából elterjedő kulturális és művészeti mozgalom, melynek elnevezése az ókori görög-római értékek újjászületését jelenti. A középkori vallásközpontú világnézet helyett az egyént, az emberi alkotóképességet és a földi élet szépségét állította a fókuszba. A korszakot a művészetekben a természethű ábrázolás és a harmónia keresése, a tudományokban pedig a tapasztalati megfigyelés jellemezte."},
     {c:'amber',e:'⚔️',t:'Fekete Sereg',d:"Mátyás állandó zsoldoshadserege, amelyből a kor legmodernebb, legjobban felszerelt katonai ereje volt. Nehézlovasságból, gyalogságból és tüzérségből állt. Vezére Kinizsi Pál volt."},
     {c:'teal',e:'💰',t:'Füstpénz',d:"Mátyás által bevezetett adótípus, amelyet háztartásonként (kéményenként) szedtek, nem telkenként. Ezzel több pénz folyt be, hiszen egy telken sokszor több család élt."},
     {c:'rose',e:'📚',t:'Bibliotheca Corviniana',d:"Mátyás budai könyvtára, amely 2000–2500 díszes kézírásos kódexet tartalmazott. Európa második legnagyobb könyvtára volt a Vatikán után. A könyveket corvináknak nevezzük."},
     {c:'blue',e:'🌍',t:'Humanizmus',d:"Reneszánsz szellemi irányzat, amely az embert és képességeit helyezte a középpontba, szemben a középkori Isten-központú gondolkodással. Mátyás udvarában humanista tudósok (Bonfini, Galeotto) éltek."},
     {c:'green',e:'📜',t:'Koronavám',d:"A harmincadvám helyett bevezetett kereskedelmi adó. Az átnevezéssel Mátyás törölte a régi mentességeket, így mindenki – nemesek is – köteles volt fizetni."},
-    {c:'purple',e:'⚖️',t:'Kancellária',d:"Mátyás által kiépített központi hivatal, amely az állam ügyintézését végezte. Tanult, alacsony sorból származó szakemberekkel töltötte fel, nem a megbízhatatlan bárókkal."},
     {c:'amber',e:'🏰',t:'Aktív védelem',d:"Mátyás törökpolitikájának alapelve: nem a kiűzés, hanem a határok megerősítése és kisebb visszafoglalások. Ennek jegyében vette vissza Jajcát (1463) és Szabácsot (1476)."},
-    {c:'teal',e:'🎓',t:'Academia Istropolitana',d:"Mátyás által Pozsonyban alapított egyetem (1467). Ez volt Magyarország második főiskolai intézménye a pécsi után. A humanista tudományokat oktatta."},
-    {c:'rose',e:'🏆',t:'Kenyérmezei csata (1479)',d:"Kinizsi Pál és Báthori István közös győzelme a betörő török sereg felett. Az egyik legnagyobb magyar katonai diadal Mátyás idején."},
-    {c:'blue',e:'💛',t:'Corvin János',d:"Mátyás törvénytelen fia, akit apja utódjává szeretett volna tenni. A bárók azonban halála után nem fogadták el királynak, helyette II. Ulászlót választották."},
-    {c:'green',e:'🌟',t:'Meghalt Mátyás...',d:"Meghalt Mátyás, oda az igazság! – a közismert mondás Mátyás igazságosságát és a halálával beköszöntő hanyatlást fejezi ki. A nép körében élő legenda szerint álruhában járta az országot."}
+    {c:'rose',e:'🏆',t:'Kenyérmezei csata (1479)',d:"Kinizsi Pál és Báthori István közös győzelme az Erdélybe betörő, Ali Kodzsa bég vezette török sereg felett. Ez volt az egyik legnagyobb magyar katonai diadal Mátyás király uralkodása idején."},
+    {c:'blue',e:'💛',t:'Corvin János',d:"Mátyás törvénytelen fia, akit apja utódjává szeretett volna tenni. A bárók azonban halála után nem fogadták el királynak, helyette II. Ulászlót választották."}
   ];
   return `<h2 style=font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--purple);margin-bottom:16px;>💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
   <div class=concepts-grid>${concepts.map(c=>`

@@ -24,7 +24,7 @@ function buildTopic5Content(){
 
   <div class="info-card">
     <h3>⚔️ A nápolyi hadjáratok</h3>
-    <p>Lajos külpolitikájának egyik legmeghatározóbb eseménye öccse, <strong>András herceg meggyilkolása</strong> volt. András a nápolyi trón várományosa volt, de felesége, Johanna és hívei megfojtották őt <strong>1345-ben</strong>.</p>
+    <p>Lajos külpolitikájának egyik legmeghatározóbb eseménye öccse, <strong>András herceg meggyilkolása</strong> volt. András a nápolyi trón várományosa volt, de <strong>András felesége, Johanna nápolyi királyné</strong> és hívei megfojtották őt <strong>1345-ben</strong>.</p>
     <p style="margin-top:10px;">Lajos bosszúhadjáratot indított (1347–48, 1350). A magyar sereg diadalmenetben vonult végig Itálián.</p>
     <ul style="margin-top:8px;padding-left:20px;">
       <li><strong>Eredmény:</strong> Bár Lajost Nápolyban királyként üdvözölték, a hatalmas távolság, a pápa ellenállása és a kitörő pestisjárvány miatt végül le kellett mondania a nápolyi trónról.</li>
@@ -98,26 +98,13 @@ function buildTopic5Content(){
   </div>
 
 
-  <div class="info-card">
-    <h3>📋 Történeti Gyorsvázlat (Szigorúan kulcsszavak)</h3>
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
+    <h3 style="color:#4ade80;">📋 Történeti Gyorsvázlat (Szigorúan kulcsszavak)</h3>
     <ul>
       <li>👑 <strong>A Lovagkirály:</strong> I. (Nagy) Lajos (1342–1382). Példaképe Szent László. Művelt, több nyelven beszélő, lovagi eszméket valló uralkodó.</li>
       <li>⚔️ <strong>Nápolyi hadjáratok:</strong> Bosszú öccse (András) meggyilkolásáért → Katonai sikerek, de a távolság és a pestis miatt a nápolyi trón megtartása sikertelen.</li>
-      <li>🌊 <strong>A Birodalom határai:</strong>
-        <ul style="margin-top:6px;padding-left:20px;">
-          <li><strong>Dalmácia:</strong> visszaszerezte Velencétől az Adriai partvidéket (zárai béke, 1358).</li>
-          <li><strong>Lengyelország:</strong> 1370-től perszonálunió (két független ország, közös uralkodó).</li>
-          <li><strong>Balkán:</strong> Ütközőzóna (hűbéri függésben lévő államok) kiépítése délkeleten.</li>
-        </ul>
-      </li>
-      <li>📜 <strong>1351-es Törvények (Országgyűlés, Buda):</strong>
-        <ul style="margin-top:6px;padding-left:20px;">
-          <li><strong>Ősiség:</strong> Nemesi birtok eladhatatlan, csak családon belül öröklődik.</li>
-          <li><strong>Háramlási jog:</strong> Fiúutód nélküli család birtoka a királyra száll.</li>
-          <li><strong>Egy és ugyanazon szabadság:</strong> Minden nemes (báró és köznemes) jogilag egyenlő.</li>
-          <li><strong>Kilenced:</strong> A földesúrnak kötelezően fizetendő adó a jobbágyoktól.</li>
-        </ul>
-      </li>
+      <li>🌊 <strong>A Birodalom határai:</strong> Dalmácia: visszaszerezte Velencétől (zárai béke, 1358). Lengyelország: 1370-től perszonálunió (két független ország, közös uralkodó). Balkán: ütközőzóna (hűbéri függésben lévő államok) kiépítése délkeleten.</li>
+      <li>📜 <strong>1351-es Törvények (Buda):</strong> Ősiség (nemesi birtok csak családon belül öröklődik), Háramlási jog (fiúutód nélküli birtok a királyra száll), Egy és ugyanazon szabadság (minden nemes jogilag egyenlő), Kilenced (jobbágyok kötelező terményadója).</li>
       <li>🎓 <strong>Kultúra és városok:</strong> Egyetemalapítás (Pécs, 1367), városok támogatása (kiváltságok), lovagi építészet (Diósgyőr, Visegrád).</li>
       <li>👧 <strong>Az utódlás:</strong> Lajos 1382-ben fiúutód nélkül halt meg. Birodalmát lányai örökölték: Mária (Magyarország) és Hedvig (Lengyelország).</li>
     </ul>
@@ -160,7 +147,7 @@ const questions5=[
   {q:'Milyen jelzővel illeti a történelem I. Lajost?',a:['A Bölcs', 'A Nagy', 'Az Igazságos'],correct:1},
   {q:'Melyik dinasztia tagja volt Nagy Lajos?',a:['A Piast-dinasztia', 'Az Anjou-dinasztia', 'A Jagelló-dinasztia'],correct:1},
   {q:'Mi akadályozta meg Nagy Lajost abban, hogy megtartsa a nápolyi trónt?',a:['A velenceiek elfoglalták az utánpótlási útvonalakat', 'A hatalmas távolság, a pápa ellenállása és a pestis', 'Az oszmánok betörtek Magyarországra'],correct:1},
-  {q:'Mit mondott ki az 1351-es törvény az ősisegről?',a:['A nemesi birtok szabadon eladható volt', 'A nemesi birtok nem volt eladható, csak a családon belül öröklődhetett', 'A jobbágyok is vásárolhattak nemesi birtokokat'],correct:1},
+  {q:'Mit mondott ki az 1351-es törvény az ősiségről?',a:['A nemesi birtok szabadon eladható volt', 'A nemesi birtok nem volt eladható, csak a családon belül öröklődhetett', 'A jobbágyok is vásárolhattak nemesi birtokokat'],correct:1},
   {q:'Mit jelent a kilenced?',a:['A termény 1/10-e, amelyet az egyháznak kellett fizetni', 'A jobbágyok földesúrnak fizetett terményadója, mely a termés tizedét jelentette. A név onnét származik, hogy az egyháznak fizetendő tized után ez volt a kilencedik tized', 'Az évi robotnapok száma'],correct:1},
   {q:'Mikor alapították a pécsi egyetemet?',a:['1342-ben', '1367-ben', '1382-ben'],correct:1},
   {q:'Mi valósult meg 1370-ben Nagy Lajos és Lengyelország között?',a:['Háború tört ki', 'Perszonálunió jött létre: Lajos lett a lengyel király is', 'Kereskedelmi szerződést kötöttek'],correct:1},
@@ -260,10 +247,10 @@ function showResult5(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=8){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1367</strong></div>`;
+  if(score>=10){
+    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1370</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 8/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 12</div>
@@ -274,18 +261,17 @@ function showResult5(){
 }
 function buildTopic5Concepts(){
   const concepts=[
-    {c:'purple',e:'👑',t:'Anjou-ház',d:"Francia–nápolyi királyi dinasztia, amely 1308-tól uralta Magyarországot. I. Károly alapította meg uralmát, fia Nagy Lajos idején élte virágkorát."},
+    {c:'purple',e:'👑',t:'Anjou-ház',d:"Francia–nápolyi királyi dinasztia, amely hivatalosan 1310-től uralta Magyarországot. Az Anjou-háznak két jelentős alakja volt Magyarországon, I. Károly és fia I. (Nagy) Lajos. Lajos fiú utód nélkül halt meg 1382-ben, így a magyarországi Anjou dinasztia férfiágon kihalt."},
     {c:'amber',e:'⚔️',t:'Lovagkirály',d:"Nagy Lajos jelzője: bátran harcolt, lovagi értékrendet követett, és személyesen vezette seregeit a csatában. Példaképe Szent László király volt."},
     {c:'teal',e:'🌊',t:'Perszonálunió',d:"Két ország közötti kapcsolat, amikor ugyanaz a személy egyszerre tölti be mindkét ország királyi tisztségét, de az országok önállóak maradnak. 1370-ben Lajos Lengyelország királya is lett."},
     {c:'rose',e:'📜',t:'Ősiség (aviticitas)',d:"Az 1351-es törvény: a nemesi birtok nem volt eladható, csak a családon belül öröklődhetett. Célja a nemesi vagyon egyben tartása volt."},
     {c:'blue',e:'👑',t:'Háramlási jog',d:"Ha egy nemesi família fiúágon kihalt, a birtok visszaszállt a királyra. Így a korona pótolni tudta az eladományozott területeit."},
     {c:'green',e:'⚖️',t:'Egy és ugyanazon szabadság',d:"Az 1351-es törvény kimondta: minden nemes – akár báró, akár köznemes – ugyanazokkal a jogokkal rendelkezik. A nemesség jogilag egységes renddé vált."},
-    {c:'purple',e:'🌾',t:'Kilenced',d:"A jobbágy terményének 1/9-ét köteles volt a földesurának adni. Megakadályozta, hogy a bárók adókedvezménnyel csábítsák el a köznemesek jobbágyait."},
-    {c:'amber',e:'🏛️',t:'Pécsi egyetem',d:"1367-ben Nagy Lajos alapította Pécsett az első magyarországi egyetemet. Az Universitas Quinqueecclesiensis a kor legmodernebb tudományait oktatta."},
+    {c:'purple',e:'🌾',t:'Kilenced',d:"A jobbágyok földesúrnak fizetett terményadója, mely a termés tizedét jelentette. A név onnét származik, hogy az egyháznak fizetendő tized után ez volt a kilencedik tized. Nagy Lajos 1351-es törvényei előírták, hogy a kilencedet minden nemesnek kötelező beszednie jobbágyaitól. Az uralkodó a jobbágyi szolgáltatások egységesítésével azt akarta elérni, hogy a középnemesi birtokokról a munkaerő ne költözzön át a bárók birtokaira."},
+    {c:'amber',e:'🏛️',t:'Pécsi egyetem',d:"1367-ben Nagy Lajos alapította Pécsett az első magyarországi egyetemet."},
     {c:'teal',e:'🛡️',t:'Ütközőállam',d:"Olyan ország, amely két nagyhatalom között helyezkedik el, és védelmi pufferzónaként funkcionál. Lajos a Balkánt ilyen ütközőzónává tette a törökök ellen."},
     {c:'rose',e:'📖',t:'Képes Krónika',d:"Nagy Lajos korában készült latin nyelvű kódex, amely a magyarok történetét meséli el gazdagon illusztrált miniatúrákkal. Az egyik legszebb középkori magyar emlék."},
-    {c:'blue',e:'🏰',t:'Zárai béke (1358)',d:"Velencével kötött béke, amellyel Magyarország visszaszerezte a teljes dalmát tengerpartot. Ezért »mosta három tenger« (Adria, Balti, Fekete-tenger) Nagy Lajos birodalmát."},
-    {c:'green',e:'💛',t:'Anjou-liliom',d:"Az Anjou-dinasztia jelképe, amelyet Nagy Lajos is használt. A stilizált liliomvirág ma is megtalálható számos európai ország és város címerében."}
+    {c:'green',e:'⚜️',t:'Anjou-liliom',d:"Az Anjou-dinasztia jelképe, amelyet Nagy Lajos is használt. A stilizált liliomvirág ma is megtalálható számos európai ország és város címerében."}
   ];
   return `<h2 style=font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--purple);margin-bottom:16px;>💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
   <div class=concepts-grid>${concepts.map(c=>`

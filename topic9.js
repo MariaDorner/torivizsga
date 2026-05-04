@@ -67,9 +67,9 @@ function buildTopic9Content(){
     <p style="margin-top:10px;">A lázadók a <strong>Kelen-hegy</strong> sziklás csúcsára hurcolták az idős püspököt, belső éles szögekkel kivert hordóba zárták, majd a meredek tetőről <strong>letaszították a mélybe</strong>. A hordó hatalmas robajjal zuhant egészen a Duna vizéig. Ezt a magas, meredek hegyet a vértanú püspök emlékére azóta is <strong>Gellért-hegynek</strong> nevezzük.</p>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,var(--card),var(--card2));border-color:var(--border2);">
-    <h3 style="color:var(--gold);">📋 Összefoglalás – Ami biztosan kell a vizsgára</h3>
-    <ul style="padding-left:20px;line-height:2;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
+    <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
+    <ul style="padding-left:20px;">
       <li>🦅 <strong>Emese álma:</strong> Turulmadár → Álmos neve → Árpád és a honfoglalás</li>
       <li>🐎 <strong>Fehér ló mondája:</strong> Föld-víz-fű csere → Szvatopluk becsapva → Kárpát-medence megszerzése</li>
       <li>🎺 <strong>Lehel kürtje:</strong> Lech-mezei vereség → Lehel kürttel megöli a császárt → „Szolgám leszel a másvilágon"</li>
@@ -91,9 +91,9 @@ function buildTopic9Videos(){
     {e:'⚡',level:'alap',lt:'Beavatás – Legkönnyebb',title:'Magyar mondák – Emese álma és a fehér ló',desc:'Rövid, animációs összefoglaló a honfoglalás előtti nagy mondákról. Tökéletes bevezető, amely vizuálisan mutatja be a turulmadár mondáját és a fehér ló cselfogását.',url:'https://www.youtube.com/watch?v=2bKIV1YDHWY'},
     {e:'🎬',level:'alap',lt:'Kezdő',title:'Mondák a Magyar Történelemből – Lehel kürtje',desc:'A klasszikus magyar mondafilmsorozat Lehel kürtjéről szóló epizódja. Látványos, könnyen követhető és szórakoztató – azonnal belecsöppen a tanuló a kor hangulatába.',url:'https://www.youtube.com/watch?v=kPxjDzCMbMc'},
     {e:'🏊',level:'alap',lt:'Kezdő – Könnyed',title:'Mondák a Magyar Történelemből – Búvár Kund',desc:'A legendás búvármonda filmadaptációja. Rövid, drámai és nagyon látványos – a pozsonyi hajóhad elsüllyesztésének története percek alatt bevésődik a fejbe.',url:'https://www.youtube.com/watch?v=KoFiEmECnpI'},
-    {e:'📚',level:'kozepes',lt:'Középhaladó',title:'Szent László – A lovagkirály élete és mondái',desc:'Részletesebb ismeretterjesztő videó, amely bemutatja a valódi történelmi Szent Lászlót és a köré szőtt mondákat. Jól használható a füzetvázlat kiegészítéséhez.',url:'https://www.youtube.com/watch?v=MuWOZg1eO2A'},
-    {e:'🎓',level:'kozepes',lt:'Haladó Megfigyelő',title:'Magyar mondák – Kemény Simon és a páncélcsere',desc:'Hunyadi korának mondáit és Kemény Simon önfeláldozásának történetét bemutató összeállítás. Komolyabb hangvételű, bővebb háttérrel a 15. századi török harcokhoz.',url:'https://www.youtube.com/watch?v=AbPSXzwcJxY'},
-    {e:'🎯',level:'profi',lt:'Mesterlövész – Legnehezebb',title:'Magyarország története – Árpád-kor és mondák',desc:'Részletes dokumentarista feldolgozás a honfoglalástól az Árpád-kori mondákon át a középkori hősökig. Hosszabb elmélyülést igényel, a legelszántabb diákoknak javasolt.',url:'https://www.youtube.com/watch?v=jqgBAMZ_Ogg'},
+    {e:'📚',level:'alap',lt:'Alap',title:'Szent László – A lovagkirály élete és mondái',desc:'Részletesebb ismeretterjesztő videó, amely bemutatja a valódi történelmi Szent Lászlót és a köré szőtt mondákat. Jól használható a füzetvázlat kiegészítéséhez.',url:'https://www.youtube.com/watch?v=MuWOZg1eO2A'},
+    {e:'🎓',level:'alap',lt:'Alap',title:'Magyar mondák – Kemény Simon és a páncélcsere',desc:'Hunyadi korának mondáit és Kemény Simon önfeláldozásának történetét bemutató összeállítás. Komolyabb hangvételű, bővebb háttérrel a 15. századi török harcokhoz.',url:'https://www.youtube.com/watch?v=AbPSXzwcJxY'},
+    {e:'🎯',level:'alap',lt:'Alap',title:'Magyarország története – Árpád-kor és mondák',desc:'Részletes dokumentarista feldolgozás a honfoglalástól az Árpád-kori mondákon át a középkori hősökig. Hosszabb elmélyülést igényel, a legelszántabb diákoknak javasolt.',url:'https://www.youtube.com/watch?v=jqgBAMZ_Ogg'},
   ];
   return `<h2 style="font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--rose-d);margin-bottom:16px;">🎥 TITKOS VIDEÓARCHÍVUM: LEGENDÁK AKTÁI (Nehézségi sorrendben)</h2>
   <div class="video-grid">${vids.map(v=>`
@@ -109,28 +109,7 @@ function buildTopic9Videos(){
 
 // ===== TOPIC 9 CONCEPTS =====
 function buildTopic9Concepts(){
-  const concepts=[
-    {c:'purple',e:'🦅',t:'Turul',d:"A magyarok ősi, mondabeli sólyma. Emese álmában jelenik meg, és a magyarság isteni eredetét és küldetését jelképezi. A turulmadár mind a mai napig a magyarság egyik legfontosabb jelképe."},
-    {c:'amber',e:'🐎',t:'Fehér ló mondája',d:"Árpád okos csele: fehér lovat, aranynyerget és aranyféket adott Szvatopluknak, cserébe csak egy marék földet, vizet és füvet kért – amit a nomád szokás szerint az egész ország átengedésének tekintett."},
-    {c:'teal',e:'🎺',t:'Lehel kürtje',d:"Lehel kapitány a fogságban is bosszút állt: a kürtjével homlokon vágta a győztes császárt. Mondása: 'Előttem jársz, és szolgám leszel a másvilágon!' – utal a magyar ősi hitre, hogy a megölt ellenség a túlvilágon szolgál."},
-    {c:'rose',e:'🏊',t:'Búvár Kund (Zotmund)',d:"Az 1051-es pozsonyi ostromban éjjel a Duna mélyén úszva, kézifúróval lyukasztotta ki a német hajókat. Egyetlen ember leleményessége és bátorsága döntötte el a hadjárat sorsát."},
-    {c:'blue',e:'🏔️',t:'Vértes hegység',d:"I. András király 1051-ben éheztetéssel és rajtaütésekkel kényszerítette visszavonulásra III. Henriket. A menekülő németek elhajigálták vértjeiket (páncéljaikat) – erről kapta nevét a Vértes hegység."},
-    {c:'green',e:'⚔️',t:'Kemény Simon',d:"Hunyadi János leghűségesebb vitéze, aki az 1442-es szebeni csata előtt felajánlotta, hogy felveszi Hunyadi páncélját és lovát. Tudta, hogy ez számára biztos halált jelent – mégis önként vállalta a haza megmentéséért."},
-    {c:'purple',e:'👑',t:'I. (Szent) László',d:"Magyar király (1077–1095). Kemény törvényeivel helyreállította a rendet, 1091-ben Horvátországot csatolta az országhoz, Nagyváradon és Zágrábban püspökséget alapított. 1192-ben szentté avatták."},
-    {c:'amber',e:'✝️',t:'Szent Imre',d:"I. István egyetlen fia és trónörököse. Tanítója Gellért püspök volt. 1031-ben vadkanvadászaton meghalt. Jelképe a fehér liliom – a testi-lelki tisztaság szimbóluma. 1083-ban avatták szentté."},
-    {c:'teal',e:'🌸',t:'Szent Margit',d:"IV. Béla lánya, akit szülei a tatárjárásból való megmenekülés fogadalmaként apácának adtak. A Nyulak szigetén élt (ma Margit-sziget). Minden kérőjét visszautasította, hű maradt fogadalmához."},
-    {c:'rose',e:'⛰️',t:'Gellért püspök',d:"Velencei szerzetes, Imre herceg tanítója. 1046-ban a lázadó pogányok a Kelen-hegy tetejéről szöges hordóba zárva a Dunába dobták. A hegyről ma is róla elnevezett Gellért-hegyként emlékezünk rá."},
-    {c:'blue',e:'🏰',t:'Intelmek',d:"I. (Szent) István által fiának, Imre hercegnek írt útmutató, amelyben bölcs tanácsokat adott az igazságos, türelmes és jó keresztény uralkodáshoz. Máig fennmaradt középkori irodalmunk egyik legértékesebb emléke."},
-    {c:'green',e:'🦁',t:'Árpád-ház',d:"Álmos fiától, Árpádtól eredő magyar uralkodódinasztia. Árpád vezette be a magyarokat a Kárpát-medencébe 895 körül. Az Árpád-házi királyok egészen 1301-ig (III. András haláláig) irányították Magyarországot."},
-  ];
-  return `<h2 style=font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--purple);margin-bottom:16px;>💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
-  <div class=concepts-grid>${concepts.map(c=>`
-    <div class=concept-card ${c.c} onclick=toggleConcept(this)>
-      <div class=concept-emoji>${c.e}</div>
-      <div class=concept-term>${c.t}</div>
-      <div class=concept-def>${c.d}</div>
-      <div class=concept-hint>👆 Kattints a magyarázathoz</div>
-    </div>`).join('')}</div>`;
+  return '';
 }
 
 const topic9={title:'9. Tétel – Legendák kora',subtitle:'Magyar mondák és hősök',emoji:'🦁',content:buildTopic9Content,concepts:buildTopic9Concepts,quiz:buildTopic9Quiz,videos:buildTopic9Videos};
@@ -238,10 +217,10 @@ function showResult9(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=8){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1492</strong></div>`;
+  if(score>=10){
+    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>Bulcsú</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 8/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 12</div>

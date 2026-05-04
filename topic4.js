@@ -2,7 +2,7 @@
 function buildTopic4Videos(){
   const vids=[
     {e:'⚡',level:'alap',lt:'Villám',title:'Trónviszályok és I. Károly uralkodása – Gyorstalpaló',desc:'Mindössze 3 perces, animált jelentés. Ha már csak percek vannak hátra a Tudáspróbáig, ez a legjobb ismétlőanyag!',url:'https://www.youtube.com/watch?v=nshL8eOsB94'},
-    {e:'⚡',level:'alap',lt:'Pörgős',title:'Az Anjouk birodalma | zanza.tv (Külső hírszerzési csatorna)',desc:'Gyors, rajzos összefoglaló az Anjou-dinasztia magyarországi szerepéről és Károly Róbert konszolidációjáról.',url:'https://www.youtube.com/watch?v=nshL8eOsB94'},
+    {e:'⚡',level:'alap',lt:'Pörgős',title:'Az Anjouk birodalma | zanza.tv (Külső hírszerzési csatorna)',desc:'Gyors, rajzos összefoglaló az Anjou-dinasztia magyarországi szerepéről és Károly Róbert konszolidációjáról.',url:'https://zanza.tv/tortenelem/magyarsag-tortenete-kezdetektol-1490-ig/az-anjouk-birodalma'},
     {e:'😄',level:'alap',lt:'Könnyed',title:'Károly Róbert Útja A Királysághoz – Tökéletlen Történelem [TT]',desc:'Pörgős és szórakoztató eligazítás arról, hogyan küzdött meg Károly Róbert a trónért, és hogyan számolt le a hatalmaskodó tartományurakkal.',url:'https://www.youtube.com/watch?v=A5HQa_lMI2E'},
     {e:'😄',level:'alap',lt:'Könnyed',title:'Károly Róbert Uralkodása – Tökéletlen Történelem [TT]',desc:'A sikeres trónfoglalás utáni intézkedések titkos aktája lazább stílusban bemutatva. Kiderül belőle, hogyan töltötte fel a király a kincstárat.',url:'https://www.youtube.com/watch?v=zDuFjBQad7I'},
     {e:'🎓',level:'kozepes',lt:'Stratégiai',title:'Károly Róbert – Történelem érettségi tétel | Erettsegi.com',desc:'Komolyabb hangvételű, tényekre fókuszáló összefoglaló a király gazdasági reformjairól. Pluszpontokra hajtó ügynököknek kötelező!',url:'https://www.youtube.com/watch?v=i4BGwQFBf5o'},
@@ -24,7 +24,7 @@ function buildTopic4Videos(){
 function buildTopic4Concepts(){
   const concepts=[
     {c:'amber',e:'👑',t:'Tartományúr (kiskirály)',d:'A 13. század végére elhatalmaskodó hatalmas főurak, akik saját területüket a királytól teljesen függetlenül irányították. Saját hadseregük, udvartartásuk és néha saját pénzük is volt. I. Károly 1310–1323 között felszámolta uralmukat.'},
-    {c:'purple',e:'⚜️',t:'Anjou-ház',d:'Dél-itáliai (nápolyi) királyi dinasztia, amelyből I. Károly (Károly Róbert) származott. A pápai támogatás és az Árpád-házzal való nőági rokonság alapján tartott igényt a magyar trónra. Az Anjou-kor Magyarország egyik legvirágzóbb korszaka.'},
+    {c:'purple',e:'⚜️',t:'Anjou-ház',d:'Francia–nápolyi királyi dinasztia, amely hivatalosan 1310-től uralta Magyarországot. Az Anjou-háznak két jelentős alakja volt Magyarországon, I. Károly és fia I. (Nagy) Lajos. Lajos fiú utód nélkül halt meg 1382-ben, így a magyarországi Anjou dinasztia férfiágon kihalt.'},
     {c:'rose',e:'👑',t:'A törvényes koronázás 3 feltétele',d:'Ahhoz, hogy valaki törvényes magyar király legyen, egyszerre kellett: (1) a Szent Koronával, (2) az esztergomi érsek által, (3) Székesfehérváron megkoronáztatnia magát. Károly Róbert csak 1310-ben teljesítette mindhármat.'},
     {c:'teal',e:'🏰',t:'Honorbirtok',d:'I. Károly által bevezetett új birtok-adományozási rendszer. A király nem örökölhető, hanem tisztséghez (pl. nádori, vajdai) kötött földet adott. Ha valaki elvesztette a tisztségét, a birtok visszaszállt a királyra – ez hűségre kényszerítette a főurakat.'},
     {c:'rose',e:'⚔️',t:'Rozgonyi csata (1312)',d:'A tartományúri hatalom megtörésének fordulópontja. I. Károly itt mért döntő vereséget az Aba-nembeliekre. Ezután sorra szűnt meg a kiskirályok hatalma. Az egyetlen, akivel katonailag nem bírt, Csák Máté volt – ő 1321-ben természetes halállal halt meg.'},
@@ -96,14 +96,16 @@ function buildTopic4Content(){
       <img src="images/topic4_img2.png" alt="Rozgonyi csata – középkori miniatúra" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
       <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Rozgonyi csata – miniatúra</p>
     </div>
-    <p style="margin-top:10px;">Károly Róbert több mint tíz évig harcolt ellenük. A döntő fordulat 1312-ben a rozgonyi csatában következett be, ahol a király legyőzte az Abák seregét. Bár Csák Mátéval katonailag nem bírt, 1321-es halála után az ő területei is a király kezére kerültek. 1323-ra az egész ország felett helyreállt a királyi hatalom.</p>
+    <p style="margin-top:10px;">Károly Róbert több mint tíz évig harcolt ellenük. A döntő fordulat 1312-ben a rozgonyi csatában következett be, ahol a király legyőzte az Aba-nembeliek seregét. Bár Csák Mátéval katonailag nem bírt, 1321-es halála után az ő területei is a király kezére kerültek. 1323-ra az egész ország felett helyreállt a királyi hatalom.</p>
+    <div class="highlight-box" style="margin-top:8px;">🔍 <strong>Érdekesség:</strong> A rozgonyi csata közvetlen kiváltója egy gyilkosság volt: a kassai polgárok 1311-ben megölték Aba Amádét, a tartományurat. Fiai a királyra fogták a felelősséget, és ezért lázadtak fel – így indult el az az ütközet, amely végül megtörte a kiskirályok hatalmát.</div>
   </div>
 
   <div class="info-card">
-    <h3>🏰 Az új államrend: A honorbirtok</h3>
+    <h3>🏰 Az új államrend: honorbirtok és banderiális hadsereg</h3>
     <p>I. Károly a korábbi, örökölhető birtokadományozás helyett új rendszert vezetett be a hatalma megszilárdítására.</p>
     <ul style="margin-top:8px;padding-left:20px;">
       <li><strong>Honorbirtokok:</strong> A király tisztségekhez (például nádor, vajda, ispán) kötött birtokokat adományozott. Ezeket a birtokokat a nemesek csak addig birtokolhatták, amíg a tisztséget viselték. Ha a király elvette a tisztséget, a birtok is visszaszállt rá. Ez hűségre kényszerítette a főurakat.</li>
+      <li><strong>Banderiális hadszervezet:</strong> A nagyobb birtokokkal rendelkező nemeseknek kötelező volt saját zászlójuk (<em>bandérium</em>) alatt felfegyverzett, nehézpáncélos lovasokat kiállítani. Ezeket a csapatokat a király hadjárat idején összegyűjtötte – így állandó zsoldos hadsereg nélkül is ütőképes sereget tudott felállítani.</li>
     </ul>
   </div>
 
@@ -131,6 +133,7 @@ function buildTopic4Content(){
   <div class="info-card">
     <h3>🤝 Külpolitika: A Visegrádi Királytalálkozó (1335)</h3>
     <p>Károly Róbert udvarát Visegrádra helyezte át, ahol fényes palotát építtetett. Itt rendezték meg 1335-ben a középkori diplomácia egyik legfontosabb eseményét.</p>
+    <div class="highlight-box" style="margin-top:8px;">🔍 <strong>Érdekesség:</strong> Visegrád nem volt mindig az ország központja: Károly Róbert 1315-től egészen 1323-ig <strong>Temesváron</strong> tartotta az udvarát, ahol biztonságban volt, amíg a tartományurakkal harcolt. Csak az ország pacifikálása után költözött a reprezentatívabb Visegrádra.</div>
     <p style="margin-top:10px;"><strong>Résztvevők:</strong></p>
     <ol style="margin-top:8px;padding-left:20px;">
       <li>I. Károly (magyar király)</li>
@@ -146,9 +149,9 @@ function buildTopic4Content(){
   </div>
 
   <div class="info-card">
-    <h3>🗡️ A lovagi kultúra és a Zács Felicián-merénylet</h3>
+    <h3>🗡️ A lovagi kultúra és a Zách Felicián-merénylet</h3>
     <p>Károly honosította meg Magyarországon a lovagi kultúrát és a címertant. Megalapította a Szent György-rendet, az első világi lovagrendet.</p>
-    <p style="margin-top:10px;">Uralkodását azonban egy véres esemény is beárnyékolta: 1330-ban Zács Felicián, egy korábbi tartományúr bizalmasa, ebéd közben karddal támadt a királyi családra Visegrádon. A király sértetlen maradt, de Erzsébet királyné négy ujját levágta a támadó. A megtorlás kegyetlen volt: Felicián családját harmadíziglen kiirtották.</p>
+    <p style="margin-top:10px;">Uralkodását azonban egy véres esemény is beárnyékolta: 1330-ban Zách Felicián, egy udvari nemes, ebéd közben karddal támadt a királyi családra Visegrádon. A király sértetlen maradt, de Erzsébet királyné négy ujját levágta a támadó. A megtorlás kegyetlen volt: Felicián családját harmadíziglen kiirtották.</p>
   </div>
 
   <div class="info-card">
@@ -162,19 +165,13 @@ function buildTopic4Content(){
     </ul>
   </div>
 
-  <div class="info-card">
-    <h3>📋 Történeti Gyorsvázlat (Szigorúan kulcsszavak)</h3>
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
+    <h3 style="color:#4ade80;">📋 Történeti Gyorsvázlat (Szigorúan kulcsszavak)</h3>
     <ul>
       <li>👑 <strong>Interregnum (1301–1310):</strong> Árpád-ház kihal → Trónharcok → I. Károly (Anjou) győz (Érvényes koronázás: 1310, Székesfehérvár).</li>
-      <li>⚔️ <strong>Kiskirályok letörése:</strong> Tartományurak (pl. Csák Máté, Abák) hatalmának felszámolása → 1312: Rozgonyi csata (Abák). Folyamat 1321-el Csák Máté halálával zárul.</li>
+      <li>⚔️ <strong>Kiskirályok letörése:</strong> Tartományurak (pl. Csák Máté, Abák) hatalmának felszámolása → 1312: Rozgonyi csata (Abák). A folyamat 1321-ben zárul Csák Máté halálával.</li>
       <li>🏰 <strong>Honorbirtok:</strong> Tisztséghez (pl. ispán) kötött, nem örökölhető birtok → hűséges nemesi réteg kialakítása.</li>
-      <li>💰 <strong>Gazdaság (Regálék):</strong>
-        <ul style="margin-top:6px;padding-left:20px;">
-          <li><strong>Urbura (Bányareform):</strong> Földesúr is kap bányabért → arany és ezüsttermelés fellendül.</li>
-          <li><strong>Aranyforint (1325):</strong> Értékálló, új valuta.</li>
-          <li><strong>Új adók:</strong> Kapuadó (jobbágyoktól), Harmincadvám (külkereskedelem).</li>
-        </ul>
-      </li>
+      <li>💰 <strong>Gazdaság (Regálék):</strong> Urbura (bányareform): földesúr is kap bányabért → arany- és ezüsttermelés fellendül. Aranyforint (1325): értékálló, új valuta. Kapuadó (jobbágyoktól), Harmincadvám (külkereskedelem).</li>
       <li>🤝 <strong>Visegrádi találkozó (1335):</strong> Magyar–cseh–lengyel csúcs → Cél: Bécs árumegállító jogának kikerülése + lengyel trónöröklés biztosítása + cseh és lengyel uralkodó kibékítése.</li>
       <li>🏰 <strong>Udvar:</strong> Visegrádi központ → Lovagi kultúra → Zách Felicián merénylete (1330).</li>
     </ul>
@@ -200,7 +197,7 @@ const questions4=[
   {q:'Mi volt a visegrádi királytalálkozó (1335) célja?',a:['Háborút indítani Velence ellen', 'Kereskedelmi szövetséget kötni Bécs árumegállítójogával szemben (Bécs megkerülése), valamint a cseh és a lengyel király kibékítése magyar közreműködéssel', 'Megünnepelni Károly Róbert trónra lépését'],correct:1},
   {q:'Hol volt Károly Róbert székhelye?',a:['Esztergomban', 'Visegrádon', 'Budán'],correct:1},
 
-  {q:'Mi volt a rozgonyi csata (1312) jelentősége?',a:['A tatárokat verték vissza', 'Mert sikeresen lépett fel katonailag az egyik tartományúrral szemben. (Aba Amádé)', 'Magyarország visszaszerezte Dalmáciát'],correct:1},
+  {q:'Mi volt a rozgonyi csata (1312) jelentősége?',a:['A tatárokat verték vissza', 'Döntő győzelmet aratott az Aba-nembeliek felett, ezzel megtört a tartományurak ellenállásának gerince.', 'Magyarország visszaszerezte Dalmáciát'],correct:1},
   {q:'Ki volt Csák Máté?',a:['Külföldi hadvezér, aki megtámadta Magyarországot', 'Az egyik legerősebb tartományúr, aki az ország észak-nyugati részét birtokolta', 'Károly Róbert legfőbb szövetségese'],correct:1},
   {q:'Mit jelent a harmincadvám?',a:['Az áru értékének 1/30-a, amelyet a kereskedőknek kellett fizetni a határon', 'A jobbágyok által fizetett évi adó', 'A nemesek által fizetett hadiadó'],correct:0},
   {q:'Ki volt Károly Róbert fia, aki 1342-ben követte a trónon?',a:['Zsigmond', 'I. (Nagy) Lajos', 'V. István'],correct:1},
@@ -297,10 +294,10 @@ function showResult4(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=8){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1342</strong></div>`;
+  if(score>=10){
+    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>Rozgony</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 8/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 12</div>

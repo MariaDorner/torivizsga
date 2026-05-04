@@ -114,7 +114,7 @@ function buildTopic11Content(){
     <p style="margin-top:12px;"><em>Összességében egy apró kapura kiszögezett papír pár évtizeddel később jelentősen megváltoztatta Európa politikáját, szövetségi rendszerét, oktatását és alapvetően a kultúráját.</em></p>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);border:2px solid #86EFAC;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
       <li>⛪ <strong>Előzmények:</strong> Katolikus egyház válsága – pápák világi élete, tisztségárusítás, búcsúcédulák („amint a garas csörren, a lélek a mennybe röppen")</li>
@@ -252,10 +252,10 @@ function showResult11(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=8){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1517</strong></div>`;
+  if(score>=10){
+    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>Wittenberg</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 8/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 12</div>

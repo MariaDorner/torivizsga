@@ -24,7 +24,7 @@ function buildTopic2Content(){
   <img src="images/topic2_img0.png" alt="Keresztelési jelenet"/>
   <div class="content-img-caption">✝️ Vajk megkeresztelése – a leendő István király felveszi a kereszténységet. Gyula Benczúr festménye.</div>
 </div>
-    <div class="highlight-box">💡 Géza felesége a határozott jellemű <strong>Sarolt</strong> volt, az erdélyi Gyula lánya. A fejedelem felismerte: Magyarország csak a kereszténység felvételével maradhat fenn Európában.</div>
+    <div class="highlight-box">💡 Géza felesége a határozott jellemű <strong>Sarolt</strong> volt, az erdélyi fejedelmi házból. A fejedelem felismerte: Magyarország csak a kereszténység felvételével maradhat fenn Európában.</div>
   </div>
 
   <div class="info-card">
@@ -48,7 +48,7 @@ function buildTopic2Content(){
     <p>István szakítani akart a fejedelmi hagyományokkal, ezért <strong>királlyá koronáztatását</strong> kérte.</p>
     <ul>
       <li><strong>A korona:</strong> <strong>II. Szilveszter pápától</strong> kapta a koronát <strong>III. Ottó császár beleegyezésével</strong> – a két hatalom együtt ismerte el a Magyar Királyságot.</li>
-      <li><strong>Időpont:</strong> 1000 karácsonyán (vagy 1001. január 1-jén) <strong>Székesfehérvárott</strong> tették a fejére.</li>
+      <li><strong>Időpont:</strong> 1000 karácsonyán (vagy 1001. január 1-jén) <strong>Esztergomban</strong> tették a fejére.</li>
       <li><strong>Függetlenség:</strong> Mivel a koronát a pápától kapta – bár III. Ottó császár is beleegyezett –, Magyarország szuverén állam maradt: nem vált sem a Német-római Császárság, sem a pápaság hűbéresévé.</li>
     </ul>
     <div class="highlight-box">🏅 Ez volt az egyik legokosabb politikai húzás: a pápai korona révén Magyarország <strong>független, egyenrangú európai állammá</strong> vált!</div>
@@ -58,7 +58,7 @@ function buildTopic2Content(){
     <h3>🗺️ Az ország egységének megteremtése</h3>
     <p>A koronázás után Istvánnak le kellett győznie a még ellenálló törzsfőket, hogy az egész ország felett valódi hatalma legyen:</p>
     <ul>
-      <li><strong>Erdély:</strong> Legyőzte a terület urát, <strong>Gyulát</strong> (anyai nagyapját).</li>
+      <li><strong>Erdély:</strong> Legyőzte a terület urát, <strong>Gyulát</strong> (anyai nagybátyját).</li>
       <li><strong>Maros-vidék:</strong> Legyőzte <strong>Ajtonyt</strong>.</li>
       <li><strong>Külső védekezés:</strong> 1030-ban II. Konrád német császár támadását a „felégetett föld" taktikájával verte vissza a magyar haderő.</li>
     </ul>
@@ -128,12 +128,12 @@ function buildTopic2Content(){
     </div>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);border:2px solid #86EFAC;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
       <li>🌍 <strong>Géza (972–997):</strong> Külpolitikai nyitás nyugat felé, István + Gizella házassága, Pannonhalma alapítása</li>
       <li>⚔️ <strong>997 – Koppány legyőzése:</strong> Kereszténység győz a pogányság felett – István lesz az örökös</li>
-      <li>👑 <strong>István uralkodása (997–1038):</strong> Az első magyar király, a keresztény állam megalapítója</li>
+      <li>👑 <strong>István fejedelem, majd király (997/1000–1038):</strong> Az első magyar király, a keresztény állam megalapítója</li>
       <li>👑 <strong>1000/1001 – Koronázás:</strong> Pápától kapott korona → szuverén, független Magyarország</li>
       <li>🏛️ <strong>Államszervezet:</strong> Vármegyék + ispánok + nádor + dénár</li>
       <li>⛪ <strong>Egyház:</strong> 10 püspökség, Esztergom érseki székhely, tized, templomépítési kötelezettség</li>
@@ -268,18 +268,18 @@ function showResult2(){
   const res=document.getElementById('quiz2-result');
   res.style.display='block';
   const score=quizState2.correct;
-  const emoji=score>=9?'🏆':score>=7?'🥇':score>=5?'🥈':score>=3?'🥉':'💪';
-  const msg=score>=9?'Fenomenális! Igazi mesterlövész vagy!':score>=7?'Kiváló munka, felderítő!':score>=5?'Szép teljesítmény! Még egy kis gyakorlás...':score>=3?'Jó próbálkozás! Olvass még egy kicsit!':'Gyakorolj sokat, ügynök!';
+  const emoji=score>=13?'🏆':score>=11?'🥇':score>=8?'🥈':score>=5?'🥉':'💪';
+  const msg=score>=13?'Fenomenális! Igazi mesterlövész vagy!':score>=11?'Kiváló munka, felderítő!':score>=8?'Szép teljesítmény! Még egy kis gyakorlás...':score>=5?'Jó próbálkozás! Olvass még egy kicsit!':'Gyakorolj sokat, ügynök!';
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml2='';
-  if(score>=8){
+  if(score>=12){
     unlockHtml2=`<div class="unlock-notice">🔓 Dosszié 03 feloldható! A kód: <strong>1031</strong></div>`;
   } else {
-    unlockHtml2=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 8/10 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml2=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 12/14 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
-    <div class="result-score">${score} / 10</div>
+    <div class="result-score">${score} / 14</div>
     <div class="result-msg">${msg}</div>
     <div class="result-xp">⭐ +${earnedXP} XP megszerezve!</div>
     ${unlockHtml2}

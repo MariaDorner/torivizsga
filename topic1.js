@@ -134,8 +134,8 @@ function buildTopic1Content(){
     </div>
   </div>
 
-  <div class="info-card">
-    <h3>📋 Történeti Gyorsvázlat (Szigorúan kulcsszavak)</h3>
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
+    <h3 style="color:#4ade80;">📋 Történeti Gyorsvázlat (Szigorúan kulcsszavak)</h3>
     <ul>
       <li>🌍 <strong>Őshaza &amp; eredet:</strong> Urálon túli sztyeppe → ugor népektől való elkülönülés → türk hatás (szó- és tárgykölcsönzések)</li>
       <li>🗺️ <strong>Vándorlás:</strong> Magna Hungaria → Levédia (kettős fejedelemség: Kende + Gyula) → Etelköz (vérszerződés, Árpád)</li>

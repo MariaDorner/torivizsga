@@ -13,7 +13,7 @@ function buildTopic8Content(){
     <ul style="margin-top:8px;padding-left:20px;">
       <li><strong>Kincstár és hadsereg:</strong> Mátyás után a bevételek a harmadára csökkentek. Pénz hiányában Ulászló kénytelen volt feloszlatni (1492) a híres Fekete Sereget, a déli végvárrendszer fenntartása ugyanis minden pénzt felemésztett.</li>
       <li><strong>Rákosi-végzés (1505):</strong> A magyar rendek határozata (tehát nem törvény), amely kimondta, hogy ha a király fiúörökös nélkül hal meg, többé nem választanak idegen származású uralkodót, csak „magyar vérből valót". A mozgalom mögött Szapolyai János állt, mint legerősebb magyar nemes.</li>
-      <li><strong>Dózsa-féle parasztfelkelés:</strong> Bakócz Tamás érsek a pápa megbízásából törökellenes keresztes hadjáratot hirdetett. A nemesek és a parasztok közötti feszültség miatt azonban a sereg a saját urai ellen fordult. Ez lett a Dózsa-féle parasztfelkelés, amelyet Szapolyai János vert le. A felkelés vezetőit, többek között Dózsa Györgyöt is kivégzik.</li>
+      <li><strong>Dózsa-féle parasztfelkelés:</strong> Bakócz Tamás érsek a pápa megbízásából törökellenes keresztes hadjáratot hirdetett. A nemesek és a parasztok közötti feszültség miatt azonban a sereg a saját urai ellen fordult. Ez lett a Dózsa-féle parasztfelkelés, amelyet Szapolyai János vert le. A felkelés vezetőit, többek között Dózsa Györgyöt is kivégezték.</li>
       <li><strong>Tripartitum (Hármaskönyv):</strong> Ugyanebben az évben készült el Werbőczy István joggyűjteménye, amely évszázadokra meghatározta a nemesi jogokat és a jobbágyok kötelezettségeit.</li>
       <li><strong>Habsburg–Jagelló házassági szerződés (1515):</strong> Ulászló gyermekeit (Lajost és Annát) eljegyezték a Habsburg-házi Máriával és Ferdinánddal. Ez a szövetség adta később a jogalapot a Habsburgoknak a magyar trón megszerzésére.</li>
     </ul>
@@ -22,7 +22,7 @@ function buildTopic8Content(){
   <div class="info-card">
     <h3>⚔️ II. Lajos</h3>
 <div style="float:right;margin:0 0 12px 16px;max-width:170px;clear:right;"><img src="images/topic8_img1.png" alt="II. Lajos" style="width:100%;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.18);border:3px solid #D4460A;"><p style="font-size:.75rem;color:var(--muted);margin-top:4px;text-align:center;font-style:italic;">II. Lajos – utolsó Jagelló király</p></div>    <p>Apja halálakor mindössze 10 éves volt. A közhiedelemmel ellentétben nem volt gyenge „báb": kiváló nevelést kapott, hat nyelven beszélt, és jártas volt a lovaglásban, a zenében és a fegyverforgatásban is. Kortársai szerint, ha hosszabb ideig élhetett volna, nagyszerű uralkodó vált volna belőle.</p>
-    <p style="margin-top:10px;">Lajos 1521-ben vette át ténylegesen az irányítást. Uralkodását belső bárói viszályok és az Oszmán Birodalom egyre fokozódó nyomása nehezítette. Ebben az időben a magyar politikai vezetés magára maradt: a pápa ugyan küldött pénzt, de más európai hatalmak nem nyújtottak katonai segítséget. Ennek oka, hogy a korszak két legnagyobb európai állama, a franciák és a Habsburg által vezetett államalakulatok éppen egymással harcoltak.</p>
+    <p style="margin-top:10px;">Lajos 1521-ben vette át ténylegesen az irányítást — és mindjárt az első évben súlyos csapás érte az országot: <strong>I. Szulejmán szultán elfoglalta Nándorfehérvárt (1521)</strong>, azt a kulcserődöt, amelyet Hunyadi János 1456-ban megvédett. Ezzel a „Magyarország kapuja" török kézre került, és egyenes út nyílt az ország belseje felé. Mohács már csak öt év kérdése volt. Uralkodását belső bárói viszályok és az Oszmán Birodalom egyre fokozódó nyomása nehezítette. Ebben az időben a magyar politikai vezetés magára maradt: a pápa ugyan küldött pénzt, de más európai hatalmak nem nyújtottak katonai segítséget. Ennek oka, hogy a korszak két legnagyobb európai állama, a franciák és a Habsburg által vezetett államalakulatok éppen egymással harcoltak.</p>
   </div>
 
   <div class="info-card">
@@ -45,7 +45,7 @@ function buildTopic8Content(){
         </div>
         <div style="background:#1a0a08;border-radius:12px;padding:12px 14px;border:0.5px solid #F0997B;">
           <div style="font-size:13px;font-weight:500;color:#f0a080;margin-bottom:2px;">Oszmán Birodalom</div>
-          <div style="font-size:11px;color:#f0a060;">II. Szulejmán szultán</div>
+          <div style="font-size:11px;color:#f0a060;">I. Szulejmán szultán</div>
         </div>
       </div>
 
@@ -87,7 +87,7 @@ function buildTopic8Content(){
     <ol style="margin-top:8px;padding-left:20px;">
       <li><strong>Magyar támadás:</strong> A csata délután kezdődött. A magyar nehézlovasság elsöprő támadást indított, és kezdetben úgy tűnt, sikerül áttörni az oszmán vonalakat. Ok: a török egységek külön-külön érkeznek a harctérre, a magyarok azokat külön-külön akarják megsemmisíteni.</li>
       <li><strong>A fal:</strong> A magyar roham megtört a török tüzérség és a láncokkal összekötött szekérvár előtt. A 300 ágyú és a több ezer puska pusztító tüzet zúdított a támadókra.</li>
-      <li><strong>Az összeomlás:</strong> Megérkeztek a török hadsereg újabb egységei, amely bekerítette a magyar sereget. Általános menekülés kezdődött.</li>
+      <li><strong>Az összeomlás:</strong> Megérkeztek a török hadsereg újabb egységei, amelyek bekerítették a magyar sereget. Általános menekülés kezdődött.</li>
     </ol>
 
     <div style="text-align:center;margin:16px 0 4px;">
@@ -146,7 +146,7 @@ function buildTopic8Content(){
     <p>1566-ban I. Szulejmán utolsó hadjáratát Szigetvár ellen vezette. Zrínyi Miklós és védői a végsőkig kitartottak, és bár a vár elesett, a szultán maga is meghalt az ostrom alatt. (Zrínyi kirohanása) A kimerült felek végül <strong>1568-ban</strong> megkötötték a <strong>drinápolyi békét</strong>, amely rögzítette a status quo-t és lezárta a nagy hadjáratok korszakát, viszonylagos erőegyensúlyt teremtve a két birodalom között.</p>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);border:2px solid #86EFAC;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
       <li>👑 <strong>Jagelló-kor:</strong> Mátyás halála után II. Ulászló („Dobzse László") → Fekete Sereg feloszlatva (1492), bevételek harmadára csökkennek</li>
@@ -294,10 +294,10 @@ function showResult8(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=9){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1526</strong></div>`;
+  if(score>=10){
+    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1532</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 9/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 12</div>
@@ -309,18 +309,17 @@ function showResult8(){
 
 function buildTopic8Concepts(){
   const concepts=[
-    {c:'purple',e:'👑',t:'Jagelló-kor',d:"A Jagelló-dinasztia magyarországi uralmának időszaka (1490–1526). II. Ulászló és II. Lajos gyenge uralkodása alatt a központi hatalom és a hadsereg meggyengült."},
+    {c:'purple',e:'👑',t:'Jagelló-kor',d:"A magyarországi Jagelló-kor Mátyás király halálától (1490) az 1526-os mohácsi vészig tartott, melynek során II. Ulászló és II. Lajos uralkodott. Ebben az időszakban a királyi hatalom nem egyszerűen meggyengült, hanem átalakult: az uralkodók a nemességgel megosztva irányították az országot, miközben súlyos pénzhiánnyal és az 1514-es parasztfelkeléssel is küzdöttek. Bár a magyar állam erején felül védekezett, a korszak legerősebb nagyhatalmának számító Oszmán Birodalom hatalmas túlerejét végül nem tudta feltartóztatni."},
     {c:'amber',e:'📜',t:'Tripartitum',d:"Werbőczy István 1514-ben összeállított joggyűjteménye. Évszázadokra rögzítette a nemesi jogokat (pl. adómentesség) és a jobbágyok kötelezettségeit (röghöz kötés)."},
     {c:'teal',e:'🔥',t:'Dózsa-féle parasztfelkelés',d:"1514-ben a törökellenes keresztes hadjárat résztvevői a nemesek ellen fordultak. Dózsa György vezette a felkelést, amelyet Szapolyai János vert le kegyetlenül."},
-    {c:'rose',e:'💀',t:'Mohácsi csata (1526)',d:"1526. augusztus 29-én a 25 000 fős magyar sereg katasztrofális vereséget szenvedett a 60-80 000 fős török hadtól. II. Lajos király a Csele-patakba fulladt. Megkezdődött a 150 éves hódoltság."},
+    {c:'rose',e:'💀',t:'Mohácsi csata (1526)',d:"1526. augusztus 29-én a 25 000 fős magyar sereg katasztrofális vereséget szenvedett a 60-80 000 fős török hadtól. II. Lajos király a Csele-patakba fulladt."},
     {c:'blue',e:'⚔️',t:'Kettős királyság',d:"Mohács után két király is trónra lépett: Szapolyai János (I. János) és Habsburg Ferdinánd. Polgárháborújuk gyengítette az ország ellenállását a törökkel szemben."},
-    {c:'green',e:'🗺️',t:'Hódoltság',d:"Az oszmánok által megszállt és közvetlenül irányított magyarországi terület (1541–1699). Fővárosa Buda volt. Lakói töröknek is és a magyar királynak is adót fizettek."},
-    {c:'purple',e:'🏰',t:'Végvár',d:"A három országrész határán épített megerősített kastély. Célja a török betörések feltartóztatása volt. Fontos végvárak: Eger, Szigetvár, Drégely."},
-    {c:'amber',e:'🛡️',t:'Erdélyi Fejedelemség',d:"Mohács után önálló állammá vált keleti országrész. A Szapolyai-ház irányította, de a török főhatalom alatt állt. Hűbért fizetett a szultánnak."},
+    {c:'green',e:'🗺️',t:'Hódoltság',d:"A török hódoltság a Magyar Királyság középső területe volt, amelyet az Oszmán Birodalom elfoglalt és a saját uralma alá vont. Ez a korszak Buda 1541-es elfoglalásával kezdődött, és több mint 150 évig, a törökök végső kiűzéséig tartott (1699)."},
+    {c:'purple',e:'🏰',t:'Végvár',d:"A végvárak az oszmán hódítás elleni magyar védelmi rendszer alapvető egységei voltak. Az ország déli határövezetében, majd a török uralom időszakában a Hódoltság peremén alkottak többé-kevésbé egybefüggő védővonalat. A végváraknak kettős funkciójuk volt. Egyrészt a körülöttük, mögöttük fekvő területeket védték és a környékbeli lakosság számára nyújtottak menedéket a betörő ellenséggel szemben, másrészt a nagyobb hadseregek hátában az utánpótlási útvonalak zavarására, megszakítására is volt elegendő erejük."},
+    {c:'amber',e:'🛡️',t:'Erdélyi Fejedelemség',d:"Az Erdélyi Fejedelemség az ország három részre szakadása során a Magyar Királyság keleti országrészéből jött létre, az Oszmán Birodalom belső önállóságot élvező, adófizető hűbéres államaként. A 17. század első felében, Bethlen Gábor és I. Rákóczi György alatt élte virágkorát, ám a későbbiekben a török pusztítások végzetesen meggyengítették. Apafi Mihály (1661–1690) uralkodása alatt a fejedelemség már teljesen kiszolgáltatottá vált, majd a törökök kiűzése után elvesztette önállóságát, és a Habsburg Birodalom tartománya lett."},
     {c:'teal',e:'📜',t:'Váradi béke (1538)',d:"Szapolyai János és Habsburg Ferdinánd titkos megegyezése: Szapolyai halála után Ferdinánd örökli az egész országot. Szapolyai azonban megváltoztatta szándékát fia születésekor."},
     {c:'rose',e:'🏰',t:'Buda eleste (1541)',d:"I. Szulejmán szultán csellel elfoglalta Budát – városnézőnek álcázott katonái beszivárogtak a kapukon. Ezzel Magyarország három részre szakadása véglegessé vált."},
-    {c:'blue',e:'⚔️',t:'Konkvisztádor',d:"Spanyol hódítók, akik a 16. században meghódították az amerikás őslakos birodalmakat. Cortés az asztékokat, Pizarro az inkákat igázta le. Nevük spanyolul hódítót jelent."},
-    {c:'green',e:'🕊️',t:'Drinápolyi béke (1568)',d:"Lezárta a nagy hadjáratok korát. Rögzítette a status quo-t: Magyarország három részre osztva marad. A két birodalom (Habsburg és Oszmán) viszonylagos egyensúlyt teremtett."}
+    {c:'green',e:'🕊️',t:'Drinápolyi béke (1568)',d:"Az 1568-as drinápolyi békét Miksa magyar király és II. Szelim oszmán szultán kötötte meg, amellyel hivatalosan is lezárult a nagy várháborúk korszaka. A megállapodás rögzítette a meglévő határokat (status quo), ezzel tartóssá téve Magyarország három részre szakadását, a Habsburg uralkodó pedig évi 30 ezer arany adó fizetését vállalta a Portának."}
   ];
   return `<h2 style=font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--purple);margin-bottom:16px;>💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
   <div class=concepts-grid>${concepts.map(c=>`

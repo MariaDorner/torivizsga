@@ -131,7 +131,7 @@ function buildTopic10Content(){
     </ul>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#F0FFF4,#DCFCE7);border:2px solid #86EFAC;">
+  <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
       <li>🔍 <strong>Okok:</strong> Aranyéhség, fűszerhiány, török terjeszkedés (Konstantinápoly 1453), kereskedelmi utak elvágása + gömb Föld-kép (Toscanelli)</li>
@@ -275,10 +275,10 @@ function showResult10(){
   const earnedXP=score*15;
   addXP(earnedXP);
   let unlockHtml='';
-  if(score>=9){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>1492</strong></div>`;
+  if(score>=11){
+    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>tőzsde</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 9/13 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 11/13 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
   res.innerHTML=`<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 13</div>
@@ -292,13 +292,12 @@ function buildTopic10Concepts(){
     {c:'purple',e:'🌍',t:'Karavella',d:"A 15. században kifejlesztett, gyors és manőverezhető vitorlás hajó, amely a szél ellen is haladni tudott. A portugál és spanyol felfedezők ezt a hajótípust használták az óceánon."},
     {c:'amber',e:'🧭',t:'Asztrolábium',d:"Csillagászati mérőeszköz, amellyel a hajósok a csillagok állása alapján meg tudták határozni pontos helyzetüket a nyílt tengeren. A biztonságos óceáni hajózás nélkülözhetetlen eszköze volt."},
     {c:'teal',e:'🗺️',t:'Tordesillasi szerződés',d:"1494-ben Spanyolország és Portugália felosztotta egymás között a felfedezett területeket. A képzeletbeli vonaltól nyugatra Spanyolországé, keletre Portugáliáé lett minden. Brazília ezért portugál."},
-    {c:'rose',e:'🏛️',t:'Prekolumbián',d:"Kolumbusz előtti amerikai civilizációkat jelöl. Ilyen volt a maja (Yucatán), az azték (mai Mexikó) és az inka (Andok) kultúra – fejlett matematikával, csillagászattal és építészettel."},
+    {c:'rose',e:'🌍',t:'Gyarmat',d:"Állami és gazdasági önállósággal nem rendelkező terület, mely közigazgatásilag a hódító anyaországhoz tartozik."},
     {c:'blue',e:'💰',t:'Árforradalom',d:"A felfedezések után Amerikából beáramlott rengeteg nemesfém (arany, ezüst) miatt a pénz értéke csökkent, az árak pedig meredeken emelkedtek. Ez alapjaiban forgatta fel az európai gazdaságot."},
     {c:'green',e:'🔺',t:'Világkereskedelmi háromszög',d:"Európa – Afrika – Amerika között kialakult kereskedelmi rendszer: Európából iparcikket vittek Afrikába, onnan rabszolgákat Amerikába, Amerikából nyersanyagot (cukrot, aranyat) Európába."},
     {c:'purple',e:'🏭',t:'Manufaktúra',d:"A céhrendszert felváltó új termelési mód: a munkát részfeladatokra bontották, amelyeket különböző bérmunkások végeztek. Olcsóbb és nagyobb mennyiségű termelést tett lehetővé."},
     {c:'amber',e:'📈',t:'Tőzsde',d:"Szabályozott piachely, ahol árukat, részvényeket és értékpapírokat adtak-vesznek. Nem kellett az egész árut odavinni, elég volt mintát mutatni. Az első 1531-ben nyílt Antwerpenben."},
     {c:'teal',e:'⚔️',t:'Gyarmatosítás',d:"Európai hatalmak által idegen területek katonai és gazdasági uralom alá vonása. A felfedezők után érkező konkvisztádorok elvették a bennszülöttek földjét, kincset és munkaerejét."},
-    {c:'rose',e:'🌽',t:'Columbian Exchange',d:"A felfedezések nyomán indult meg növények, állatok és betegségek kicserélődése a két félteke között. Európába kerültek: burgonya, kukorica, paradicsom, paprika, kakaó, dohány."},
     {c:'blue',e:'🚢',t:'Tengerész Henrik',d:"Portugál herceg (1394–1460), aki Sagresben hajózási iskolát alapított. Szorgalmazta az Afrika körüli tengeri út feltárását. Bár maga nem vett részt felfedező utakon, nélküle nem lett volna kor."},
     {c:'green',e:'🌐',t:'Magellán körülhajózása',d:"Magellán 1519-ben indult el, és bár ő maga a Fülöp-szigeteken halt meg, egyik hajója (a Victoria) 1522-ben visszaért Spanyolországba. Ezzel bizonyította, hogy a Föld valóban gömbölyű."}
   ];

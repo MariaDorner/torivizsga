@@ -973,7 +973,10 @@ body::after {
 .result-score{font-family:'Fredoka One',cursive;font-size:3.5rem;color:var(--purple);}
 .result-msg{font-size:1.1rem;color:var(--muted);margin:8px 0 24px;}
 .result-xp{background:var(--amber-l);border:2px solid var(--amber);border-radius:14px;padding:14px 24px;display:inline-flex;align-items:center;gap:10px;font-weight:800;color:var(--amber-d);margin-bottom:16px;}
-.unlock-notice{background:var(--green-l);border:2px solid var(--green);border-radius:14px;padding:14px 20px;margin:16px 0;color:var(--green-d);font-weight:700;}
+.unlock-notice{background:var(--green-l);border:2px solid var(--green);border-radius:14px;padding:14px 20px;margin:16px 0;color:var(--green-d);font-weight:700;box-shadow:0 2px 14px rgba(34,197,94,.13);}
+@keyframes unlockSlideIn{from{opacity:0;transform:translateY(10px) scale(.98);}to{opacity:1;transform:translateY(0) scale(1);}}
+.quiz-result .unlock-notice{animation:unlockSlideIn .45s cubic-bezier(.34,1.4,.64,1) .5s both;}
+.unlock-notice strong{display:inline-block;background:#0d0d1e;color:#d4af37;font-family:'Share Tech Mono',monospace;font-size:1.13rem;letter-spacing:.07em;padding:2px 12px;border-radius:6px;border:1px solid rgba(212,175,55,.4);margin-left:4px;box-shadow:0 0 10px rgba(212,175,55,.2);}
 .retry-btn{background:#111128;color:var(--text);border:2px solid #E5E7EB;border-radius:40px;padding:12px 24px;font-family:'Nunito',sans-serif;font-weight:800;font-size:.95rem;cursor:pointer;margin-right:10px;transition:.2s;}
 .retry-btn:hover{background:#1a1a2e;}
 
@@ -1053,6 +1056,8 @@ body::after {
 @keyframes lock-spin{0%{transform:rotate(0) scale(1)}40%{transform:rotate(-15deg) scale(1.2)}70%{transform:rotate(10deg) scale(1.1)}100%{transform:rotate(0) scale(1)}}
 .module-card.just-unlocked{animation:card-pop .5s ease;}
 @keyframes card-pop{0%{transform:scale(1)}30%{transform:scale(1.06)}60%{transform:scale(.97)}100%{transform:scale(1)}}
+@keyframes lockBlink{0%,100%{opacity:1;}50%{opacity:.3;}}
+#lock-status-blink{animation:lockBlink 1.6s ease infinite;}
 
 /* === TARTALOM-NAVIGÁTOR === */
 #toc-bar{border-left:2px solid var(--border);padding:4px 0 4px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:2px;}
@@ -1345,18 +1350,27 @@ body::after {
 </div>
 
 <div class="modal-overlay" id="lock-modal">
-  <div class="modal-box" style="text-align:center;border:1px solid #d4af37;background:#0a0a1a;">
-    <div style="font-size:.65rem;letter-spacing:.35em;color:#d4af37;margin-bottom:8px;text-transform:uppercase;">⬛ TITKOSÍTOTT IRAT ⬛</div>
-    <div class="lock-emoji">🔒</div>
-    <h3 style="color:#d4af37;">Hozzáférés megtagadva</h3>
-    <p id="lock-modal-desc" style="margin-bottom:12px;color:#8898bb;font-size:.9rem;">Ez az akta zárolva van, Ügynök.</p>
-    <div class="code-hint" id="lock-modal-hint" style="color:#8898bb;font-size:.82rem;margin-bottom:14px;"></div>
-    <div style="font-size:.75rem;color:#7080a0;margin-bottom:8px;letter-spacing:.1em;">ADJA MEG A DEKÓDOLÁSI KULCSOT:</div>
-    <input type="text" class="code-input" id="code-input" maxlength="10" placeholder="· · · ·" style="background:#111;border-color:#d4af37;color:#d4af37;letter-spacing:.3em;font-size:1.3rem;text-align:center;">
-    <div class="modal-btns">
-      <button class="cancel-btn" onclick="closeLock()" style="color:#8898bb;">↩ Visszavonulás</button>
-      <button class="decode-btn" onclick="checkCode()" style="background:#d4af37;color:#000;font-weight:700;">🔓 Dekódol</button>
+  <div class="modal-box" style="text-align:center;border:1px solid #d4af37;background:#06060f;box-shadow:0 0 50px rgba(212,175,55,.14),0 8px 40px rgba(0,0,0,.55);max-width:340px;padding:32px 28px;">
+    <div style="font-family:'Share Tech Mono',monospace;font-size:.56rem;letter-spacing:.42em;color:#d4af37;opacity:.6;margin-bottom:18px;">◈ TITKOSÍTOTT IRAT ◈</div>
+    <div class="lock-emoji" style="font-size:2.8rem;margin-bottom:14px;filter:drop-shadow(0 0 12px rgba(212,175,55,.4));">🔒</div>
+    <div id="lock-modal-label" style="font-family:'Share Tech Mono',monospace;font-size:.9rem;font-weight:700;color:#d4af37;letter-spacing:.18em;margin-bottom:8px;">DOSSZIÉ --</div>
+    <div id="lock-status-blink" style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:#cc3333;letter-spacing:.2em;margin-bottom:20px;">● HOZZÁFÉRÉS MEGTAGADVA</div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.5),transparent);margin-bottom:20px;"></div>
+    <div style="font-family:'Share Tech Mono',monospace;font-size:.63rem;color:#5a6a8a;letter-spacing:.16em;margin-bottom:10px;">BELÉPÉSI KÓD MEGADÁSA</div>
+    <input type="text" class="code-input" id="code-input" maxlength="12" placeholder="· · · ·" style="background:#0a0a1a;border-color:#d4af37;color:#d4af37;letter-spacing:.3em;font-size:1.3rem;text-align:center;width:100%;box-sizing:border-box;">
+    <div class="modal-btns" style="margin-top:20px;">
+      <button class="cancel-btn" onclick="closeLock()" style="color:#6070a0;font-family:'Share Tech Mono',monospace;font-size:.78rem;letter-spacing:.05em;">↩ Visszavonulás</button>
+      <button class="decode-btn" onclick="checkCode()" style="background:#d4af37;color:#06060f;font-weight:800;font-family:'Share Tech Mono',monospace;font-size:.82rem;letter-spacing:.05em;border-color:#d4af37;box-shadow:0 0 18px rgba(212,175,55,.28);">🔓 Dekódol</button>
     </div>
+  </div>
+</div>
+
+<!-- HALADÁS MODAL -->
+<div class="modal-overlay" id="haladas-modal" onclick="closeHaladasModal(event)">
+  <div class="modal-box" style="max-width:520px;max-height:82vh;overflow-y:auto;text-align:left;padding:24px 22px;">
+    <button onclick="document.getElementById('haladas-modal').classList.remove('show')" style="position:absolute;top:12px;right:14px;background:none;border:none;color:#8898bb;font-size:1.2rem;cursor:pointer;line-height:1;">✕</button>
+    <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.35em;color:#d4af37;margin-bottom:14px;text-transform:uppercase;">📊 Haladási Jelentés</div>
+    <div id="haladas-content"></div>
   </div>
 </div>
 
@@ -1416,7 +1430,7 @@ Ha mind a 12 korszakot megmented, jöhet a végső összecsapás Dr. Tempus elle
   </div>
 
   <div class="stats-row">
-    <div class="stat-card purple">
+    <div class="stat-card purple" onclick="openHaladasModal()" style="cursor:pointer;" title="Haladás részletei">
       <h4>📊 Haladás</h4>
       <div class="big"><span id="done-count">0</span><span style="font-size:1.2rem;opacity:.5;">/12</span></div>
       <div class="xp-progress-bg"><div class="xp-progress-fill" id="home-progress"></div></div>
@@ -4281,7 +4295,8 @@ function showDossierIntro(id, callback) {
 
   var overlay = document.createElement('div');
   overlay.id = 'di-overlay';
-  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:99998;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);';
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:99998;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);cursor:pointer;';
+  overlay.onclick = function(e){ if(e.target===overlay) closeDossierIntro(); };
 
   var hasCostume = !!(bondCostumes && bondCostumes[id]);
   var costumeHtml = hasCostume ? '<div id="di-bond-fig" style="position:absolute;top:18px;right:14px;opacity:0;transition:opacity .55s .12s ease;filter:drop-shadow(0 4px 14px '+d.glow+');">'+bondCostumes[id]+'</div>' : '';
@@ -4293,7 +4308,7 @@ function showDossierIntro(id, callback) {
       'border-radius:14px;' +
       'padding:28px ' + (hasCostume ? '108px' : '24px') + ' 28px 24px;' +
       'max-width:540px;width:100%;max-height:90vh;overflow-y:auto;' +
-      'position:relative;' +
+      'position:relative;cursor:default;' +
       'box-shadow:0 0 40px ' + d.glow + ';' +
       'opacity:0;transform:translateY(20px);' +
       'transition:opacity .4s ease,transform .4s ease;' +
@@ -4311,8 +4326,8 @@ function showDossierIntro(id, callback) {
       '<div id="di-typearea" style="font-size:.88rem;color:#c8d4e8;line-height:1.8;min-height:60px;max-height:260px;overflow-y:auto;margin-bottom:20px;border-left:2px solid ' + d.accent + ';padding-left:14px;scrollbar-width:thin;"></div>' +
       '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;" id="di-tags"></div>' +
       '<div style="display:flex;justify-content:space-between;align-items:center;">' +
-        '<span style="font-family:\'Share Tech Mono\',monospace;font-size:.68rem;color:#3a4060;cursor:pointer;letter-spacing:.1em;" onclick="closeDossierIntro()">' +
-          'ÁTUGRÁS' +
+        '<span style="font-family:\'Share Tech Mono\',monospace;font-size:.72rem;color:#7c8cb8;cursor:pointer;letter-spacing:.1em;border:1px solid #3a4060;padding:4px 10px;border-radius:4px;transition:color .2s,border-color .2s;" onmouseover="this.style.color=\'#b0bce0\';this.style.borderColor=\'#7c8cb8\';" onmouseout="this.style.color=\'#7c8cb8\';this.style.borderColor=\'#3a4060\';" onclick="closeDossierIntro()">' +
+          '⏭ ÁTUGRÁS' +
         '</span>' +
         '<button id="di-btn" onclick="closeDossierIntro()" style="' +
           'display:none;' +
@@ -4551,12 +4566,6 @@ function switchTabTo(name){
     document.getElementById('tab-content').innerHTML=topic9.content();
     setTimeout(initCardFadeIn,50);
   }
-  if(name==='content'&&currentTopic===12&&!document.getElementById('tab-content').innerHTML){
-    document.getElementById('tab-content').innerHTML=topic12.content();
-    setTimeout(initCardFadeIn,50);
-    setTimeout(initTopic12Charts,200);
-  }
-
   if(name==='concepts'&&currentTopic===4&&!document.getElementById('tab-concepts').innerHTML){
     document.getElementById('tab-concepts').innerHTML=topic4.concepts();
     setTimeout(initCardFadeIn,50);
@@ -4629,13 +4638,7 @@ const lockData={
 function openLock(id){
   currentLockId=id;
   const d=lockData[id];
-  const hintEl=document.getElementById('lock-modal-hint');
-  hintEl.innerHTML=d.hint.replace(/\n/g,'<br>');
-  const fromQuiz=[2,3,4,10];
-  const desc=fromQuiz.includes(id)
-    ? 'Ez az akta zárolva van. Válaszolj a kérdésre a feloldáshoz!'
-    : 'Ez az akta zárolva van. (Fejlesztés alatt – fejlesztői kód szükséges.)';
-  document.getElementById('lock-modal-desc').textContent=desc;
+  document.getElementById('lock-modal-label').textContent=d.label.toUpperCase();
   document.getElementById('code-input').value='';
   document.getElementById('lock-modal').classList.add('show');
 }
@@ -5605,17 +5608,18 @@ function buildTOC(){
 
 // ===== BOND BRIEFING =====
 var briefings={
-  1:{code:'AKTA #001',title:'A Honfoglalás Hadművelete',text:'Ügynök, a feladat: azonosítsd a magyarok vándorlási útvonalát, a törzsszövetség felépítését és a Kárpát-medence megszerzésének stratégiáját. Hét vezér, vérszerződés, Vereckei-hágó – mind a te elemzésedre vár. A 907-es pozsonyi csata titkos iratai szintén hozzáférhetők. Figyelmeztetés: a besenyők megbízhatatlan szövetségesek.',tags:['895','Honfoglalás','Árpád','Besenyő nyomás','907 – Pozsonyi csata']},
-  2:{code:'AKTA #002',title:'Az Államalapítás Küldetése',text:'Az Árpád-ház folytonosságát biztosítani kell. Tanulmányozd István király egyházszervező munkáját, a vármegyerendszer kiépítését és a Koppány elleni döntő hadműveletet 997-ben. A pápai korona megszerzése prioritás – ez biztosítja a szuverenitást. Mellékelt iratok: az Intelmek, a tized rendelete és a Pannonhalma-alapítólevél.',tags:['1000','Kereszténység','Vármegye','Koppány','Pannonhalma']},
-  3:{code:'AKTA #003',title:'A Tatárjárás Titkos Aktái',text:'1241. A birodalom összeomlásának küszöbén állunk. IV. Béla király menekül, a muhi csata elveszett – rossz felderítés, katasztrofális következmény. Elemezd a vereség okait, a túlélés stratégiáját és az újjáépítés módszereit. A kunok megbízhatatlannak bizonyultak. A kővárak beépítése azonnal szükséges.',tags:['1241','Muhi csata','IV. Béla','Mongol invázió','Újjáépítés']},
-  4:{code:'AKTA #004',title:'Az Anjou Konszolidáció',text:'I. Károly Róbert teljhatalmat épít ki. A kiskirályok (Csák Máté, Kőszegiek) semlegesítése sikeres volt. A rozgonyi csata (1312) döntő pont. Az aranyforint bevezetése stabilizálta a birodalmat. Feladatod: elemezd a honorbirtok-rendszert és a visegrádi királytalálkozó (1335) stratégiai jelentőségét. Kód: az ő halálának éve.',tags:['1312','Kiskirályok','Aranyforint','Visegrád 1335','Honorbirtok']},
-  5:{code:'AKTA #005',title:'A Lovagkirály Birodalma',text:'Nagy Lajos három tengeren túlra terjesztette hatalmát – Adria, Balti-tenger, Fekete-tenger. A zárai béke (1358) visszaszerezte Dalmáciát, az 1370-es lengyel perszonálunió megduplázta a birodalmat. Az 1351-es törvények (ősiség, kilenced) rögzítették a társadalmi rendet. Kód: a pécsi egyetem alapításának éve.',tags:['1358 – Zárai béke','Perszonálunió','Kilenced','Pécs 1367','Három tenger']},
-  6:{code:'AKTA #006',title:'A Törökverő Legenda',text:'Hunyadi János több évtizeden át tartja a védelmi vonalat. Szeben (1442): Kemény Simon csele. Hosszú hadjárat (1443-44): Szófiáig nyomultunk. Várna (1444): vereség, rossz hírszerzés miatt. Nándorfehérvár (1456): végső diadal – Szilágyi, Hunyadi, Kapisztrán. 65 év békét nyertünk. Kód: a győzelem éve.',tags:['1442 – Szeben','1444 – Várna','1456 – Nándorfehérvár','Janicsárok','Szekérvár']},
-  7:{code:'AKTA #007',title:'A Reneszánsz Akta – SZIGORÚAN TITKOS',text:'A hetedik és legtitkosabb dosszié. Mátyás király egyesíti a katonai erőt a kulturális fölénnyel. A Fekete Sereg (Kinizsi Pál), a Bibliotheca Corviniana (2500 corvina) és Bécs elfoglalása (1485) – mind részletes elemzést igényel. A koronavám és a füstpénz megháromszorozta a bevételeket. Az utód kérdése megoldatlan maradt. Kód: a király halálának éve.',tags:['1458–1490','Fekete Sereg','Corvina','Bécs 1485','Kenyérmező 1479']},
-  8:{code:'AKTA #008',title:'Az Összeomlás Dossziéja',text:'Mohács, 1526. augusztus 29. A Magyar Királyság egyetlen délután elveszítette királyát, 7 főpapját és 28 báróját. A Jagelló-kor gyengeségei, Dózsa felkelése (1514), a kettős királyválasztás és Buda 1541-es eleste – a végzetes döntések sorozata. Három részre szakadt: Királyi Magyarország, Hódoltság, Erdély. Kód: a katasztrófa éve.',tags:['1526 – Mohács','1541 – Buda eleste','Három rész','Szapolyai vs Ferdinánd','Dózsa 1514']},
-  10:{code:'AKTA #010',title:'Az Ismeretlen Vizek Hadművelete',text:'A 15-16. század legnagyobb kémakciója: az európai hatalmak ismeretlen területek feltérképezésére küldenek ügynököket. Kolumbusz (1492), Vasco da Gama (1498), Magellán (1519-22). A tordesillasi szerződés felosztotta a világot. Az árforradalom destabilizálta Európa gazdaságát. Az inka és az azték civilizáció azonosítva – státusz: megsemmisítve. Kód: Amerika felfedezésének éve.',tags:['1492 – Kolumbusz','Tordesillasi szerz.','Árforradalom','Inka, Azték, Maja','Manufaktúra']},
-  11:{code:'AKTA #011',title:'A Hitszakadás Aktái',text:'Luther Márton 1517-ben egyetlen papírral felrobbantotta Európát. A 95 tétel, a búcsúcédulák tiltakozása, a wormsi birodalmi gyűlés – mind dokumentálva. Az augsburgi béke (1555) megteremtette az egyensúlyt. A jezsuiták (Loyolai Ignác) elindították a visszatérítést. Magyarországon: Vizsolyi Biblia (1590), tordai vallásszabadság (1568). Kód: a 95 tétel éve.',tags:['1517 – 95 tétel','Augsburg 1555','Jezsuiták','Vizsolyi Biblia','Torda 1568']},
-  12:{code:'AKTA #012',title:'A Felvilágosult Despota',text:'Mária Terézia és II. József gyökeresen átalakítják a birodalmat rendeletekkel, az országgyűlés megkerülésével. Az Urbárium (1767) védte a jobbágyokat. A Ratio Educationis (1777) egységes oktatást teremtett. II. József – a kalapos király – 6000+ rendeletet adott ki, majd halálos ágyán visszavonta őket. A magyarság 35%-ra csökkent saját hazájában. Kód: a Vitam et sanguinem éve.',tags:['Pragmatica Sanctio','Urbárium 1767','Kalapos király','Vitam et sanguinem 1741','Hadik – Berlin 1757']},
+  1:{code:'AKTA #001 – ALFA SZINT',title:'A Honfoglalás Hadművelete',text:'CÉLPONT: Kárpát-medence. STÁTUSZ: Sikeres területbiztosítás, 895–907. Fedett forrásaink (Julianus barát 1236-os jelentése) megerősítik: a magyarok az Urál vidékéről, Levédián és Etelközön át érték el a célterületet. A vérszerződés hét törzsvezetőt köt össze – ez a mi hálózatunk alapja. Figyelmeztető jelzés: besenyő erők megbízhatatlanok, Etelközt felszámolják. A Vereckei-hágón végrehajtott betörés és a 907-es pozsonyi hadművelet lezárta a területfoglalást. Elemzési prioritás: Árpád stratégiai döntéseinek rekonstrukciója.',tags:['895','Honfoglalás','Árpád','Besenyő nyomás','907 – Pozsonyi csata']},
+  2:{code:'AKTA #002 – BÉTA SZINT',title:'Az Államalapítás Küldetése',text:'CÉLPONT: Dinasztikus stabilitás és külső legitimáció. Koppány – a belső fenyegetés – 997-ben semlegesítve. A pápai koronaküldés (1000) megszerezte a nemzetközi fedőtörténetet: keresztény királyság, európai szövetséges. István király az egyházmegyék és vármegyék rendszerével párhuzamos hálózatot épített ki az ország irányítására. Mellékelt iratok: az Intelmek (titkos utasítás az utódnak), a tized rendelete és a pannonhalmi alapítólevél. KOCKÁZAT: trónörökös kérdése megoldatlan – Imre herceg 1031-es halála veszélyes hatalmi vákuumot nyitott.',tags:['1000','Kereszténység','Vármegye','Koppány','Pannonhalma']},
+  3:{code:'AKTA #003 – VÖRÖS RIASZTÁS',title:'A Tatárjárás Titkos Aktái',text:'VESZÉLYFOKOZAT: KRITIKUS. 1241. április 11., Muhi. A terep felmérés elmaradt, a szekérvár csapdává vált – a teljes magyar haderő megsemmisült. IV. Béla fedett útvonalon menekül az Adriáig. Egyetlen megbízható hírforrás: Julianus barát 1237-es jelentése a közeledő mongol főseregről – figyelmen kívül hagyták. A kunok – potenciális szövetségesek – Kötöny meggyilkolása után kivonultak. TANULSÁG: csak a kővárak tartottak ki. Az újjáépítési hadművelet (várépítések, hospes-betelepítés) megakadályozta a teljes összeomlást.',tags:['1241','Muhi csata','IV. Béla','Mongol invázió','Újjáépítés']},
+  4:{code:'AKTA #004 – KONSZOLIDÁCIÓS JELENTÉS',title:'Az Anjou Konszolidáció',text:'HELYZETELEMZÉS: Az Árpád-ház kihalt, a terep instabil. I. Károly Róbert 1310-ben megszerzi az irányítást. Belső ellenállók (Csák Máté, Kőszegiek) – státusz: semlegesítve, utolsó ütközet Rozgonynál (1312). Pénzügyi hadművelet: az aranyforint bevezetése stabilizálja a gazdaságot, a kamara nyereség a bevételeket háromszorosára növeli. A visegrádi királytalálkozó (1335) – magyar–cseh–lengyel egyeztetés – célja Bécs árumegállítójogának megkerülése. A honorbirtok-rendszer biztosítja az uralkodói kontrollt. KÓDKULCS: az irányító halálának éve.',tags:['1312','Kiskirályok','Aranyforint','Visegrád 1335','Honorbirtok']},
+  5:{code:'AKTA #005 – TERJESZKEDÉSI AKTA',title:'A Lovagkirály Birodalma',text:'OPERATÍV TERÜLET: három tenger partvidéke. Nagy Lajos három évtizedes birodalmának határait az Adria, a Baltikum és a Fekete-tenger jelöli ki. Elsődleges hadművelet: a dalmát partvidék visszaszerzése Velencétől – a zárai béke (1358) sikeresen lezárja. 1370: lengyel perszonálunió – egyetlen ügynök két birodalmat irányít. Belső szabályozás: az 1351-es dekrétum rögzíti az ősiséget és kötelezővé teszi a kilencedet. A pécsi egyetem (1367) – a birodalom első képzési bázisa. KÓDKULCS: az alapítás éve.',tags:['1358 – Zárai béke','Perszonálunió','Kilenced','Pécs 1367','Három tenger']},
+  6:{code:'AKTA #006 – VÉDELMI HADÁLLÁS',title:'A Törökverő Legenda',text:'ELSŐDLEGES CÉLPONT: az oszmán terjeszkedés feltartóztatása. Hunyadi János operatív vezető – évtizedes megbízhatósági szint: MAXIMÁLIS. Szeben (1442): Kemény Simon fedőmanővere sikeres, Ali bég serege megsemmisítve. Hosszú hadjárat (1443–44): Szófiáig nyomultunk előre. Várna (1444): vereség – a keresztény sereg felrúgta a megkötött békét, a szultán főseregét a genovaiak pénzért szállították át. Nándorfehérvár (1456): döntő diadal Szilágyi, Hunyadi és Kapisztrán hármasával. Megszerzett időablak: 65 év. KÓDKULCS: a győzelem éve.',tags:['1442 – Szeben','1444 – Várna','1456 – Nándorfehérvár','Janicsárok','Szekérvár']},
+  7:{code:'AKTA #007 – SZIGORÚAN TITKOS',title:'A Reneszánsz Akta',text:'HOZZÁFÉRÉSI SZINT: ÜGYNÖKSÉGI VEZETŐ. Mátyás király kettős fedőtörténetet épít: páncélos zsoldoshadsereg kifelé, reneszánsz udvar befelé. A Fekete Sereg 8-10 ezer főjét Kinizsi Pál irányítja – Kenyérmező (1479) bizonyítja harci értékét. A Bibliotheca Corviniana 2500 kötetes archívum: Európa második legnagyobb hírszerzési és kulturális adatbázisa. Bécs elfoglalva (1485). Bevételi forrás megháromszorozva: koronavám + füstpénz. KRITIKUS KOCKÁZAT: törvényes utód nincs, a rendszer összeomlás előtt áll. KÓDKULCS: az irányító halálának éve.',tags:['1458–1490','Fekete Sereg','Corvina','Bécs 1485','Kenyérmező 1479']},
+  8:{code:'AKTA #008 – KATASZTRÓFA-JELENTÉS',title:'Az Összeomlás Dossziéja',text:'IDŐPONT: 1526. augusztus 29., Mohács. VESZTESÉGLISTA: király (II. Lajos – Csele-patak), 7 főpap, 28 báró – egyetlen délután. Előzmények: a Jagelló-kor pénzügyi összeomlása, a Fekete Sereg feloszlatása (1492), Dózsa felkelése (1514) meggyengítette a védelmet. Kettős fedőtörténet kialakul: Szapolyai János és Habsburg Ferdinánd egyszerre igényli az irányítást. 1541: Buda elveszett. Három operatív zóna: Királyi Magyarország (Habsburg), Hódoltság (oszmán), Erdélyi Fejedelemség (török hűbér). STÁTUSZ: a küldetés folytatódik.',tags:['1526 – Mohács','1541 – Buda eleste','Három rész','Szapolyai vs Ferdinánd','Dózsa 1514']},
+  9:{code:'AKTA #009 – TITOKZATOS ARCHÍVUM',title:'A Mondák Titkos Tárháza',text:'HOZZÁFÉRÉSI SZINT: MÍTOSZ-ELEMZÉSI RÉSZLEG. A magyarság kollektív emlékezetének legfontosabb narratívái archiválva. Emese-álom protokoll: turul-totem legitimálja a dinasztiát → Álmos → Árpád. Fehér ló hadművelet: föld-víz-fű csereügylet, Szvatopluk kijátszva – a Kárpát-medence törvényes alapon megszerzve. Lehel-ügynök utolsó akciója a Lech folyónál: mártíriuma előtt a parancsnoklánc egyetlen kürtcsapással semlegesítve. Búvár Kund beszivárgásos akció: kézifúróval tizenegy hajó elsüllyesztve, Henrik serege visszavonultatva (1051). Kemény Simon fedőidentitás-csere Hunyadival → önfeláldozás → győzelem Szebennél (1442). A szentek hálózata (László, Imre, Margit, Gellért) spirituális fedővonalként védi az ország emlékezetét. STÁTUSZ: az archívum lezárhatatlan.',tags:['Emese álma – turul','Fehér ló mondája','Lehel kürtje','Búvár Kund 1051','Kemény Simon 1442']},
+  10:{code:'AKTA #010 – FELTÉRKÉPEZÉSI HADMŰVELET',title:'Az Ismeretlen Vizek Hadművelete',text:'CÉLTERÜLET: ismeretlen kontinens, kódneve: Újvilág. Az európai hatalmak ügynökeit fedett tengeri expedíciók formájában küldik előre. Kolumbusz (1492), Vasco da Gama (1498), Magellán (1519–22) – mind aktív terepen. A tordesillasi szerződés (1494) felosztotta a megszerezhető területeket Spanyolország és Portugália között. Helyszíni célpontok azonosítva: maja, azték, inka civilizációk – státusz: felszámolva. Gazdasági mellékhatás: az Amerikából beáramló nemesfém árforradalmat robbant ki Európában. KÓDKULCS: az első bevetés éve.',tags:['1492 – Kolumbusz','Tordesillasi szerz.','Árforradalom','Inka, Azték, Maja','Manufaktúra']},
+  11:{code:'AKTA #011 – IDEOLÓGIAI HADMŰVELET',title:'A Hitszakadás Aktái',text:'DETONÁTOR: Wittenberg, 1517. október 31. Luther Márton 95 tétele egyetlen dokumentummal robbantotta fel az európai ideológiai egyensúlyt. A búcsúcédula-rendszer – a Vatikán finanszírozási hálózata – kompromittálva. A wormsi birodalmi gyűlés (1521) nem tudta semlegesíteni az ügynököt. Ellenlépés: a jezsuita rend (Loyolai Ignác) megindítja a visszatérítési hadműveletet. Augsburgi béke (1555): ideiglenes egyensúly. Magyar terep: tordai vallásszabadság (1568), Vizsolyi Biblia (1590) – a magyar hírszerzési bázis saját csatornákon kommunikál. KÓDKULCS: a detonáció éve.',tags:['1517 – 95 tétel','Augsburg 1555','Jezsuiták','Vizsolyi Biblia','Torda 1568']},
+  12:{code:'AKTA #012 – RENDELETBIRODALOM',title:'A Felvilágosult Despota',text:'IRÁNYÍTÓ: Mária Terézia, majd II. József. Módszer: az országgyűlés megkerülése – rendeletek útján. A Pragmatica Sanctio (1723) biztosítja a nőági öröklést és a birodalom egységét. Kettős vámrendelet (1754): Magyarország az éléskamra szerepébe kényszerítve. Urbárium (1767): jobbágyterhelés limitálva. Ratio Educationis (1777): egységes oktatási hálózat kiépítve. II. József – a kalapos király – 6000+ rendeletet ad ki, köztük a jobbágyrendeletet (1785) és a türelmi rendeletet (1781). Halálos ágyán visszavon szinte mindent – három rendelet életben marad. KÓDKULCS: a Vitam et sanguinem éve.',tags:['Pragmatica Sanctio','Urbárium 1767','Kalapos király','Vitam et sanguinem 1741','Hadik – Berlin 1757']},
 };
 
 function showBriefing(id){
@@ -6106,6 +6110,105 @@ setTimeout(buildTimeline, 100);
 <script src="topic11.js"></script>
 <script src="topic12.js"></script>
 <script src="topic13.js"></script>
+
+<script>
+// ===== HALADÁS MODAL =====
+var hk_scores = JSON.parse(localStorage.getItem('hk_scores') || '{}');
+
+// showResult wrapper: kvíz pontszám mentése
+(function(){
+  var orig = window.showResult;
+  window.showResult = function(){
+    if(typeof orig === 'function') orig();
+    if(currentTopic && quizState && quizState.q){
+      var correct = quizState.q.filter(function(q){ return q._result === 'c'; }).length;
+      if(hk_scores[currentTopic] === undefined || correct > hk_scores[currentTopic]){
+        hk_scores[currentTopic] = correct;
+        try{ localStorage.setItem('hk_scores', JSON.stringify(hk_scores)); } catch(e){}
+      }
+    }
+  };
+})();
+
+function openHaladasModal(){
+  var content = document.getElementById('haladas-content');
+  if(!content) return;
+
+  var currentRank = ranks.filter(function(r){ return xp >= r.xp; }).pop() || ranks[0];
+  var nextRank = ranks.find(function(r){ return r.xp > xp; });
+  var pct = nextRank ? Math.round((xp - currentRank.xp) / (nextRank.xp - currentRank.xp) * 100) : 100;
+
+  var html = '';
+
+  // XP & rang szekció
+  html += '<div style="background:#0d0d1a;border:1px solid rgba(212,175,55,.3);border-radius:12px;padding:16px;margin-bottom:16px;">';
+  html += '<div style="font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;color:#8898bb;text-transform:uppercase;margin-bottom:10px;">⭐ XP & Rangfokozat</div>';
+  html += '<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;">';
+  html += '<div style="font-family:var(--mono);font-size:1.9rem;font-weight:900;color:#d4af37;text-shadow:0 0 12px rgba(212,175,55,.4);">' + xp + ' XP</div>';
+  html += '<div style="flex:1;">';
+  html += '<div style="font-weight:700;color:#f0f0f8;font-size:.9rem;">' + currentRank.n + '</div>';
+  if(nextRank) html += '<div style="font-size:.72rem;color:#8898bb;margin-top:2px;">Következő: ' + nextRank.n + ' (' + nextRank.xp + ' XP)</div>';
+  else html += '<div style="font-size:.72rem;color:#d4af37;margin-top:2px;">🏆 Maximális rang elérve!</div>';
+  html += '</div></div>';
+  html += '<div style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.15);border-radius:4px;height:8px;overflow:hidden;">';
+  html += '<div style="background:linear-gradient(90deg,#a07820,#d4af37,#f0d060);height:100%;border-radius:4px;width:' + pct + '%;transition:width .7s ease;box-shadow:0 0 8px rgba(212,175,55,.4);"></div>';
+  html += '</div>';
+  if(nextRank) html += '<div style="font-size:.68rem;color:#8898bb;margin-top:5px;text-align:right;">' + pct + '% a következő rangig (' + (nextRank.xp - xp) + ' XP hiányzik)</div>';
+  html += '</div>';
+
+  // Dosszié-állapotok
+  html += '<div style="font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;color:#8898bb;text-transform:uppercase;margin-bottom:8px;">📁 Dosszié-állapotok</div>';
+  html += '<div style="display:flex;flex-direction:column;gap:5px;margin-bottom:16px;">';
+
+  modules.forEach(function(m){
+    if(m.id === 13) return;
+    var score = hk_scores[m.id];
+    var hasScore = score !== undefined;
+    var isWeak = hasScore && score < 8;
+    var isStrong = hasScore && score >= 8;
+    var borderColor = m.locked ? 'rgba(255,255,255,.06)' : (isWeak ? 'rgba(224,92,122,.4)' : isStrong ? 'rgba(34,197,94,.35)' : 'rgba(212,175,55,.2)');
+    var bg = m.locked ? 'rgba(0,0,0,.2)' : (isWeak ? 'rgba(224,92,122,.07)' : isStrong ? 'rgba(34,197,94,.07)' : 'rgba(212,175,55,.04)');
+    html += '<div style="background:' + bg + ';border:1px solid ' + borderColor + ';border-radius:8px;padding:9px 13px;display:flex;align-items:center;gap:10px;">';
+    html += '<span style="font-size:1.2rem;flex-shrink:0;">' + m.icon + '</span>';
+    html += '<div style="flex:1;min-width:0;"><div style="font-size:.8rem;font-weight:700;color:' + (m.locked ? '#444' : '#f0f0f8') + ';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + String(m.id).padStart(2,'0') + '. ' + m.name + '</div></div>';
+    if(m.locked){
+      html += '<span style="font-size:.68rem;color:#444;font-family:var(--mono);flex-shrink:0;">🔒 ZÁROLT</span>';
+    } else if(isStrong){
+      html += '<span style="font-family:var(--mono);font-weight:900;font-size:.95rem;color:#22c55e;flex-shrink:0;">' + score + '/10</span>';
+    } else if(isWeak){
+      html += '<span style="font-family:var(--mono);font-weight:900;font-size:.95rem;color:#e05c7a;flex-shrink:0;">' + score + '/10</span>';
+    } else {
+      html += '<span style="font-size:.68rem;color:#d4af37;font-family:var(--mono);flex-shrink:0;">📂 NYITOTT</span>';
+    }
+    html += '</div>';
+  });
+  html += '</div>';
+
+  // Gyenge pontok szekció
+  var weakTopics = modules.filter(function(m){ return hk_scores[m.id] !== undefined && hk_scores[m.id] < 8; });
+  if(weakTopics.length > 0){
+    html += '<div style="background:rgba(224,92,122,.07);border:1px solid rgba(224,92,122,.35);border-radius:12px;padding:14px 16px;">';
+    html += '<div style="font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;color:#e05c7a;text-transform:uppercase;margin-bottom:10px;">⚠️ Gyenge pontok – érdemes visszamenni!</div>';
+    weakTopics.forEach(function(m){
+      html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">';
+      html += '<span style="font-size:1.1rem;">' + m.icon + '</span>';
+      html += '<span style="font-size:.82rem;color:#f0f0f8;flex:1;">' + m.name + '</span>';
+      html += '<span style="font-family:var(--mono);font-weight:700;font-size:.9rem;color:#e05c7a;">' + hk_scores[m.id] + '/10</span>';
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
+  content.innerHTML = html;
+  document.getElementById('haladas-modal').classList.add('show');
+}
+
+function closeHaladasModal(e){
+  if(e.target === document.getElementById('haladas-modal')){
+    document.getElementById('haladas-modal').classList.remove('show');
+  }
+}
+</script>
 
 </body>
 </html>
