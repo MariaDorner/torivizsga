@@ -132,6 +132,10 @@ function buildTopic4Content(){
 
   <div class="info-card">
     <h3>🤝 Külpolitika: A Visegrádi Királytalálkozó (1335)</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:200px;">
+      <img src="images/visegradi-var-2.jpg" alt="Visegrádi vár" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Visegrádi vár – a királytalálkozó helyszíne</p>
+    </div>
     <p>Károly Róbert udvarát Visegrádra helyezte át, ahol fényes palotát építtetett. Itt rendezték meg 1335-ben a középkori diplomácia egyik legfontosabb eseményét.</p>
     <div class="highlight-box" style="margin-top:8px;">🔍 <strong>Érdekesség:</strong> Visegrád nem volt mindig az ország központja: Károly Róbert 1315-től egészen 1323-ig <strong>Temesváron</strong> tartotta az udvarát, ahol biztonságban volt, amíg a tartományurakkal harcolt. Csak az ország pacifikálása után költözött a reprezentatívabb Visegrádra.</div>
     <p style="margin-top:10px;"><strong>Résztvevők:</strong></p>
@@ -150,6 +154,10 @@ function buildTopic4Content(){
 
   <div class="info-card">
     <h3>🗡️ A lovagi kultúra és a Zách Felicián-merénylet</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:180px;">
+      <img src="images/Zách_Felícián.jpg" alt="Zách Felicián merénylete" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Zách Felicián merénylete (1330)</p>
+    </div>
     <p>Károly honosította meg Magyarországon a lovagi kultúrát és a címertant. Megalapította a Szent György-rendet, az első világi lovagrendet.</p>
     <p style="margin-top:10px;">Uralkodását azonban egy véres esemény is beárnyékolta: 1330-ban Zách Felicián, egy udvari nemes, ebéd közben karddal támadt a királyi családra Visegrádon. A király sértetlen maradt, de Erzsébet királyné négy ujját levágta a támadó. A megtorlás kegyetlen volt: Felicián családját harmadíziglen kiirtották.</p>
   </div>
