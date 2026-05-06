@@ -1,16 +1,68 @@
 ﻿// ===== TOPIC 4 VIDEOS =====
-function buildTopic4Videos(){
-  const vids=[
-    {e:'⚡',level:'alap',lt:'Villám',title:'Trónviszályok és I. Károly uralkodása – Gyorstalpaló',desc:'Mindössze 3 perces, animált jelentés. Ha már csak percek vannak hátra a Tudáspróbáig, ez a legjobb ismétlőanyag!',url:'https://www.youtube.com/watch?v=nshL8eOsB94'},
-    {e:'⚡',level:'alap',lt:'Pörgős',title:'Az Anjouk birodalma | zanza.tv (Külső hírszerzési csatorna)',desc:'Gyors, rajzos összefoglaló az Anjou-dinasztia magyarországi szerepéről és Károly Róbert konszolidációjáról.',url:'https://zanza.tv/tortenelem/magyarsag-tortenete-kezdetektol-1490-ig/az-anjouk-birodalma'},
-    {e:'😄',level:'alap',lt:'Könnyed',title:'Károly Róbert Útja A Királysághoz – Tökéletlen Történelem [TT]',desc:'Pörgős és szórakoztató eligazítás arról, hogyan küzdött meg Károly Róbert a trónért, és hogyan számolt le a hatalmaskodó tartományurakkal.',url:'https://www.youtube.com/watch?v=A5HQa_lMI2E'},
-    {e:'😄',level:'alap',lt:'Könnyed',title:'Károly Róbert Uralkodása – Tökéletlen Történelem [TT]',desc:'A sikeres trónfoglalás utáni intézkedések titkos aktája lazább stílusban bemutatva. Kiderül belőle, hogyan töltötte fel a király a kincstárat.',url:'https://www.youtube.com/watch?v=zDuFjBQad7I'},
-    {e:'🎓',level:'kozepes',lt:'Stratégiai',title:'Károly Róbert – Történelem érettségi tétel | Erettsegi.com',desc:'Komolyabb hangvételű, tényekre fókuszáló összefoglaló a király gazdasági reformjairól. Pluszpontokra hajtó ügynököknek kötelező!',url:'https://www.youtube.com/watch?v=i4BGwQFBf5o'},
-    {e:'🎯',level:'profi',lt:'Mesterlövész',title:'A középkori magyar állam megerősödése I. Károly idején | dr. Kulcsár Árpád',desc:'Középiskolai szintű, nagyon alapos tanári eligazítás. Ha a legapróbb részletekre is kíváncsi vagy a kiskirályokkal kapcsolatban, nyisd meg ezt a fájlt!',url:'https://www.youtube.com/watch?v=bsmp37P-mX4'},
-    {e:'🎬',level:'kozepes',lt:'Archív',title:'Magyarország története S01E09',desc:'Hivatalos dokumentumfilm a kiskirályok koráról és az ország újraegyesítéséről. Mélyebb nyomozáshoz és otthoni megfigyeléshez ideális aktacsomag.',url:'https://www.youtube.com/watch?v=yG8WUMPrjUc'},
+function buildTopic4Videos() {
+  const vids = [
+    {
+      e: "⚡",
+      level: "alap",
+      lt: "Villám",
+      title: "Trónviszályok és I. Károly uralkodása – Gyorstalpaló",
+      desc: "Mindössze 3 perces, animált jelentés. Ha már csak percek vannak hátra a Tudáspróbáig, ez a legjobb ismétlőanyag!",
+      url: "https://www.youtube.com/watch?v=nshL8eOsB94",
+    },
+    {
+      e: "⚡",
+      level: "alap",
+      lt: "Pörgős",
+      title: "Az Anjouk birodalma | zanza.tv (Külső hírszerzési csatorna)",
+      desc: "Gyors, rajzos összefoglaló az Anjou-dinasztia magyarországi szerepéről és Károly Róbert konszolidációjáról.",
+      url: "https://zanza.tv/tortenelem/magyarsag-tortenete-kezdetektol-1490-ig/az-anjouk-birodalma",
+    },
+    {
+      e: "😄",
+      level: "alap",
+      lt: "Könnyed",
+      title: "Károly Róbert Útja A Királysághoz – Tökéletlen Történelem [TT]",
+      desc: "Pörgős és szórakoztató eligazítás arról, hogyan küzdött meg Károly Róbert a trónért, és hogyan számolt le a hatalmaskodó tartományurakkal.",
+      url: "https://www.youtube.com/watch?v=A5HQa_lMI2E",
+    },
+    {
+      e: "😄",
+      level: "alap",
+      lt: "Könnyed",
+      title: "Károly Róbert Uralkodása – Tökéletlen Történelem [TT]",
+      desc: "A sikeres trónfoglalás utáni intézkedések titkos aktája lazább stílusban bemutatva. Kiderül belőle, hogyan töltötte fel a király a kincstárat.",
+      url: "https://www.youtube.com/watch?v=zDuFjBQad7I",
+    },
+    {
+      e: "🎓",
+      level: "kozepes",
+      lt: "Stratégiai",
+      title: "Károly Róbert – Történelem érettségi tétel | Erettsegi.com",
+      desc: "Komolyabb hangvételű, tényekre fókuszáló összefoglaló a király gazdasági reformjairól. Pluszpontokra hajtó ügynököknek kötelező!",
+      url: "https://www.youtube.com/watch?v=i4BGwQFBf5o",
+    },
+    {
+      e: "🎯",
+      level: "profi",
+      lt: "Mesterlövész",
+      title:
+        "A középkori magyar állam megerősödése I. Károly idején | dr. Kulcsár Árpád",
+      desc: "Középiskolai szintű, nagyon alapos tanári eligazítás. Ha a legapróbb részletekre is kíváncsi vagy a kiskirályokkal kapcsolatban, nyisd meg ezt a fájlt!",
+      url: "https://www.youtube.com/watch?v=bsmp37P-mX4",
+    },
+    {
+      e: "🎬",
+      level: "kozepes",
+      lt: "Archív",
+      title: "Magyarország története S01E09",
+      desc: "Hivatalos dokumentumfilm a kiskirályok koráról és az ország újraegyesítéséről. Mélyebb nyomozáshoz és otthoni megfigyeléshez ideális aktacsomag.",
+      url: "https://www.youtube.com/watch?v=yG8WUMPrjUc",
+    },
   ];
   return `<h2 style="font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--rose-d);margin-bottom:16px;">🎥 TITKOS VIDEÓARCHÍVUM: 5. AKTA - AZ ANJOU-MŰVELET (Biztonsági besorolás szerinti sorrendben)</h2>
-  <div class="video-grid">${vids.map(v=>`
+  <div class="video-grid">${vids
+    .map(
+      (v) => `
     <a href="${v.url}" target="_blank" class="video-card">
       <div class="video-thumb">${v.e}</div>
       <div class="video-info">
@@ -18,36 +70,102 @@ function buildTopic4Videos(){
         <div class="video-title">${v.title}</div>
         <div class="video-desc">${v.desc}</div>
       </div>
-    </a>`).join('')}</div>`;
+    </a>`,
+    )
+    .join("")}</div>`;
 }
 // ===== TOPIC 4 CONCEPTS =====
-function buildTopic4Concepts(){
-  const concepts=[
-    {c:'amber',e:'👑',t:'Tartományúr (kiskirály)',d:'A 13. század végére elhatalmaskodó hatalmas főurak, akik saját területüket a királytól teljesen függetlenül irányították. Saját hadseregük, udvartartásuk és néha saját pénzük is volt. I. Károly 1310–1323 között felszámolta uralmukat.'},
-    {c:'purple',e:'⚜️',t:'Anjou-ház',d:'Francia–nápolyi királyi dinasztia, amely hivatalosan 1310-től uralta Magyarországot. Az Anjou-háznak két jelentős alakja volt Magyarországon, I. Károly és fia I. (Nagy) Lajos. Lajos fiú utód nélkül halt meg 1382-ben, így a magyarországi Anjou dinasztia férfiágon kihalt.'},
-    {c:'rose',e:'👑',t:'A törvényes koronázás 3 feltétele',d:'Ahhoz, hogy valaki törvényes magyar király legyen, egyszerre kellett: (1) a Szent Koronával, (2) az esztergomi érsek által, (3) Székesfehérváron megkoronáztatnia magát. Károly Róbert csak 1310-ben teljesítette mindhármat.'},
-    {c:'teal',e:'🏰',t:'Honorbirtok',d:'I. Károly által bevezetett új birtok-adományozási rendszer. A király nem örökölhető, hanem tisztséghez (pl. nádori, vajdai) kötött földet adott. Ha valaki elvesztette a tisztségét, a birtok visszaszállt a királyra – ez hűségre kényszerítette a főurakat.'},
-    {c:'rose',e:'⚔️',t:'Rozgonyi csata (1312)',d:'A tartományúri hatalom megtörésének fordulópontja. I. Károly itt mért döntő vereséget az Aba-nembeliekre. Ezután sorra szűnt meg a kiskirályok hatalma. Az egyetlen, akivel katonailag nem bírt, Csák Máté volt – ő 1321-ben természetes halállal halt meg.'},
-    {c:'amber',e:'🪙',t:'Aranyforint',d:'Károly Róbert pénzreformjának legfontosabb eredménye (1325). A firenzei mintára vert stabil, tiszta aranyból készült érme. Értékálló fizetőeszköz lett, amely elősegítette a kereskedelem fellendülését és az ország gazdagodását.'},
-    {c:'blue',e:'⛏️',t:'Urbura (bányabér)',d:'Korábban a nemesek eltitkolták a földjükön talált nemesfémet (arany/ezüst), mert a király elvette volna, vagy nagyon keveset fizetett volna a birtokért. Károly Róbert viszont nekik adta a bányajövedelem egyharmadát, így érdekelté váltak abban, hogy bejelentsék a bányát. Ennek köszönhetően Magyarország Európában az egyik legtöbb aranyat és ezüstöt bányászta.'},
-    {c:'green',e:'🛡️',t:'Banderiális hadszervezet',d:'I. Károly által bevezetett új katonai rendszer. A nagybirtokosoktól megkövetelte, hogy saját zászlójuk (bandérium) alatt nehézfegyverzetű lovasokat állítsanak ki. Így a király egy jól felszerelt, professzionális hadsereget gyűjthetett össze hadjáratokhoz.'},
-    {c:'teal',e:'🚪',t:'Kapuadó',d:'I. Károly által bevezetett adónem. A jobbágyok után, a telek kapujának száma alapján vetette ki a király. Kiszámítható, stabil bevételt biztosított az államnak, és az ország belső fejlesztéseit finanszírozta.'},
-    {c:'purple',e:'🧔',t:'Csák Máté',d:'A legerősebb tartományúr, a Felvidék nyugati részének ura (Trencsén központtal). Saját önálló "birodalmát" irányított. I. Károly katonailag nem tudta legyőzni, de 1321-es természetes halála után területei visszaszálltak a királyra – anélkül, hogy csatát kellett volna nyerni.'},
-    {c:'blue',e:'🤝',t:'Visegrádi királytalálkozó (1335)',d:'I. Károly, Luxemburgi János (cseh) és III. Kázmér (lengyel) király találkozója Visegrádon. Célja: Bécs árumegállítójogának megkerülése. Új kereskedelmi útvonalakat jelöltek ki, amelyek kihagyták Bécset, és közvetlen kapcsolatot teremtettek Közép-Európa között.'},
-    {c:'green',e:'👶',t:'Nagy Lajos',d:'I. Károly fia és utódja (1342-től). Apja megszilárdította az ország gazdasági és katonai alapjait, így Nagy Lajos egy erős, stabil Magyarországot örökölt. Ezt használta fel katonai hadjáratokhoz és Magyarország középkori fénykorának megteremtéséhez.'},
+function buildTopic4Concepts() {
+  const concepts = [
+    {
+      c: "amber",
+      e: "👑",
+      t: "Tartományúr (kiskirály)",
+      d: "A 13. század végére elhatalmaskodó hatalmas főurak, akik saját területüket a királytól teljesen függetlenül irányították. Saját hadseregük, udvartartásuk és néha saját pénzük is volt. I. Károly 1310–1323 között felszámolta uralmukat.",
+    },
+    {
+      c: "purple",
+      e: "⚜️",
+      t: "Anjou-ház",
+      d: "Francia–nápolyi királyi dinasztia, amely hivatalosan 1310-től uralta Magyarországot. Az Anjou-háznak két jelentős alakja volt Magyarországon, I. Károly és fia I. (Nagy) Lajos. Lajos fiú utód nélkül halt meg 1382-ben, így a magyarországi Anjou dinasztia férfiágon kihalt.",
+    },
+    {
+      c: "rose",
+      e: "👑",
+      t: "A törvényes koronázás 3 feltétele",
+      d: "Ahhoz, hogy valaki törvényes magyar király legyen, egyszerre kellett: (1) a Szent Koronával, (2) az esztergomi érsek által, (3) Székesfehérváron megkoronáztatnia magát. Károly Róbert csak 1310-ben teljesítette mindhármat.",
+    },
+    {
+      c: "teal",
+      e: "🏰",
+      t: "Honorbirtok",
+      d: "I. Károly által bevezetett új birtok-adományozási rendszer. A király nem örökölhető, hanem tisztséghez (pl. nádori, vajdai) kötött földet adott. Ha valaki elvesztette a tisztségét, a birtok visszaszállt a királyra – ez hűségre kényszerítette a főurakat.",
+    },
+    {
+      c: "rose",
+      e: "⚔️",
+      t: "Rozgonyi csata (1312)",
+      d: "A tartományúri hatalom megtörésének fordulópontja. I. Károly itt mért döntő vereséget az Aba-nembeliekre. Ezután sorra szűnt meg a kiskirályok hatalma. Az egyetlen, akivel katonailag nem bírt, Csák Máté volt – ő 1321-ben természetes halállal halt meg.",
+    },
+    {
+      c: "amber",
+      e: "🪙",
+      t: "Aranyforint",
+      d: "Károly Róbert pénzreformjának legfontosabb eredménye (1325). A firenzei mintára vert stabil, tiszta aranyból készült érme. Értékálló fizetőeszköz lett, amely elősegítette a kereskedelem fellendülését és az ország gazdagodását.",
+    },
+    {
+      c: "blue",
+      e: "⛏️",
+      t: "Urbura (bányabér)",
+      d: "Korábban a nemesek eltitkolták a földjükön talált nemesfémet (arany/ezüst), mert a király elvette volna, vagy nagyon keveset fizetett volna a birtokért. Károly Róbert viszont nekik adta a bányajövedelem egyharmadát, így érdekelté váltak abban, hogy bejelentsék a bányát. Ennek köszönhetően Magyarország Európában az egyik legtöbb aranyat és ezüstöt bányászta.",
+    },
+    {
+      c: "green",
+      e: "🛡️",
+      t: "Banderiális hadszervezet",
+      d: "I. Károly által bevezetett új katonai rendszer. A nagybirtokosoktól megkövetelte, hogy saját zászlójuk (bandérium) alatt nehézfegyverzetű lovasokat állítsanak ki. Így a király egy jól felszerelt, professzionális hadsereget gyűjthetett össze hadjáratokhoz.",
+    },
+    {
+      c: "teal",
+      e: "🚪",
+      t: "Kapuadó",
+      d: "I. Károly által bevezetett adónem. A jobbágyok után, a telek kapujának száma alapján vetette ki a király. Kiszámítható, stabil bevételt biztosított az államnak, és az ország belső fejlesztéseit finanszírozta.",
+    },
+    {
+      c: "purple",
+      e: "🧔",
+      t: "Csák Máté",
+      d: 'A legerősebb tartományúr, a Felvidék nyugati részének ura (Trencsén központtal). Saját önálló "birodalmát" irányított. I. Károly katonailag nem tudta legyőzni, de 1321-es természetes halála után területei visszaszálltak a királyra – anélkül, hogy csatát kellett volna nyerni.',
+    },
+    {
+      c: "blue",
+      e: "🤝",
+      t: "Visegrádi királytalálkozó (1335)",
+      d: "I. Károly, Luxemburgi János (cseh) és III. Kázmér (lengyel) király találkozója Visegrádon. Célja: Bécs árumegállítójogának megkerülése. Új kereskedelmi útvonalakat jelöltek ki, amelyek kihagyták Bécset, és közvetlen kapcsolatot teremtettek Közép-Európa között.",
+    },
+    {
+      c: "green",
+      e: "👶",
+      t: "Nagy Lajos",
+      d: "I. Károly fia és utódja (1342-től). Apja megszilárdította az ország gazdasági és katonai alapjait, így Nagy Lajos egy erős, stabil Magyarországot örökölt. Ezt használta fel katonai hadjáratokhoz és Magyarország középkori fénykorának megteremtéséhez.",
+    },
   ];
   return `<h2 style="font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--amber);margin-bottom:16px;">💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
-  <div class="concepts-grid">${concepts.map(c=>`
+  <div class="concepts-grid">${concepts
+    .map(
+      (c) => `
     <div class="concept-card ${c.c}" onclick="toggleConcept(this)">
       <div class="concept-emoji">${c.e}</div>
       <div class="concept-term">${c.t}</div>
       <div class="concept-def">${c.d}</div>
       <div class="concept-hint">👆 Kattints a magyarázathoz</div>
-    </div>`).join('')}</div>`;
+    </div>`,
+    )
+    .join("")}</div>`;
 }
 
 // ===== TOPIC 4 CONTENT =====
-function buildTopic4Content(){
+function buildTopic4Content() {
   return `
   <div class="info-card">
     <h2>I. Károly és a magyar állam újjászervezése</h2>
@@ -150,6 +268,10 @@ function buildTopic4Content(){
 
   <div class="info-card">
     <h3>🗡️ A lovagi kultúra és a Zách Felicián-merénylet</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:180px;">
+        <img src="images/Zách_Felícián.jpg" alt="Zách Felicián merénylete" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Zách Felicián merénylete (1330)</p>
+    </div>
     <p>Károly honosította meg Magyarországon a lovagi kultúrát és a címertant. Megalapította a Szent György-rendet, az első világi lovagrendet.</p>
     <p style="margin-top:10px;">Uralkodását azonban egy véres esemény is beárnyékolta: 1330-ban Zách Felicián, egy udvari nemes, ebéd közben karddal támadt a királyi családra Visegrádon. A király sértetlen maradt, de Erzsébet királyné négy ujját levágta a támadó. A megtorlás kegyetlen volt: Felicián családját harmadíziglen kiirtották.</p>
   </div>
@@ -179,35 +301,111 @@ function buildTopic4Content(){
 `;
 }
 
-const topic4={
-  title:'4. Tétel – Károly Róbert',
-  subtitle:'Az Anjouk és az ország újraegyesítése',
-  emoji:'💰',
+const topic4 = {
+  title: "4. Tétel – Károly Róbert",
+  subtitle: "Az Anjouk és az ország újraegyesítése",
+  emoji: "💰",
   content: buildTopic4Content,
   concepts: buildTopic4Concepts,
   quiz: buildTopic4Quiz,
   videos: buildTopic4Videos,
 };
 // ===== TOPIC 2 CONCEPTS =====
-const questions4=[
-  {q:'Mit nevezünk tartományúrnak?',a:['A király által kinevezett vármegyei vezető', 'Hatalmas birtokokkal rendelkező főúr, aki saját területét a királytól függetlenül irányította', 'Külföldi hűbérúr, aki magyar területeket szerzett meg'],correct:1},
-  {q:'Melyik dinasztia tagja volt I. Károly (Károly Róbert)?',a:['A Piast-dinasztia', 'Az Anjou-dinasztia', 'A Habsburg-dinasztia'],correct:1},
-  {q:'Hogyan szerezte meg Károly Róbert a hatalmat Magyarországon?',a:['Egyből elfoglalta a trónt', 'Hosszú küzdelem után, 1310 körülre szilárdult meg a hatalma', 'A pápa ajándékozta neki a koronát'],correct:1},
-  {q:'Mit veretett Károly Róbert pénzreformja során?',a:['Ezüst dénárt', 'Aranyforintot', 'Réz garast'],correct:1},
-  {q:'Mi volt a visegrádi királytalálkozó (1335) célja?',a:['Háborút indítani Velence ellen', 'Kereskedelmi szövetséget kötni Bécs árumegállítójogával szemben (Bécs megkerülése), valamint a cseh és a lengyel király kibékítése magyar közreműködéssel', 'Megünnepelni Károly Róbert trónra lépését'],correct:1},
-  {q:'Hol volt Károly Róbert székhelye?',a:['Esztergomban', 'Visegrádon', 'Budán'],correct:1},
+const questions4 = [
+  {
+    q: "Mit nevezünk tartományúrnak?",
+    a: [
+      "A király által kinevezett vármegyei vezető",
+      "Hatalmas birtokokkal rendelkező főúr, aki saját területét a királytól függetlenül irányította",
+      "Külföldi hűbérúr, aki magyar területeket szerzett meg",
+    ],
+    correct: 1,
+  },
+  {
+    q: "Melyik dinasztia tagja volt I. Károly (Károly Róbert)?",
+    a: ["A Piast-dinasztia", "Az Anjou-dinasztia", "A Habsburg-dinasztia"],
+    correct: 1,
+  },
+  {
+    q: "Hogyan szerezte meg Károly Róbert a hatalmat Magyarországon?",
+    a: [
+      "Egyből elfoglalta a trónt",
+      "Hosszú küzdelem után, 1310 körülre szilárdult meg a hatalma",
+      "A pápa ajándékozta neki a koronát",
+    ],
+    correct: 1,
+  },
+  {
+    q: "Mit veretett Károly Róbert pénzreformja során?",
+    a: ["Ezüst dénárt", "Aranyforintot", "Réz garast"],
+    correct: 1,
+  },
+  {
+    q: "Mi volt a visegrádi királytalálkozó (1335) célja?",
+    a: [
+      "Háborút indítani Velence ellen",
+      "Kereskedelmi szövetséget kötni Bécs árumegállítójogával szemben (Bécs megkerülése), valamint a cseh és a lengyel király kibékítése magyar közreműködéssel",
+      "Megünnepelni Károly Róbert trónra lépését",
+    ],
+    correct: 1,
+  },
+  {
+    q: "Hol volt Károly Róbert székhelye?",
+    a: ["Esztergomban", "Visegrádon", "Budán"],
+    correct: 1,
+  },
 
-  {q:'Mi volt a rozgonyi csata (1312) jelentősége?',a:['A tatárokat verték vissza', 'Döntő győzelmet aratott az Aba-nembeliek felett, ezzel megtört a tartományurak ellenállásának gerince.', 'Magyarország visszaszerezte Dalmáciát'],correct:1},
-  {q:'Ki volt Csák Máté?',a:['Külföldi hadvezér, aki megtámadta Magyarországot', 'Az egyik legerősebb tartományúr, aki az ország észak-nyugati részét birtokolta', 'Károly Róbert legfőbb szövetségese'],correct:1},
-  {q:'Mit jelent a harmincadvám?',a:['Az áru értékének 1/30-a, amelyet a kereskedőknek kellett fizetni a határon', 'A jobbágyok által fizetett évi adó', 'A nemesek által fizetett hadiadó'],correct:0},
-  {q:'Ki volt Károly Róbert fia, aki 1342-ben követte a trónon?',a:['Zsigmond', 'I. (Nagy) Lajos', 'V. István'],correct:1},
-  {q:'Mit jelent a honorbirtok?',a:['Örökölhető nemesi birtok, amelyet a király adományozott', 'Tisztséghez kötött birtok, amelyet a király visszavehetett, ha elvette a tisztséget', 'Egyházi tulajdonban lévő, adómentesen kezelt birtok'],correct:1},
-  {q:'I. Károllyal szemben, melyik tartományúr állt ellen legtovább?',a:['Csák Máté', 'Kőszegi Henrik', 'Borsa Kopasz'],correct:0}
+  {
+    q: "Mi volt a rozgonyi csata (1312) jelentősége?",
+    a: [
+      "A tatárokat verték vissza",
+      "Döntő győzelmet aratott az Aba-nembeliek felett, ezzel megtört a tartományurak ellenállásának gerince.",
+      "Magyarország visszaszerezte Dalmáciát",
+    ],
+    correct: 1,
+  },
+  {
+    q: "Ki volt Csák Máté?",
+    a: [
+      "Külföldi hadvezér, aki megtámadta Magyarországot",
+      "Az egyik legerősebb tartományúr, aki az ország észak-nyugati részét birtokolta",
+      "Károly Róbert legfőbb szövetségese",
+    ],
+    correct: 1,
+  },
+  {
+    q: "Mit jelent a harmincadvám?",
+    a: [
+      "Az áru értékének 1/30-a, amelyet a kereskedőknek kellett fizetni a határon",
+      "A jobbágyok által fizetett évi adó",
+      "A nemesek által fizetett hadiadó",
+    ],
+    correct: 0,
+  },
+  {
+    q: "Ki volt Károly Róbert fia, aki 1342-ben követte a trónon?",
+    a: ["Zsigmond", "I. (Nagy) Lajos", "V. István"],
+    correct: 1,
+  },
+  {
+    q: "Mit jelent a honorbirtok?",
+    a: [
+      "Örökölhető nemesi birtok, amelyet a király adományozott",
+      "Tisztséghez kötött birtok, amelyet a király visszavehetett, ha elvette a tisztséget",
+      "Egyházi tulajdonban lévő, adómentesen kezelt birtok",
+    ],
+    correct: 1,
+  },
+  {
+    q: "I. Károllyal szemben, melyik tartományúr állt ellen legtovább?",
+    a: ["Csák Máté", "Kőszegi Henrik", "Borsa Kopasz"],
+    correct: 0,
+  },
 ];
 
-let quizState4={q:[],idx:0,correct:0,answered:false};
+let quizState4 = { q: [], idx: 0, correct: 0, answered: false };
 
-function buildTopic4Quiz(){
+function buildTopic4Quiz() {
   return `<div class="quiz-container">
     <div class="quiz-header">
       <h3>🎯 Mesterlövész Tudáspróba – 4. Akta</h3>
@@ -226,80 +424,120 @@ function buildTopic4Quiz(){
   </div>`;
 }
 
-function initQuiz4(){
-  quizState4.q=[...questions4].sort(()=>Math.random()-.5);
-  quizState4.idx=0;quizState4.correct=0;quizState4.answered=false;
-  document.getElementById('quiz4-body').style.display='block';
-  document.getElementById('quiz4-result').style.display='none';
+function initQuiz4() {
+  quizState4.q = [...questions4].sort(() => Math.random() - 0.5);
+  quizState4.idx = 0;
+  quizState4.correct = 0;
+  quizState4.answered = false;
+  document.getElementById("quiz4-body").style.display = "block";
+  document.getElementById("quiz4-result").style.display = "none";
   renderQuestion4();
 }
 
-function renderQuestion4(){
-  const q=quizState4.q[quizState4.idx];
-  document.getElementById('q4-counter').innerText=`${quizState4.idx+1} / ${quizState4.q.length}`;
-  document.getElementById('q4-text').innerText=q.q;
-  const letters=['A','B','C'];
-  const shuffled=[0,1,2].sort(()=>Math.random()-.5);
-  document.getElementById('q4-answers').innerHTML=shuffled.map((origIdx,i)=>`
-    <button class="answer-btn" data-correct="${origIdx===q.correct}" onclick="answerQ4(this)">
+function renderQuestion4() {
+  const q = quizState4.q[quizState4.idx];
+  document.getElementById("q4-counter").innerText =
+    `${quizState4.idx + 1} / ${quizState4.q.length}`;
+  document.getElementById("q4-text").innerText = q.q;
+  const letters = ["A", "B", "C"];
+  const shuffled = [0, 1, 2].sort(() => Math.random() - 0.5);
+  document.getElementById("q4-answers").innerHTML = shuffled
+    .map(
+      (origIdx, i) => `
+    <button class="answer-btn" data-correct="${origIdx === q.correct}" onclick="answerQ4(this)">
       <span class="answer-letter">${letters[i]}</span>${q.a[origIdx]}
-    </button>`).join('');
-  const dots=document.getElementById('progress4-dots');
-  dots.innerHTML=Array.from({length:quizState4.q.length},(_,i)=>`<div class="dot ${i<quizState4.idx?(quizState4.q[i]._result==='c'?'correct':'wrong'):''}${i===quizState4.idx?'current':''}"></div>`).join('');
-  document.getElementById('feedback4').style.display='none';
-  document.getElementById('next4-btn').style.display='none';
-  quizState4.answered=false;
+    </button>`,
+    )
+    .join("");
+  const dots = document.getElementById("progress4-dots");
+  dots.innerHTML = Array.from(
+    { length: quizState4.q.length },
+    (_, i) =>
+      `<div class="dot ${i < quizState4.idx ? (quizState4.q[i]._result === "c" ? "correct" : "wrong") : ""}${i === quizState4.idx ? "current" : ""}"></div>`,
+  ).join("");
+  document.getElementById("feedback4").style.display = "none";
+  document.getElementById("next4-btn").style.display = "none";
+  quizState4.answered = false;
 }
 
-function answerQ4(btn){
-  if(quizState4.answered)return;
-  quizState4.answered=true;
-  const isCorrect=btn.dataset.correct==='true';
-  document.querySelectorAll('#q4-answers .answer-btn').forEach(b=>{
-    b.disabled=true;
-    if(b.dataset.correct==='true')b.classList.add('correct');
+function answerQ4(btn) {
+  if (quizState4.answered) return;
+  quizState4.answered = true;
+  const isCorrect = btn.dataset.correct === "true";
+  document.querySelectorAll("#q4-answers .answer-btn").forEach((b) => {
+    b.disabled = true;
+    if (b.dataset.correct === "true") b.classList.add("correct");
   });
-  if(isCorrect){
-    btn.classList.add('correct');
+  if (isCorrect) {
+    btn.classList.add("correct");
     quizState4.correct++;
-    quizState4.q[quizState4.idx]._result='c';
-    const fb=document.getElementById('feedback4');
-    fb.className='feedback-box correct';fb.innerText='🎉 Helyes! Zseniális válasz!';fb.style.display='block';
+    quizState4.q[quizState4.idx]._result = "c";
+    const fb = document.getElementById("feedback4");
+    fb.className = "feedback-box correct";
+    fb.innerText = "🎉 Helyes! Zseniális válasz!";
+    fb.style.display = "block";
     startConfetti(30);
-    if(window.mascotCorrect)mascotCorrect();
+    if (window.mascotCorrect) mascotCorrect();
   } else {
-    btn.classList.add('wrong');
-    quizState4.q[quizState4.idx]._result='w';
-    const fb=document.getElementById('feedback4');
-    fb.className='feedback-box wrong';fb.innerText='❌ Sajnos nem ez volt a helyes válasz. Nézd meg a zöld gombot!';fb.style.display='block';
-    if(window.mascotWrong)mascotWrong();
+    btn.classList.add("wrong");
+    quizState4.q[quizState4.idx]._result = "w";
+    const fb = document.getElementById("feedback4");
+    fb.className = "feedback-box wrong";
+    fb.innerText =
+      "❌ Sajnos nem ez volt a helyes válasz. Nézd meg a zöld gombot!";
+    fb.style.display = "block";
+    if (window.mascotWrong) mascotWrong();
   }
-  document.getElementById('next4-btn').style.display='block';
-  document.getElementById('next4-btn').innerText=quizState4.idx===quizState4.q.length-1?'Eredmény megtekintése 🏆':'Következő kérdés →';
+  document.getElementById("next4-btn").style.display = "block";
+  document.getElementById("next4-btn").innerText =
+    quizState4.idx === quizState4.q.length - 1
+      ? "Eredmény megtekintése 🏆"
+      : "Következő kérdés →";
 }
 
-function nextQuestion4(){
+function nextQuestion4() {
   quizState4.idx++;
-  if(quizState4.idx<quizState4.q.length){renderQuestion4();}
-  else{showResult4();}
+  if (quizState4.idx < quizState4.q.length) {
+    renderQuestion4();
+  } else {
+    showResult4();
+  }
 }
 
-function showResult4(){
-  document.getElementById('quiz4-body').style.display='none';
-  const res=document.getElementById('quiz4-result');
-  res.style.display='block';
-  const score=quizState4.correct;
-  const emoji=score>=10?'🏆':score>=8?'🥇':score>=6?'🥈':score>=4?'🥉':'💪';
-  const msg=score>=10?'Fenomenális! Igazi mesterlövész vagy!':score>=8?'Kiváló munka, felderítő!':score>=6?'Szép teljesítmény! Még egy kis gyakorlás...':score>=4?'Jó próbálkozás! Olvass még egy kicsit!':'Gyakorolj sokat, ügynök!';
-  const earnedXP=score*15;
+function showResult4() {
+  document.getElementById("quiz4-body").style.display = "none";
+  const res = document.getElementById("quiz4-result");
+  res.style.display = "block";
+  const score = quizState4.correct;
+  const emoji =
+    score >= 10
+      ? "🏆"
+      : score >= 8
+        ? "🥇"
+        : score >= 6
+          ? "🥈"
+          : score >= 4
+            ? "🥉"
+            : "💪";
+  const msg =
+    score >= 10
+      ? "Fenomenális! Igazi mesterlövész vagy!"
+      : score >= 8
+        ? "Kiváló munka, felderítő!"
+        : score >= 6
+          ? "Szép teljesítmény! Még egy kis gyakorlás..."
+          : score >= 4
+            ? "Jó próbálkozás! Olvass még egy kicsit!"
+            : "Gyakorolj sokat, ügynök!";
+  const earnedXP = score * 15;
   addXP(earnedXP);
-  let unlockHtml='';
-  if(score>=10){
-    unlockHtml=`<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>Rozgony</strong></div>`;
+  let unlockHtml = "";
+  if (score >= 10) {
+    unlockHtml = `<div class="unlock-notice">🔓 Következő dosszié feloldható! A kód: <strong>Rozgony</strong></div>`;
   } else {
-    unlockHtml=`<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
+    unlockHtml = `<div class="unlock-notice" style="background:var(--rose-l);border-color:var(--rose);color:var(--rose-d);">⚠️ Legalább 10/12 pont kell a következő dosszié kódjához! Próbáld újra!</div>`;
   }
-  res.innerHTML=`<div class="result-emoji">${emoji}</div>
+  res.innerHTML = `<div class="result-emoji">${emoji}</div>
     <div class="result-score">${score} / 12</div>
     <div class="result-msg">${msg}</div>
     <div class="result-xp">⭐ +${earnedXP} XP megszerezve!</div>
