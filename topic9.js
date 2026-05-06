@@ -2,89 +2,145 @@
 function buildTopic9Content(){
   return `
   <div class="info-card">
-    <h2>Legendák kora – Magyar mondák és hősök</h2>
+    <h2>🦁 Legendák kora – Magyar mondák és hősök</h2>
+    <p style="font-size:.83rem;color:var(--muted);margin-bottom:14px;">Tíz hős és monda vár rád a honfoglalástól a középkorig. Kattints egy kártyára, és egyenesen a történetéhez ugrik az oldal!</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:10px;">
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-emese');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">🦅</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Emese álma</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">~895 előtt</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">A turulmadár megjövendölte a honfoglalást</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-feherlo');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">🐎</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Fehér ló mondája</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">895 körül</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">Árpád csellel szerezte meg a Kárpát-medencét</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-lehel');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">🎺</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Lehel kürtje</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">955</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">Fogságban kürtjével verte agyon a császárt</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-buvar');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">🏊</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Búvár Kund</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">1051</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">Fúróval süllyesztette el Henrik hajóhadát</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-vertes');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">🏔️</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Vértes mondája</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">1051</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">Az eldobált páncélok adtak nevet a hegységnek</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-kemeny');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">⚔️</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Kemény Simon</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">1442</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">Hunyadi páncélját felvéve áldozta fel életét</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-laszlo');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">👑</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Szent László</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">1077–1095</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">Lovagkirály: törvényhozó, hadvezér és csodatévő</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-imre');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">✝️</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Szent Imre</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">†1031</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">István egyetlen fia, a fehér liliom hercege</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-margit');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">🌸</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Szent Margit</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">1242–1270</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">IV. Béla lánya, aki a kolostor mellett döntött</div>
+      </div>
+      <div style="background:#16162a;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;padding:12px 8px 10px;text-align:center;cursor:pointer;" onclick="var el=document.getElementById('legend-gellert');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'});" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(212,175,55,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <span style="font-size:1.7rem;display:block;margin-bottom:6px;">⛰️</span>
+        <div style="font-size:.75rem;font-weight:800;color:#d4af37;line-height:1.25;margin-bottom:4px;">Gellért püspök</div>
+        <div style="font-size:.62rem;color:#8898bb;margin-bottom:5px;">†1046</div>
+        <div style="font-size:.63rem;color:#c4cce0;line-height:1.35;">A Gellért-hegy névadója, vértanú szerzetes</div>
+      </div>
+    </div>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-emese">
     <h3>🦅 Emese álma – A magyarság eredete</h3>
     <p>A magyar nép eredetének egyik legszebb mondája Emese álmáról szól. Emese, a nagy vezér Ügyek felesége egy különleges álmot látott: egy <strong>turulmadár</strong> – a magyarok ősi, mondabeli sólyma – szállt le rá, betakarta hatalmas szárnyaival, majd öléből egy kristálytiszta forrás fakadt, amely hatalmas folyóvá duzzadt és <strong>nyugat felé</strong> folyt.</p>
     <p style="margin-top:10px;">A táltosok megfejtették az álmot: Emese fia hatalmas vezér lesz, és leszármazottai egy <strong>új, dicsőséges hazában</strong> királyokként fognak uralkodni. A gyermeket az álomról <strong>Álmosnak</strong> nevezték – ő lett a magyar törzsek vezére, fia Árpád pedig bevezette a magyarságot a Kárpát-medencébe.</p>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-feherlo">
     <h3>🐎 A fehér ló mondája – Hogyan lett a Kárpát-medence a miénk?</h3>
     <p>Amikor Árpád és a magyarok megérkeztek a Kárpát-medencébe, <strong>okos csellel</strong> szerezték meg az új hazát. Árpád követet küldött Szvatopluk fejedelemhez: ajándékba adott egy csodálatos, hófehér lovat, csillogó aranynyereggel és aranyfékkel. Cserébe csupán egy marék <strong>földet, vizet és füvet</strong> kért.</p>
     <p style="margin-top:10px;">Szvatopluk jót nevetett – azt hitte, a magyarok együgyűek. Nem tudta, hogy a keleti nomád népek törvénye szerint, aki önként földet, vizet és füvet ad valakinek, az <strong>jelképesen az egész országát</strong> átadja! Amikor a magyarok hamarosan megindultak befelé, Árpádék nyugodtan megüzenték: a földet a lóért, a füvet a fékért, a vizet a nyeregért már megvásárolták. Szvatopluk a Duna habjaiba fulladt, a magyarok pedig örökre birtokba vették a Kárpát-medencét.</p>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-lehel">
     <h3>🎺 Lehel kürtje – A bosszúálló kapitány</h3>
-    <div style="float:right;margin:0 0 12px 16px;max-width:160px;">
-      <img src="images/lehel kürtje.jpg" alt="Lehel kürtje" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
-      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Lehel kürtje</p>
-    </div>
     <p>Konrád császár idején a magyarok Augsburg városát akarták elfoglalni, de <strong>Ulrik püspök</strong> és a sváb urak vitézül ellenálltak. A német sereg rajtaütött a vigyázatlan magyarokon, és a <strong>Lech folyónál</strong> megszorítva fogságba ejtette <strong>Lehel</strong> és <strong>Bulcsú</strong> kapitányokat.</p>
     <p style="margin-top:10px;">A császár kérdezte, miért oly kegyetlenek a keresztényekkel. Lehel így felelt: <em>„Mi vagyunk a magasságos Istennek bosszúállása, Ő küldött rátok ostorul."</em></p>
     <p style="margin-top:10px;">Amikor választhatott halálnemet, Lehel előbb a kürtjét kérte. Odavitték – és ő a kürttel <strong>homlokon vágta a császárt</strong>, aki egyetlen csapástól meghalt. Lehel azt mondta: <em>„Előttem jársz, és szolgám leszel a másvilágon!"</em> – mert a magyarok hite szerint, akit megölsz, az neked szolgál a túlvilágon.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1.5px solid rgba(212,175,55,.35);border-radius:12px;overflow:hidden;margin-top:14px;">
+      <div style="padding:13px 14px;background:rgba(212,175,55,.07);border-right:1px solid rgba(212,175,55,.18);">
+        <div style="font-size:.72rem;font-weight:800;letter-spacing:.05em;color:#d4af37;margin-bottom:8px;">📖 A monda szerint</div>
+        <p style="font-size:.8rem;line-height:1.5;color:#c4cce0;">Lehel kürtjével egyetlen csapással agyonverte a császárt, és bosszúállóként halt hősi halált. Akit megölsz, az a túlvilágon a szolgád lesz.</p>
+      </div>
+      <div style="padding:13px 14px;background:rgba(34,211,160,.07);">
+        <div style="font-size:.72rem;font-weight:800;letter-spacing:.05em;color:#22d3a0;margin-bottom:8px;">🔍 A történelem szerint</div>
+        <p style="font-size:.8rem;line-height:1.5;color:#c4cce0;">Lehelt és Bulcsút a lech-mezei vereség (955) után <strong>felakasztották</strong> — a kürtös merénylet a mondában él. A nomád hitvilágban viszont valóban létezett az a képzet, hogy akit megölsz, az a túlvilágon a szolgád lesz.</p>
+      </div>
+    </div>
+    <div style="background:rgba(212,175,55,.08);border-left:3px solid #d4af37;border-radius:0 10px 10px 0;padding:10px 14px;margin-top:12px;font-size:.82rem;color:#c4cce0;line-height:1.55;">
+      🔍 <strong>Érdekesség:</strong> Lehel kürtje <strong>ma is megtekinthető</strong> a <strong>Jász Múzeumban, Jászberényben.</strong> A szarvasagancsból faragott, képekkel gazdagon díszített tárgy azonban valószínűleg <strong>Lehel halála után, a 12. század során készülhetett</strong> – erre utalnak az ábrázolások stílusa és az anyagvizsgálatok. Erről ugyanakkor <em>eltérő vélemények vannak a régészeti és a történészi kutatók között</em>, a kérdés máig nem tekinthető véglegesen lezártnak.
+    </div>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-buvar">
     <h3>🏊 Búvár Kund – Az egyetlen fúróval győző vitéz</h3>
     <p>Az 1051-es esztendőben <strong>III. Henrik</strong> német-római császár hatalmas sereggel támadta Magyarországot. A pozsonyi vár ostromát egy <strong>hatalmas dunai hajóhad</strong> segítette, amely élelmet és fegyvert szállított a katonáknak.</p>
     <p style="margin-top:10px;"><strong>Zotmund</strong> (Búvár Kund), a kiváló úszó vakmerő tervet eszelt ki: az éj leple alatt a Dunába ereszkedve, észrevétlenül úszott a hajók alá, majd <strong>kézifúróval sorra lyukasztotta ki</strong> a hajók alját. Reggelre a büszke flotta süllyedni kezdett, az értékes rakomány a habokban merült el. Az élelem nélkül maradt császári sereg kénytelen volt feladni az ostromot. Búvár Kund egyetlen fúróval győzte le a hatalmas túlerőt.</p>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-vertes">
     <h3>🏔️ A Vértes hegység neve – Hogyan kapta nevét a hegység?</h3>
     <p>1051-ben <strong>I. András</strong> magyar király ravasz hadicsellel védte meg az országát. Kiürítette az egész vidéket a hódítók előtt – sem élelmet, sem takarmányt nem hagyott az ellenségnek. Sőt, elfogva a császár futárát, <strong>hamis parancsot</strong> küldött a dunai hajóhadnak: vonuljon vissza Németországba.</p>
     <p style="margin-top:10px;">Henrik éhező serege folyamatosan szenvedte a magyar rajtaütéseket, ezért kénytelen volt békéért könyörögni. András a szokásos magyar bőkezűséggel élelmet küldött a megadó ellenségnek. A németek, hogy megmenekültek a halál torkából, <strong>futva mentek haza – elhajigálva pajzsaikat, vértjeiket</strong>. A vértek szinte beborították a hegyoldalakat. Ezért a hegységet mind a mai napig <strong>Vértesnek</strong> hívják.</p>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-kemeny">
     <h3>⚔️ Kemény Simon – Az önfeláldozó vitéz</h3>
     <p>Az 1442-es szebeni csata előtt a török vezér, <strong>Mezid bég</strong> kiadta a parancsot: csak Hunyadit támadják, öljék meg a magyar vezért! A hír eljutott a magyar táborba, és ekkor lépett elő <strong>Kemény Simon</strong>, Hunyadi leghűségesebb vitéze.</p>
     <p style="margin-top:10px;">A bátor lovag azt javasolta: <strong>cseréljenek ruhát, fegyverzetet és lovat</strong>. Pontosan tudta, hogy a csillogó vérttel magára vonja a biztos halált – de egy percig sem habozott. A csatában az egész török sereg ráveti magát a „Hunyadira". Kemény Simon oroszlánként küzdött, rengeteg törököt lekaszabolt, de a hatalmas túlerő végül legyűrte – <strong>hősi halált halt</strong>.</p>
     <p style="margin-top:10px;">A törökök ujjongtak, azt hitték, végeztek a magyar vezérrel. Eközben az igazi Hunyadi egy egyszerű katona páncéljában, a tartalék sereggel oldalról rontott rájuk. A meglepett ellenség összeomlott, a magyarok <strong>megsemmisítő győzelmet</strong> arattak. Kemény Simon önfeláldozása nélkül Hunyadi talán ott veszett volna.</p>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-laszlo">
     <h3>👑 Szent László – A lovagkirály mondája</h3>
-    <div style="float:right;margin:0 0 12px 16px;max-width:150px;">
-      <img src="images/Szent László.jpg" alt="Szent László" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
-      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">I. (Szent) László király</p>
-    </div>
     <p><strong>I. (Szent) László</strong> (1077–1095) a magyar állam megszilárdítója, kiváló hadvezér és mélyen vallásos király volt. Kemény törvényeivel helyreállította a közbiztonságot, 1091-ben Horvátországot a Magyar Királysághoz csatolta, és több püspökséget alapított (Nagyvárad, Zágráb). 1083-ban elérte az első magyar szentek – István, Imre és Gellért – felavatását. Maga is 1192-ben lett szent.</p>
     <p style="margin-top:10px;">A legenda szerint jóval halála után, amikor tatárok pusztítottak Erdélyben, a kimerült székely harcosok az égre emelt tekintettel fohászkodtak a nagy királyhoz. Ekkor a porfelhőből egy <strong>hatalmas, koronás lovag</strong> jelent meg, és megállíthatatlanul verte szét az ellenséget. A foglyul ejtett tatárok remegve mesélték: egy <strong>óriási, sebezhetetlen vitéz</strong> vezette a magyarokat, fölötte Szűz Mária lebegett. Aznap a nagyváradi templomban László szobra <strong>verítékezett</strong>, fegyvere csorba volt és vértől csöpögött.</p>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-imre">
     <h3>✝️ Szent Imre – A fehér liliom hercege</h3>
-    <div style="float:right;margin:0 0 12px 16px;max-width:150px;">
-      <img src="images/Szent Imre.jpg" alt="Szent Imre" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
-      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Szent Imre herceg</p>
-    </div>
     <p><strong>Szent Imre</strong> István király egyetlen trónörököse volt. Tanítója a kor egyik legműveltebb embere, <strong>Gellért püspök</strong> volt. Apja személyesen írt neki útmutatót: az <strong>Intelmeket</strong>. Imre erős katonává és művelt herceggé nőtt, ám 1031-ben egy vadkanvadászaton tragikusan elhunyt. 1083-ban szentté avatták.</p>
     <p style="margin-top:10px;">A leghíresebb monda szerint Imre éjjel a veszprémi templomban imádkozva megkérdezte Istent, mivel szerezhetne neki legnagyobb örömet. Ekkor ragyogó égi fény töltötte el a templomot, és egy hang azt súgta: a legjobb ajándék a <strong>teljes testi és lelki tisztaság</strong>. Imre titkos fogadalmat tett. Bár megnősült, feleségével testvérként éltek. Ezért ábrázolják mindig egy szál <strong>fehér liliommal</strong> – az ártatlanság jelképével.</p>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-margit">
     <h3>🌸 Szent Margit – A királylány, aki lemondott a trónról</h3>
-    <div style="float:right;margin:0 0 12px 16px;max-width:150px;">
-      <img src="images/Arpadhazi_szent_margit.jpg" alt="Árpád-házi Szent Margit" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
-      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Árpád-házi Szent Margit</p>
-    </div>
     <p>A tatárjárás idején IV. Béla és felesége fogadalmat tett: ha Isten megmenti Magyarországot, a születendő gyermeküket az egyháznak ajánlják. A tatárok kivonultak – és a kis Margitot apácának adták. Apja pedig a <strong>Nyulak szigetén</strong> kolostort építtetett neki (ma: Margit-sziget).</p>
     <p style="margin-top:10px;">Bár igazi királylány volt, a legnehezebb munkákat végezte: rongyokban járt, mosott, takarított, ápolta a betegeket. Európa leghatalmasabb királyai – köztük a cseh király – feleségül akarták venni, apja is megengedte volna a fogadalom felbontását. Margit <strong>minden kérőt visszautasított</strong>, hű maradt fogadalmához. 1943-ban szentté avatták.</p>
   </div>
 
-  <div class="info-card">
+  <div class="info-card" id="legend-gellert">
     <h3>⛰️ Gellért püspök vértanúsága</h3>
-    <div style="float:right;margin:0 0 12px 16px;max-width:150px;">
-      <img src="images/Szent Gellért.jpg" alt="Szent Gellért püspök" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
-      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Szent Gellért püspök</p>
-    </div>
     <p><strong>Gellért</strong> velencei szerzetes volt, akit István király Imre herceg tanítójának kért fel. István halála után a lázadó pogányok rátámadtak a keresztény papokra. 1046-ban Gellért püspök a Duna partján tartott kíséretével, amikor a feldühödött tömeg elfogta.</p>
-    <p style="margin-top:10px;">A lázadók a <strong>Kelen-hegy</strong> sziklás csúcsára hurcolták az idős püspököt, belülről éles szögekkel kivert hordóba, majd a meredek tetőről <strong>letaszították a mélybe</strong>. A hordó hatalmas robajjal zuhant egészen a Duna vizéig. Másik megközelítés szerint kocsihoz kötötték és lelökték a sziklafalon bele a Dunába. Ezt a magas, meredek hegyet a vértanú püspök emlékére azóta is <strong>Gellért-hegynek</strong> nevezzük.</p>
+    <p style="margin-top:10px;">A lázadók a <strong>Kelen-hegy</strong> sziklás csúcsára hurcolták az idős püspököt, belső éles szögekkel kivert hordóba zárták, majd a meredek tetőről <strong>letaszították a mélybe</strong>. A hordó hatalmas robajjal zuhant egészen a Duna vizéig. Ezt a magas, meredek hegyet a vértanú püspök emlékére azóta is <strong>Gellért-hegynek</strong> nevezzük.</p>
   </div>
 
   <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
@@ -93,7 +149,7 @@ function buildTopic9Content(){
       <li>🦅 <strong>Emese álma:</strong> Turulmadár → Álmos neve → Árpád és a honfoglalás</li>
       <li>🐎 <strong>Fehér ló mondája:</strong> Föld-víz-fű csere → Szvatopluk becsapva → Kárpát-medence megszerzése</li>
       <li>🎺 <strong>Lehel kürtje:</strong> Lech-mezei vereség → Lehel kürttel megöli a császárt → „Szolgám leszel a másvilágon"</li>
-      <li>🏊 <strong>Búvár Kund:</strong> 1052 – Pozsony ostroma → fúróval kilyukasztja a hajókat → Henrik visszavonul</li>
+      <li>🏊 <strong>Búvár Kund:</strong> 1051 – Pozsony ostroma → fúróval kilyukasztja a hajókat → Henrik visszavonul</li>
       <li>🏔️ <strong>Vértes hegység:</strong> 1051 – Henrik éheztetése → eldobált vértek → hegység neve</li>
       <li>⚔️ <strong>Kemény Simon:</strong> 1442 – páncélcsere Hunyadival → önfeláldozás → győzelem Szebennél</li>
       <li>👑 <strong>Szent László:</strong> 1077–1095 – kemény törvények, Horvátország, szentek avatása, 1192: ő is szent</li>

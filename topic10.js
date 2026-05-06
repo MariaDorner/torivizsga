@@ -54,13 +54,66 @@ function buildTopic10Content(){
     <ul style="margin-top:8px;padding-left:20px;">
       <li><strong>Bartolomeu Dias (1487):</strong> Ő volt az első európai, aki elérte Afrika legdélebbi pontját, a Jóreménység fokát. (Afrika megkerülhető)</li>
       <li><strong>Vasco da Gama (1498):</strong> Afrika megkerülésével, a tengeren keresztül jutott el Indiába. Ezzel a portugálok közvetlen kapcsolatba kerültek a fűszerpiaccal.</li>
-      <li><strong>Kolumbusz Kristóf (1492):</strong> A spanyol királynő támogatásával nyugat felé indult. Október 12-én érte el a Bahama-szigeteket (Amerika), de haláláig azt hitte, Indiában jár. Ezért nevezte az őslakosokat indiánoknak. A felfedezéshez használt hajói: Nina, Pinta, Santa Maria. Kolumbusznak ezen kívül még további három útja volt az új kontinensre. (A mai Kolumbia név adója)</li>
+      <li><strong>Kolumbusz Kristóf (1492):</strong> A spanyol királynő támogatásával nyugat felé indult. Október 12-én érte el a Bahama-szigeteket (Amerika), de haláláig azt hitte, Indiában jár. Ezért nevezte az őslakosokat indiánoknak. A felfedezéshez használt hajói: Nina, Pinta, Santa Maria. Kolumbusznak ezen kívül még további két útja volt az új kontinensre. (A mai Kolumbia név adója)</li>
       <li><strong>Amerigo Vespucci:</strong> Ő volt az, aki felismerte, hogy amit Kolumbusz talált, az nem India, hanem egy új kontinens. Róla nevezték el a földrészt Amerikának.</li>
       <li><strong>Magellán (1519–1522):</strong> Először kísérelte meg a Föld körülhajózását. Bár ő maga a Fülöp-szigeteken életét vesztette a bennszülöttekkel vívott harcban, egyik hajója (a Victoria) visszatért Spanyolországba, bizonyítva, hogy a Föld körbehajózható.</li>
     </ul>
     <div style="text-align:center;margin:16px 0 4px;">
       <img src="images/topic10_img5.png" alt="A felfedezők útjainak térképe" style="max-width:100%;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.18);border:3px solid #0D9488;">
       <p style="font-size:.82rem;color:var(--muted);margin-top:6px;font-style:italic;">A nagy felfedezők útvonalai: Kolumbusz, Vasco da Gama, Dias, Magellán</p>
+    </div>
+    <div style="overflow-x:auto;margin:20px 0 4px;">
+      <p style="font-size:.8rem;font-weight:700;color:var(--muted);text-align:center;letter-spacing:.06em;margin-bottom:10px;">FELFEDEZŐK IDŐVONALA (1487–1522)</p>
+      <div style="min-width:560px;position:relative;padding:0 8px 4px;">
+        <div style="position:absolute;top:30px;left:9%;right:9%;height:3px;background:linear-gradient(90deg,#854F0B,#D4460A,#3B82F6,#0D9488,#7C3AED);border-radius:2px;"></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <div style="text-align:center;width:18%;position:relative;z-index:1;">
+            <div style="font-size:.8rem;font-weight:700;color:#D4AF37;margin-bottom:5px;">1487</div>
+            <div style="width:16px;height:16px;background:#854F0B;border:3px solid #D4AF37;border-radius:50%;margin:0 auto 8px;"></div>
+            <div style="background:rgba(133,79,11,0.2);border:1.5px solid #854F0B;border-radius:8px;padding:7px 4px;">
+              <div style="font-size:1.1rem;">⛵</div>
+              <div style="font-size:.72rem;font-weight:700;color:#F5C469;margin:3px 0 2px;">Dias</div>
+              <div style="font-size:.65rem;color:var(--muted);">Jóreménység foka</div>
+            </div>
+          </div>
+          <div style="text-align:center;width:18%;position:relative;z-index:1;">
+            <div style="font-size:.8rem;font-weight:700;color:#D4AF37;margin-bottom:5px;">1492</div>
+            <div style="width:16px;height:16px;background:#D4460A;border:3px solid #D4AF37;border-radius:50%;margin:0 auto 8px;"></div>
+            <div style="background:rgba(212,70,10,0.2);border:1.5px solid #D4460A;border-radius:8px;padding:7px 4px;">
+              <div style="font-size:1.1rem;">🧭</div>
+              <div style="font-size:.72rem;font-weight:700;color:#F5C469;margin:3px 0 2px;">Kolumbusz</div>
+              <div style="font-size:.65rem;color:var(--muted);">Amerika (Bahama)</div>
+            </div>
+          </div>
+          <div style="text-align:center;width:18%;position:relative;z-index:1;">
+            <div style="font-size:.8rem;font-weight:700;color:#D4AF37;margin-bottom:5px;">1498</div>
+            <div style="width:16px;height:16px;background:#3B82F6;border:3px solid #D4AF37;border-radius:50%;margin:0 auto 8px;"></div>
+            <div style="background:rgba(59,130,246,0.2);border:1.5px solid #3B82F6;border-radius:8px;padding:7px 4px;">
+              <div style="font-size:1.1rem;">🌊</div>
+              <div style="font-size:.72rem;font-weight:700;color:#F5C469;margin:3px 0 2px;">Vasco da Gama</div>
+              <div style="font-size:.65rem;color:var(--muted);">Tengeri út Indiába</div>
+            </div>
+          </div>
+          <div style="text-align:center;width:18%;position:relative;z-index:1;">
+            <div style="font-size:.8rem;font-weight:700;color:#D4AF37;margin-bottom:5px;">~1502</div>
+            <div style="width:16px;height:16px;background:#0D9488;border:3px solid #D4AF37;border-radius:50%;margin:0 auto 8px;"></div>
+            <div style="background:rgba(13,148,136,0.2);border:1.5px solid #0D9488;border-radius:8px;padding:7px 4px;">
+              <div style="font-size:1.1rem;">🗺️</div>
+              <div style="font-size:.72rem;font-weight:700;color:#F5C469;margin:3px 0 2px;">Vespucci</div>
+              <div style="font-size:.65rem;color:var(--muted);">"Új kontinens!"</div>
+            </div>
+          </div>
+          <div style="text-align:center;width:18%;position:relative;z-index:1;">
+            <div style="font-size:.8rem;font-weight:700;color:#D4AF37;margin-bottom:5px;">1519–22</div>
+            <div style="width:16px;height:16px;background:#7C3AED;border:3px solid #D4AF37;border-radius:50%;margin:0 auto 8px;"></div>
+            <div style="background:rgba(124,58,237,0.2);border:1.5px solid #7C3AED;border-radius:8px;padding:7px 4px;">
+              <div style="font-size:1.1rem;">🌍</div>
+              <div style="font-size:.72rem;font-weight:700;color:#F5C469;margin:3px 0 2px;">Magellán</div>
+              <div style="font-size:.65rem;color:var(--muted);">Első körülhajózás</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

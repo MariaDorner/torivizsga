@@ -57,6 +57,80 @@ function buildTopic11Content(){
   </div>
 
   <div class="info-card">
+    <h3>⚔️ Luther és Kálvin – a két nagy reformátor</h3>
+    <div style="border:1.5px solid rgba(212,175,55,.35);border-radius:12px;overflow:hidden;">
+      <div style="display:grid;grid-template-columns:1fr 40px 1fr;">
+        <div style="background:rgba(212,70,10,0.22);border-bottom:2px solid #D4460A;padding:12px 10px 10px;text-align:center;">
+          <span style="font-size:1.5rem;display:block;margin-bottom:4px;">📜</span>
+          <div style="font-size:.95rem;font-weight:800;color:#F87340;">Luther Márton</div>
+          <div style="font-size:.72rem;font-weight:600;color:#F87340;opacity:.8;margin-top:2px;">Evangélikus irányzat</div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:900;color:#d4af37;background:#16162a;border-left:1px solid rgba(212,175,55,.18);border-right:1px solid rgba(212,175,55,.18);border-bottom:2px solid rgba(212,175,55,.35);">VS</div>
+        <div style="background:rgba(59,130,246,0.2);border-bottom:2px solid #3B82F6;padding:12px 10px 10px;text-align:center;">
+          <span style="font-size:1.5rem;display:block;margin-bottom:4px;">✝️</span>
+          <div style="font-size:.95rem;font-weight:800;color:#60a8f8;">Kálvin János</div>
+          <div style="font-size:.72rem;font-weight:600;color:#60a8f8;opacity:.8;margin-top:2px;">Református irányzat</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1px 1fr;">
+        <div style="background:rgba(212,70,10,0.07);">
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(212,70,10,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(212,70,10,0.25);color:#F87340;border:1px solid #D4460A;">Helyszín</span>
+            <p style="color:#c4cce0;">Wittenberg, Szászország (Németország)</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(212,70,10,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(212,70,10,0.25);color:#F87340;border:1px solid #D4460A;">Mikor?</span>
+            <p style="color:#c4cce0;">1517 – 95 tétel kifüggesztése</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(212,70,10,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(212,70,10,0.25);color:#F87340;border:1px solid #D4460A;">Fő tanítás</span>
+            <p style="color:#c4cce0;">Az ember <strong>csak a hit által</strong> üdvözülhet – pénzzel és cselekedetekkel nem lehet a mennybe kerülni</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(212,70,10,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(212,70,10,0.25);color:#F87340;border:1px solid #D4460A;">Egyház stílusa</span>
+            <p style="color:#c4cce0;">Egyszerűbb, de megtartotta az oltárt és a szertartásokat; anyanyelvű istentisztelet</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(212,70,10,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(212,70,10,0.25);color:#F87340;border:1px solid #D4460A;">Különlegesség</span>
+            <p style="color:#c4cce0;">Kétszín alatti áldozás (bor is jár a hívőknek); lefordította a Bibliát németre</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(212,70,10,0.25);color:#F87340;border:1px solid #D4460A;">Magyarországon</span>
+            <p style="color:#c4cce0;">Városi <strong>német polgárság</strong> és a <strong>Felvidék</strong> lakói körében terjedt el</p>
+          </div>
+        </div>
+        <div style="background:rgba(212,175,55,.25);"></div>
+        <div style="background:rgba(59,130,246,0.07);">
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(59,130,246,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(59,130,246,0.2);color:#60a8f8;border:1px solid #3B82F6;">Helyszín</span>
+            <p style="color:#c4cce0;">Genf, Svájc</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(59,130,246,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(59,130,246,0.2);color:#60a8f8;border:1px solid #3B82F6;">Mikor?</span>
+            <p style="color:#c4cce0;">1536 – Institutio Christianae Religionis megjelenése</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(59,130,246,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(59,130,246,0.2);color:#60a8f8;border:1px solid #3B82F6;">Fő tanítás</span>
+            <p style="color:#c4cce0;"><strong>Predesztináció</strong> (eleve elrendelés) – Isten már születés előtt döntött az ember sorsáról</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(59,130,246,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(59,130,246,0.2);color:#60a8f8;border:1px solid #3B82F6;">Egyház stílusa</span>
+            <p style="color:#c4cce0;">Olcsó, dísztelen egyház – semmi szobor, kép vagy pompa; csak ima és Biblia-magyarázat</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;border-bottom:1px solid rgba(59,130,246,0.2);">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(59,130,246,0.2);color:#60a8f8;border:1px solid #3B82F6;">Különlegesség</span>
+            <p style="color:#c4cce0;">Puritán (szigorúan egyszerű) életmód; a siker és a szorgalom a kiválasztottság jele</p>
+          </div>
+          <div style="padding:9px 12px;font-size:.8rem;line-height:1.45;">
+            <span style="display:inline-block;font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-bottom:4px;background:rgba(59,130,246,0.2);color:#60a8f8;border:1px solid #3B82F6;">Magyarországon</span>
+            <p style="color:#c4cce0;">Magyar <strong>nemesség</strong> és a mezővárosok népe; fővárosa <strong>Debrecen</strong> („kálvinista Róma")</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-card">
     <h3>🕊️ A katolikus megújulás (Ellenreformáció)</h3>
     <p>A katolikus egyház a 16. század közepén indította el belső megújulását, hogy gátat szabjon a protestantizmus terjedésének.</p>
     <p style="margin-top:12px;"><strong>A tridenti zsinat (1545–1563) döntései:</strong></p>
