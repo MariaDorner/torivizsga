@@ -1578,6 +1578,7 @@ function showUnlockAnimation(label, callback){
 function addXP(amount){
   const prevRank=ranks.filter(r=>xp>=r.xp).pop();
   xp+=amount;
+  try{localStorage.setItem('hk_xp',xp);}catch(e){}
   var xpEl=document.getElementById('xp-count');
   if(xpEl) xpEl.innerText=xp;
   var homeEl=document.getElementById('total-xp-home');
@@ -1628,6 +1629,21 @@ const modules=[
   {id:13,icon:'💥',name:'Az Utolsó Küldetés',color:'mod3',locked:true},
 ];
 
+// Restore persisted progress from localStorage
+(function(){
+  try{
+    var _unl=JSON.parse(localStorage.getItem('hk_unlocked')||'[]');
+    _unl.forEach(function(idx){if(modules[idx])modules[idx].locked=false;});
+  }catch(e){}
+  try{var _xp=parseInt(localStorage.getItem('hk_xp')||'0',10);if(!isNaN(_xp)&&_xp>0)xp=_xp;}catch(e){}
+})();
+
+function saveUnlockedModules(){
+  var idxs=[];
+  modules.forEach(function(m,i){if(!m.locked)idxs.push(i);});
+  try{localStorage.setItem('hk_unlocked',JSON.stringify(idxs));}catch(e){}
+}
+
 function buildModuleGrid(){
   const grid=document.getElementById('module-grid');
   grid.innerHTML='';
@@ -1650,6 +1666,7 @@ function buildModuleGrid(){
           if(card){card.style.animation='none';card.offsetHeight;card.style.animation='errorShake .4s ease';}
         } else {
           modules[12].locked=false;
+          saveUnlockedModules();
           buildModuleGrid();
           openTopic(13);
         }
@@ -4770,6 +4787,7 @@ function checkCode(){
       closeLock();
       modalBox.classList.remove('unlocking');
       modules[d.idx].locked=false;
+      saveUnlockedModules();
       buildModuleGrid();
       var _bec=document.getElementById('badge-earned-count');if(_bec)_bec.textContent=earnedBadges.length;
       // Feloldás overlay animáció
@@ -5973,6 +5991,7 @@ function showBriefing(id){
 
 // ===== TELJESÍTMÉNY-JELVÉNYEK =====
 var earnedBadges=JSON.parse(localStorage.getItem('hk_badges')||'[]');
+(function(){var bec=document.getElementById('badge-earned-count');if(bec)bec.textContent=earnedBadges.length;})();
 var badgeDefs=[
   // Tételek
   {id:'topic_1',icon:'🐎',title:'Honfoglaló',desc:'Megnyitottad az 1. dossziét',cat:'Tételek'},
@@ -6534,6 +6553,20 @@ function closeHaladasModal(e){
     document.getElementById('haladas-modal').classList.remove('show');
   }
 }
+
+// ===== RESTORE UI FROM SAVED PROGRESS =====
+(function(){
+  if(xp>0){
+    var curRank=ranks.filter(function(r){return xp>=r.xp;}).pop();
+    if(curRank){var rankEl=document.getElementById('rank-txt');if(rankEl)rankEl.innerText=curRank.n;}
+  }
+  var homeEl=document.getElementById('total-xp-home');
+  if(homeEl) homeEl.innerText=xp;
+  var bec=document.getElementById('badge-earned-count');
+  if(bec) bec.textContent=earnedBadges.length;
+  doneCount=_openedTopics.filter(function(id){return id!==13;}).length;
+  updateHomeProgress();
+})();
 </script>
 
 </body>
