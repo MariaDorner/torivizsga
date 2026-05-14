@@ -358,6 +358,28 @@ body::after {
 .back-btn:hover{background:rgba(212,175,55,.08);box-shadow:0 0 12px var(--gold-glow);}
 
 /* =====================================================
+   SCROLL-TO-TOP BUTTON
+   ===================================================== */
+#scroll-top-btn{
+  position:fixed;bottom:68px;left:20px;z-index:2500;
+  display:none;align-items:center;gap:6px;
+  background:linear-gradient(135deg,#0e0e20 0%,#1a1628 100%);
+  border:1px solid var(--gold);
+  color:var(--gold);
+  font-family:var(--mono);font-weight:600;
+  padding:8px 16px;border-radius:20px;
+  cursor:pointer;font-size:12px;
+  letter-spacing:.04em;
+  box-shadow:0 0 10px rgba(212,175,55,.18);
+  transition:.25s;
+}
+#scroll-top-btn:hover{
+  background:linear-gradient(135deg,#1a1628 0%,#251e3a 100%);
+  box-shadow:0 0 18px rgba(212,175,55,.38);
+  transform:translateY(-2px);
+}
+
+/* =====================================================
    TABS
    ===================================================== */
 .tab-bar{
@@ -1518,6 +1540,8 @@ Ha mind a 12 korszakot megmented, jöhet a végső összecsapás Dr. Tempus elle
   <div id="tab-videos" class="content-area hidden"></div>
 </div>
 
+<button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Tetejére</button>
+
 <script>
 // ===== STARS BG =====
 (function(){
@@ -1536,6 +1560,8 @@ Ha mind a 12 korszakot megmented, jöhet a végső összecsapás Dr. Tempus elle
 window.addEventListener('scroll',()=>{
   const h=document.documentElement.scrollHeight-innerHeight;
   document.getElementById('scroll-progress').style.width=(h>0?(scrollY/h)*100:0)+'%';
+  const btn=document.getElementById('scroll-top-btn');
+  if(btn) btn.style.display=(currentTopic&&currentTopic!==13&&scrollY>400)?'flex':'none';
 });
 
 // ===== STATE =====
@@ -1615,7 +1641,7 @@ function xpPulse(){
 // ===== MODULE DATA =====
 const modules=[
   {id:1,icon:'🐎',name:'Vándorlás és honfoglalás',color:'mod1',locked:false},
-  {id:2,icon:'👑',name:'István az államalapító',color:'mod2',locked:true},
+  {id:2,icon:'👑',name:'István, az államalapító',color:'mod2',locked:true},
   {id:3,icon:'💀',name:'Tatárjárás',color:'mod3',locked:true},
   {id:4,icon:'💰',name:'Károly Róbert',color:'mod1',locked:true},
   {id:5,icon:'⚔️',name:'Nagy Lajos',color:'mod2',locked:true},
@@ -2328,6 +2354,11 @@ function renderBF() {
   if (!root) { setTimeout(renderBF, 100); return; }
   if (bfState.phase === 0) { renderBFIntro(); return; }
   if (bfState.phase === 6) { renderBFVictory(); return; }
+  if (bfState._showPhaseIntro) {
+    bfState._showPhaseIntro = false;
+    showPhaseIntro(bfState.phase, function() { renderBF(); });
+    return;
+  }
   const ph = bfData[bfState.phaseKeys[bfState.phase-1]];
   if (!ph) return;
   const task = ph.tasks[bfState.taskIdx];
@@ -2335,7 +2366,7 @@ function renderBF() {
 
   const bossHPpct = Math.max(0, (bfState.bossHP / bfState.bossMaxHP) * 100);
   const phaseColor = ph.color;
-  const bossAvatarMap = {phase1:'🏹',phase2:'🐉',phase3:'⚔️',phase4:'🌍',phase5:'💀'};
+  const bossAvatarMap = {phase1:'🐎',phase2:'🔥',phase3:'🏰',phase4:'⛵',phase5:'💥'};
   const bossAvatar = bossAvatarMap[bfState.phaseKeys[bfState.phase-1]] || '🦹';
   const isLastStand = bfState.playerHP === 1;
   const arenaBaseColors = ['#0d091a','#1a0805','#05130a','#05091a','#160004'];
@@ -2996,8 +3027,86 @@ function renderBFIntro() {
 
 window.bfStart = function() {
   bfState.phase = 1;
+  bfState._showPhaseIntro = true;
   renderBF();
 };
+
+function showPhaseIntro(phaseNum, callback) {
+  var ph = bfData[bfState.phaseKeys[phaseNum-1]];
+  if (!ph) { callback(); return; }
+
+  var avatarMap = {phase1:'🐎',phase2:'🔥',phase3:'🏰',phase4:'⛵',phase5:'💥'};
+  var avatar = avatarMap[bfState.phaseKeys[phaseNum-1]] || '🎯';
+  var color = ph.color;
+
+  // "3. FÁZIS – A Hálózatépítő" → "A HÁLÓZATÉPÍTŐ"
+  var titleParts = ph.title.split('–');
+  var mainTitle = (titleParts.length > 1 ? titleParts[1].trim() : ph.title).toUpperCase();
+  var phaseLabel = phaseNum + '. FÁZIS';
+
+  var overlay = document.createElement('div');
+  overlay.id = 'bf-phase-intro';
+  overlay.style.cssText = 'position:fixed;inset:0;z-index:9800;background:#000;display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:inherit;';
+
+  var st = document.createElement('style');
+  st.textContent = [
+    '@keyframes pi-pop{0%{opacity:0;transform:scale(0) rotate(-10deg)}55%{opacity:1;transform:scale(1.22) rotate(4deg)}75%{transform:scale(.96) rotate(-2deg)}100%{opacity:1;transform:scale(1) rotate(0)}}',
+    '@keyframes pi-slide{0%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}',
+    '@keyframes pi-line{0%{width:0;opacity:0}100%{width:220px;opacity:1}}',
+    '@keyframes pi-scan{0%{top:-4%}100%{top:108%}}',
+  ].join('');
+  overlay.appendChild(st);
+
+  // Háttér szín-tint
+  var bg = document.createElement('div');
+  bg.style.cssText = 'position:absolute;inset:0;background:radial-gradient(ellipse at center,'+color+'1a 0%,transparent 68%);pointer-events:none;';
+  overlay.appendChild(bg);
+
+  // Scan line
+  var scan = document.createElement('div');
+  scan.style.cssText = 'position:absolute;left:0;right:0;height:2px;top:-4%;background:linear-gradient(90deg,transparent,'+color+'88,transparent);animation:pi-scan 2s linear .4s both;pointer-events:none;';
+  overlay.appendChild(scan);
+
+  // Tartalom
+  var content = document.createElement('div');
+  content.style.cssText = 'text-align:center;position:relative;z-index:1;padding:20px;';
+
+  var ava = document.createElement('div');
+  ava.textContent = avatar;
+  ava.style.cssText = 'font-size:5.5rem;margin-bottom:16px;display:block;opacity:0;animation:pi-pop .65s cubic-bezier(.17,.67,.35,1.4) .25s both;filter:drop-shadow(0 0 28px '+color+') drop-shadow(0 0 60px '+color+'55);';
+  content.appendChild(ava);
+
+  var label = document.createElement('div');
+  label.textContent = phaseLabel;
+  label.style.cssText = 'font-size:.68rem;letter-spacing:.5em;color:'+color+';text-transform:uppercase;font-family:"Share Tech Mono",monospace;margin-bottom:12px;opacity:0;animation:pi-slide .45s ease .72s both;';
+  content.appendChild(label);
+
+  var line = document.createElement('div');
+  line.style.cssText = 'height:1px;background:linear-gradient(90deg,transparent,'+color+',transparent);width:0;margin:0 auto 14px;animation:pi-line .55s ease .9s both;';
+  content.appendChild(line);
+
+  var title = document.createElement('div');
+  title.textContent = mainTitle;
+  title.style.cssText = 'font-size:clamp(1.5rem,5vw,2.3rem);font-weight:900;color:#fff;letter-spacing:.1em;margin-bottom:10px;opacity:0;animation:pi-slide .45s ease 1.1s both;text-shadow:0 0 40px rgba(255,255,255,.18);';
+  content.appendChild(title);
+
+  var sub = document.createElement('div');
+  sub.textContent = ph.subtitle;
+  sub.style.cssText = 'font-size:.8rem;color:#6070a0;font-family:"Share Tech Mono",monospace;letter-spacing:.06em;opacity:0;animation:pi-slide .45s ease 1.3s both;';
+  content.appendChild(sub);
+
+  overlay.appendChild(content);
+  document.body.appendChild(overlay);
+
+  setTimeout(function() {
+    overlay.style.transition = 'opacity .38s ease';
+    overlay.style.opacity = '0';
+    setTimeout(function() {
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+      callback();
+    }, 400);
+  }, 3800);
+}
 
 // --- PHASE TRANSITION ---
 function renderBFPhaseTransition(nextPhase) {
@@ -3011,7 +3120,7 @@ function renderBFPhaseTransition(nextPhase) {
   const starsHtml = lastPs ? '<div class="pt-stat" style="min-width:110px;"><div style="font-size:.6rem;letter-spacing:.2em;color:#8898bb;text-transform:uppercase;margin-bottom:4px;">Fázis értékelés</div><div style="font-size:1.5rem;letter-spacing:3px;">'+'⭐'.repeat(lastPs.stars)+'☆'.repeat(3-lastPs.stars)+'</div>'+(lastPs.errors===0?'<div style="font-size:.6rem;color:#22c55e;margin-top:4px;letter-spacing:.06em;">✨ Hibátlan!</div>':'<div style="font-size:.6rem;color:#f87171;margin-top:4px;">'+lastPs.errors+' hiba</div>')+'</div>' : '';
   const nextBtnHTML = isFinal
     ? '<button id="bf-pt-btn" onclick="bfState.phase=6;renderBF();" style="background:linear-gradient(90deg,#d4af37,#f0d060);color:#000;border:none;border-radius:12px;padding:16px 40px;font-size:1.05rem;font-weight:900;cursor:pointer;letter-spacing:.05em;box-shadow:0 0 24px rgba(212,175,55,.5);">🏆 Eredmény megtekintése</button>'
-    : '<button id="bf-pt-btn" onclick="bfState.phase='+nextPhase+';renderBF();" style="background:linear-gradient(90deg,#d4af37,#f0d060);color:#000;border:none;border-radius:12px;padding:16px 40px;font-size:1.05rem;font-weight:900;cursor:pointer;letter-spacing:.05em;box-shadow:0 0 24px rgba(212,175,55,.5);">Bevetés folytatása →</button>';
+    : '<button id="bf-pt-btn" onclick="bfState.phase='+nextPhase+';bfState._showPhaseIntro=true;renderBF();" style="background:linear-gradient(90deg,#d4af37,#f0d060);color:#000;border:none;border-radius:12px;padding:16px 40px;font-size:1.05rem;font-weight:900;cursor:pointer;letter-spacing:.05em;box-shadow:0 0 24px rgba(212,175,55,.5);">Bevetés folytatása →</button>';
   const nextInfoHTML = ph
     ? '<div style="background:#0a0a14;border:1px solid '+ph.color+'44;border-radius:12px;padding:16px 20px;max-width:480px;margin:0 auto 28px;opacity:0;transform:translateY(10px);transition:opacity .6s .9s ease,transform .6s .9s ease;" id="bf-pt-next">'
       +'<div style="font-size:.62rem;letter-spacing:.28em;color:'+ph.color+';text-transform:uppercase;margin-bottom:6px;">Következő fázis</div>'
@@ -3503,7 +3612,7 @@ function renderBFVictory() {
     vBreakTitle.style.cssText = 'font-size:7px;letter-spacing:.28em;color:#4a5a78;text-transform:uppercase;margin-bottom:8px;text-align:center;';
     vBreakTitle.textContent = 'Fázis teljesítmény';
     vBreakWrap.appendChild(vBreakTitle);
-    var phaseAvatarArr = ['🏹','🐉','⚔️','🌍','💀'];
+    var phaseAvatarArr = ['🐎','🔥','🏰','⛵','💥'];
     bfState.phaseStats.forEach(function(ps, pi) {
       var row = document.createElement('div');
       row.style.cssText = 'display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#06060e,#0a0820);border:1px solid rgba(212,175,55,.1);border-radius:10px;padding:9px 14px;margin-bottom:5px;opacity:0;animation:bv-stat-in .5s ease '+(0.1+pi*.12)+'s both;';
@@ -6273,7 +6382,7 @@ window.initCardFadeIn = function(){
 // ===== INTERAKTÍV IDŐVONAL =====
 var tlData = [
   {id:1,  icon:'🐎', name:'Vándorlás és honfoglalás', years:'895–997',    num:'01'},
-  {id:2,  icon:'👑', name:'István az államalapító',   years:'997–1038',   num:'02'},
+  {id:2,  icon:'👑', name:'István, az államalapító',   years:'997–1038',   num:'02'},
   {id:3,  icon:'💀', name:'Tatárjárás',               years:'1241–1242',  num:'03'},
   {id:4,  icon:'💰', name:'Károly Róbert',             years:'1308–1342',  num:'04'},
   {id:5,  icon:'⚔️', name:'Nagy Lajos',               years:'1342–1382',  num:'05'},

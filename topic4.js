@@ -111,7 +111,7 @@ function buildTopic4Concepts() {
       c: "amber",
       e: "🪙",
       t: "Aranyforint",
-      d: "Károly Róbert pénzreformjának legfontosabb eredménye (1325). A firenzei mintára vert stabil, tiszta aranyból készült érme. Értékálló fizetőeszköz lett, amely elősegítette a kereskedelem fellendülését és az ország gazdagodását.",
+      d: "Károly Róbert pénzreformjának legfontosabb eredménye (1325). A firenzei mintára vert stabil, majdnem színaranyból készült érme. Értékálló fizetőeszköz lett, amely elősegítette a kereskedelem fellendülését és az ország gazdagodását.",
     },
     {
       c: "blue",
@@ -214,8 +214,8 @@ function buildTopic4Content() {
       <img src="images/topic4_img2.png" alt="Rozgonyi csata – középkori miniatúra" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
       <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Rozgonyi csata – miniatúra</p>
     </div>
-    <p style="margin-top:10px;">Károly Róbert több mint tíz évig harcolt ellenük. A döntő fordulat 1312-ben a rozgonyi csatában következett be, ahol a király legyőzte az Aba-nembeliek seregét. Bár Csák Mátéval katonailag nem bírt, 1321-es halála után az ő területei is a király kezére kerültek. 1323-ra az egész ország felett helyreállt a királyi hatalom.</p>
-    <div class="highlight-box" style="margin-top:8px;">🔍 <strong>Érdekesség:</strong> A rozgonyi csata közvetlen kiváltója egy gyilkosság volt: a kassai polgárok 1311-ben megölték Aba Amádét, a tartományurat. Fiai a királyra fogták a felelősséget, és ezért lázadtak fel – így indult el az az ütközet, amely végül megtörte a kiskirályok hatalmát.</div>
+    <p style="margin-top:10px;">Károly Róbert több mint tíz évig harcolt ellenük. A döntő fordulat <strong>1312-ben, a rozgonyi csatában</strong> következett be, ahol I. Károly – a kassai polgárok segítségével – döntő vereséget mért <strong>Aba Amadé fiaira</strong> (az Aba-nembeliekre). Bár Csák Mátéval katonailag nem bírt, 1321-es halála után az ő területei is a király kezére kerültek. 1323-ra az egész ország felett helyreállt a királyi hatalom.</p>
+    <div class="highlight-box" style="margin-top:8px;">⚔️ <strong>Rozgonyi csata (1312) – a fordulópont:</strong> A csata közvetlen előzménye az volt, hogy <strong>1311 szeptemberében</strong> a kassai polgárok – városi kiváltságaik védelmében – megölték az egyik kiskirályt, Aba Amadét. I. Károly a kassai polgárokkal együtt mért döntő vereséget Aba Amadé fiaira Rozgonynál. Ez a győzelem törte meg véglegesen a kiskirályok hatalmát.</div>
   </div>
 
   <div class="info-card">
@@ -228,12 +228,22 @@ function buildTopic4Content() {
   </div>
 
   <div class="info-card">
+    <h3>🗡️ A lovagi kultúra és a Zách Felicián-merénylet</h3>
+    <div style="float:right;margin:0 0 12px 16px;max-width:180px;">
+        <img src="images/Zách_Felícián.jpg" alt="Zách Felicián merénylete" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Zách Felicián merénylete (1330)</p>
+    </div>
+    <p>Károly honosította meg Magyarországon a lovagi kultúrát és a címertant. Megalapította a Szent György-rendet, az első világi lovagrendet.</p>
+    <p style="margin-top:10px;">Uralkodását azonban egy véres esemény is beárnyékolta: 1330-ban Zách Felicián, egy udvari nemes, ebéd közben karddal támadt a királyi családra Visegrádon. A király sértetlen maradt, de Erzsébet királyné négy ujját levágta a támadó. A megtorlás kegyetlen volt: Felicián családját harmadíziglen kiirtották.</p>
+  </div>
+
+  <div class="info-card">
     <h3>💰 Gazdasági reformok és bevételek</h3>
     <div style="float:right;margin:0 0 12px 16px;max-width:120px;">
       <img src="images/topic4_img3.png" alt="Magyar aranyforint – 14. század" style="width:100%;border-radius:50%;border:2px solid #d4af37;"/>
       <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Magyar aranyforint</p>
     </div>
-    <p>Mivel a királyi birtokok aránya 20% alá csökkent, Károlynak új jövedelmekre volt szüksége. Ezeket regálénak (királyi felségjogon szedett jövedelemnek) nevezzük.</p>
+    <p>Mivel a királyi birtokok aránya 20% alá csökkent, Károlynak új jövedelmekre volt szüksége. Ezeket <strong>regálénak</strong> (királyi felségjogon szedett jövedelemnek) nevezzük.</p>
     <p style="margin-top:12px;"><strong>Bányászat és az „Urbura"</strong></p>
     <p>Magyarország ebben az időben Európa leggazdagabb nemesfém-lelőhelye volt (az aranytermelés 75%-át adta).</p>
     <ul style="margin-top:8px;padding-left:20px;">
@@ -242,9 +252,9 @@ function buildTopic4Content() {
     </ul>
     <p style="margin-top:12px;"><strong>Pénzreform és adózás</strong></p>
     <ul style="margin-top:8px;padding-left:20px;">
-      <li><strong>Aranyforint (1325):</strong> Károly firenzei mintára értékálló, tiszta aranypénzt veretett, amely egész Európában kedvelt fizetőeszköz lett.</li>
-      <li><strong>Kapuadó:</strong> Mivel az új pénz értékálló volt, a király elesett a korábbi pénzrontásból származó haszontól. Ennek pótlására bevezette a kapuadót. Minden olyan kapu után adót kellett fizetni, amelyen egy megrakott szénásszekér be tudott hajtani.</li>
-      <li><strong>Harmincad:</strong> A külkereskedelemre kivetett vám, az áru értékének harmincadrésze.</li>
+      <li><strong>Aranyforint (1325):</strong> Károly firenzei mintára értékálló, majdnem színarany pénzt veretett, amely egész Európában kedvelt fizetőeszköz lett.</li>
+      <li><strong>Kapuadó:</strong> Mivel az új pénz értékálló volt, a király elesett a korábbi pénzrontásból származó haszontól. Ennek pótlására bevezette a kapuadót. Minden olyan kapu után adót kellett fizetni, amelyen egy megrakott szénásszekér be tudott hajtani. Ha több család lakott ugyanazon a portán, az adón közösen osztoztak. (💡 Mátyás idejében ez füstadóvá alakul át: már minden család külön fizet, kéményenként.)</li>
+      <li><strong>Harmincad:</strong> A külkereskedelemre kivetett vám, amelyet a kereskedők fizettek – mértéke az áru értékének harmincadrésze.</li>
     </ul>
   </div>
 
@@ -264,16 +274,6 @@ function buildTopic4Content() {
       <li>Új kereskedelmi útvonalat jelöltek ki Csehország felé, hogy kikerüljék Bécs városát és annak „árumegállító jogát" (ami kötelezte a kereskedőket, hogy Bécsben adják el az áruikat).</li>
       <li>Megállapodtak, hogy ha a lengyel király utód nélkül hal meg, a magyar Anjouk öröklik a lengyel trónt (így lett később Nagy Lajos lengyel király is).</li>
     </ul>
-  </div>
-
-  <div class="info-card">
-    <h3>🗡️ A lovagi kultúra és a Zách Felicián-merénylet</h3>
-    <div style="float:right;margin:0 0 12px 16px;max-width:180px;">
-        <img src="images/Zách_Felícián.jpg" alt="Zách Felicián merénylete" style="width:100%;border-radius:8px;border:2px solid var(--border);"/>
-      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:4px;">Zách Felicián merénylete (1330)</p>
-    </div>
-    <p>Károly honosította meg Magyarországon a lovagi kultúrát és a címertant. Megalapította a Szent György-rendet, az első világi lovagrendet.</p>
-    <p style="margin-top:10px;">Uralkodását azonban egy véres esemény is beárnyékolta: 1330-ban Zách Felicián, egy udvari nemes, ebéd közben karddal támadt a királyi családra Visegrádon. A király sértetlen maradt, de Erzsébet királyné négy ujját levágta a támadó. A megtorlás kegyetlen volt: Felicián családját harmadíziglen kiirtották.</p>
   </div>
 
   <div class="info-card">

@@ -37,24 +37,51 @@ function buildTopic5Content(){
   </div>
 
   <div class="info-card">
-    <h3>🌊 A Birodalom kiterjesztése: „Három tenger mossa partjait"</h3>
-    <p>Lajos nemcsak délen, hanem északon és keleten is növelte befolyását. Birodalmát három tenger mosta (Adria, Balti-tenger, Fekete-tenger), bár ez inkább közvetett uralmat jelentett.</p>
-    <p style="margin-top:12px;"><strong>Velence és Dalmácia:</strong></p>
-    <p style="margin-top:8px;">Lajos legfontosabb célja az Adriai-tenger partvidékének, Dalmáciának a visszaszerzése volt Velencétől. Emiatt háborút is kezdeményezett Velencével 1357-ben, amelyet megnyert. Így az adriai partvidék ismét a Magyar Királysághoz tartozott.</p>
-    <p style="margin-top:12px;"><strong>Lengyelország és a Perszonálunió:</strong></p>
-    <ul style="margin-top:8px;padding-left:20px;">
-      <li>1370-ben, nagybátyja III. Kázmér halála után megörökölte a lengyel trónt.</li>
-      <li><strong>Perszonálunió:</strong> A két ország független maradt, csak az uralkodó személye volt közös.</li>
-      <li>Lengyelországot döntően édesanyja, Erzsébet irányította.</li>
-    </ul>
-    <p style="margin-top:12px;"><strong>Balkáni hódítások:</strong></p>
-    <ul style="margin-top:8px;padding-left:20px;">
-      <li>Lajos hűbéri függésbe vonta: Havasalföldet, Moldvát, Szerbiát és Boszniát – „ütközőzónaként" védve Magyarországot.</li>
+    <h3>🌊 A Birodalom kiterjesztése: „Három tenger mossa partjait" – tény vagy legenda?</h3>
+    <p>A „három tenger mossa partjait" kifejezés valójában <strong>utólagos legenda</strong> – Lajos korában nem hangzott el, és a valóságban csak az Adriai-tenger kapcsolódott <em>közvetlenül</em> a Magyar Királysághoz. A másik két tenger legfeljebb áttételesen hozható összefüggésbe Lajos uralmával:</p>
+    <ul style="margin-top:10px;padding-left:20px;line-height:1.85;">
+      <li><strong>Adriai-tenger ✔ – Velence és Dalmácia</strong> – Lajos legfontosabb célja az adriai partvidék visszaszerzése volt Velencétől. 1357-ben háborút indított, amelyet megnyert, majd az 1358-as zárai béke értelmében Dalmácia valóban a Magyar Királyság szerves részévé vált. Ez az egyetlen valódi, közvetlen tengeri kapcsolat.</li>
+      <li><strong>Balti-tenger ✘ – Lengyel perszonálunió</strong> – 1370-ben, nagybátyja III. Kázmér halála után Lajos örökölte a lengyel trónt. Ez azonban perszonálunió volt: a két ország teljesen független maradt, csupán az uralkodó személye volt közös – Lengyelországot döntően Lajos édesanyja, Erzsébet irányította. Ráadásul Lengyelországnak ebben az időszakban egyáltalán nem volt tengerpartja: Pomerániát teljes egészében a Német Lovagrend uralta, így az ország a Balti-tengertől el volt zárva.</li>
+      <li><strong>Fekete-tenger ✘ – Balkáni ütközőzóna</strong> – Lajos hűbéri függésbe vonta Havasalföldet, Moldvát, Szerbiát és Boszniát, „ütközőzónaként" védve Magyarországot a törökök ellen. Ezek azonban önálló fejedelemségek maradtak – a hűbéri viszony nem jelent területi uralmat. Ráadásul Havasalföldnek nem volt fekete-tengeri partszakasza, Moldva déli határvidéke pedig ebben a korban vitatott és lakatlan mocsárvidék volt – nem valódi tengerpart.</li>
     </ul>
 
     <div style="text-align:center;margin:16px 0 4px;">
       <img src="images/topic5_img2.png" alt="Közép-Európa Nagy Lajos korában" style="max-width:100%;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.18);border:3px solid var(--teal);">
       <p style="font-size:.82rem;color:var(--muted);margin-top:6px;font-style:italic;">Közép-Európa I. (Nagy) Lajos korában, 1342–1382</p>
+    </div>
+  </div>
+
+  <div class="info-card" style="border-color:rgba(212,175,55,.4);">
+    <h3>🌊 Interaktív infografika: „Három tenger mossa partjait" – a legenda és a valóság</h3>
+    <p style="margin-bottom:14px;">A mondás utólagos legenda: <strong>csak az Adriai-tenger kapcsolódott valóban a Magyar Királysághoz.</strong> Kattints egy irányra, és megtudod, mi volt a valóság!</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
+      <button data-key="napolyi" onclick="t5Show('napolyi')" class="t5-region" style="background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.35);border-radius:8px;padding:14px 12px;cursor:pointer;text-align:left;transition:.2s;opacity:.7;">
+        <div style="font-size:1.5rem;line-height:1;">⚔️</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:#f87171;font-weight:700;letter-spacing:.1em;margin:4px 0 2px;">DÉL · 1347–1350</div>
+        <div style="font-size:.88rem;color:#f0f0f8;font-weight:700;">Nápolyi hadjáratok</div>
+        <div style="font-size:.75rem;color:#8898bb;margin-top:3px;">Bosszú András haláláért</div>
+      </button>
+      <button data-key="dalmacia" onclick="t5Show('dalmacia')" class="t5-region" style="background:rgba(96,168,248,.08);border:1px solid rgba(96,168,248,.35);border-radius:8px;padding:14px 12px;cursor:pointer;text-align:left;transition:.2s;opacity:.7;">
+        <div style="font-size:1.5rem;line-height:1;">⛵</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:#60a8f8;font-weight:700;letter-spacing:.1em;margin:4px 0 2px;">NYUGAT · 1358</div>
+        <div style="font-size:.88rem;color:#f0f0f8;font-weight:700;">Dalmácia visszaszerzése</div>
+        <div style="font-size:.75rem;color:#8898bb;margin-top:3px;">Zárai béke – Adriai-tenger</div>
+      </button>
+      <button data-key="lengyelorszag" onclick="t5Show('lengyelorszag')" class="t5-region" style="background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.35);border-radius:8px;padding:14px 12px;cursor:pointer;text-align:left;transition:.2s;opacity:.7;">
+        <div style="font-size:1.5rem;line-height:1;">👑</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:#4ade80;font-weight:700;letter-spacing:.1em;margin:4px 0 2px;">ÉSZAK · 1370</div>
+        <div style="font-size:.88rem;color:#f0f0f8;font-weight:700;">Lengyel perszonálunió</div>
+        <div style="font-size:.75rem;color:#8898bb;margin-top:3px;">Balti-tenger – legenda (nincs tengerpart)</div>
+      </button>
+      <button data-key="balkan" onclick="t5Show('balkan')" class="t5-region" style="background:rgba(252,211,77,.08);border:1px solid rgba(252,211,77,.35);border-radius:8px;padding:14px 12px;cursor:pointer;text-align:left;transition:.2s;opacity:.7;">
+        <div style="font-size:1.5rem;line-height:1;">🛡️</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:#fcd34d;font-weight:700;letter-spacing:.1em;margin:4px 0 2px;">KELET-DÉL</div>
+        <div style="font-size:.88rem;color:#f0f0f8;font-weight:700;">Balkáni ütközőzóna</div>
+        <div style="font-size:.75rem;color:#8898bb;margin-top:3px;">Fekete-tenger – legenda (nincs tengerpart)</div>
+      </button>
+    </div>
+    <div id="t5map-info" style="background:rgba(212,175,55,.05);border:1px solid rgba(212,175,55,.2);border-radius:8px;padding:14px;min-height:64px;transition:background .3s,border-color .3s;">
+      <span style="color:#8898bb;font-family:'Share Tech Mono',monospace;font-size:.78rem;">👆 Kattints egy irányra a részletekhez!</span>
     </div>
   </div>
 
@@ -66,9 +93,9 @@ function buildTopic5Content(){
       <tr><td><strong>Ősiség</strong></td><td>A nemesi birtok nem volt eladható, csak a családon belül öröklődhetett.</td><td>Megakadályozni a családi birtokok elaprózódását.</td></tr>
       <tr><td><strong>Háramlási jog</strong></td><td>Ha egy család fiúágon kihalt, a birtok visszaszállt a királyra.</td><td>A királyi birtokok utánpótlásának biztosítása.</td></tr>
       <tr><td><strong>Egy és ugyanazon szabadság</strong></td><td>Minden nemes – báró vagy köznemes – ugyanazokkal a jogokkal rendelkezett.</td><td>A nemesség jogi egységének megteremtése.</td></tr>
-      <tr><td><strong>Kilenced</strong></td><td>A jobbágy terményének kilencedét köteles volt a földesurának adni.</td><td>Megtiltotta, hogy a bárók adókedvezménnyel csalogassák el a köznemesek jobbágyait.</td></tr>
+      <tr><td><strong>Kilenced</strong></td><td>A jobbágyok földesúrnak fizetett terményadója, mely a termés egytizedét jelentette. A neve onnan ered, hogy az egyháznak fizetendő tized után ez volt a kilencedik tized.</td><td>Lajos törvénye előírta, hogy minden nemesnek kötelező beszednie – célja az volt, hogy a jobbágyok ne költözzenek el a középnemesi birtokokról a bárók kedvezményesebb majorságaiba.</td></tr>
     </table>
-    <p style="margin-top:12px;"><strong>Bíráskodás:</strong> A jobbágyok felett a földesúr ítélkezhetett (úriszék). A legjelentősebb urak megkapták a <strong>pallosjogot</strong> is – súlyos bűnökért halálbüntetést is kiszabhattak.</p>
+    <p style="margin-top:12px;"><strong>Bíráskodás:</strong> A jobbágyok felett a földesúr ítélkezhetett (úriszék). A legjelentősebb urak megkapták a <strong>pallosjogot</strong> is – súlyos bűnökért halálbüntetést is kiszabhattak. <em>(🪢 Érdekesség: a pallosjog neve ellenére a jobbágyokat általában felakasztották, nem fejezték le – a lefejezés a nemesek kivégzési módja volt, mivel azt a kor felfogása szerint méltóságteljesebbnek tartották.)</em></p>
   </div>
 
   <div class="info-card">
@@ -88,7 +115,7 @@ function buildTopic5Content(){
 
   <div class="info-card">
     <h3>👨‍👧 A magánember és az utódlás</h3>
-    <p>Lajos második felesége <strong>Boszniai Erzsébet</strong> volt. Tizenhét év várakozás után született meg három leányuk: Katalin, Mária és Hedvig.</p>
+    <p>Lajos második felesége <strong>a boszniai királyi családból származó Erzsébet</strong> volt. Tizenhét év várakozás után született meg három leányuk: Katalin, Mária és Hedvig.</p>
     <p style="margin-top:10px;">Utolsó éveiben Lajos súlyos betegségben (valószínűleg leprában) szenvedett. <strong>1382-ben halt meg.</strong> Mivel nem volt fia, országát lányai örökölték:</p>
     <ol style="margin-top:8px;padding-left:20px;">
       <li><strong>Mária:</strong> Magyarország királynője lett.</li>
@@ -285,20 +312,21 @@ function buildTopic5Concepts(){
 
 // ===== TOPIC 5 INFOGRAPHIC JS =====
 var t5data = {
-  napolyi: {color:'#991b1b', szin:'#fee2e2', title:'⚔️ Nápolyi hadjáratok (1347–1350)', text:'András herceg – Lajos öccse – a nápolyi trón várományosa volt, de felesége, Johanna megfojtatta 1345-ben. Lajos két bosszúhadjáratot indított: 1347–48-ban diadalmenetben vonult végig Itálián, és Nápolyban királyként üdvözölték. A hatalmas távolság, a pápa ellenállása és a kitörő pestis miatt végül le kellett mondania a nápolyi trónról.'},
-  dalmacia: {color:'#1e40af', szin:'#dbeafe', title:'⛵ Dalmácia és a zárai béke (1358)', text:'Lajos legfontosabb külpolitikai célja az Adriai-tenger partvidékének visszaszerzése volt Velencétől. 1357-ben háborút indított, amelyet megnyert. Az 1358-as zárai béke értelmében a teljes dalmát partvidék visszakerült a Magyar Királysághoz – ezért mosta az Adriai-tenger a birodalom partjait.'},
-  lengyelorszag: {color:'#15803d', szin:'#dcfce7', title:'👑 Lengyel perszonálunió (1370)', text:'1370-ben nagybátyja, III. Kázmér lengyel király utód nélkül halt meg. A korábbi megállapodás alapján Lajos örökölte a lengyel trónt. Így jött létre a perszonálunió: a két ország teljesen független maradt, csak az uralkodó személye volt közös. Lengyelországot döntően édesanyja, Erzsébet irányította Lajos nevében.'},
-  balkan: {color:'#92400e', szin:'#fef3c7', title:'🛡️ Balkáni ütközőzóna', text:'Lajos hűbéri függésbe vonta a Magyar Királyság déli szomszédait: Havasalföldet, Moldvát, Szerbiát és Boszniát. Ezek az államok nem váltak közvetlenül Magyarország részévé, de elismervén Lajos főségét, védelmi ütközőzónát alkottak a déli határon a törökök ellen. Így ért a birodalom közvetve a Fekete-tengerig.'},
+  napolyi:      {color:'#f87171', border:'rgba(248,113,113,.5)', bg:'rgba(248,113,113,.07)', title:'⚔️ Nápolyi hadjáratok (1347–1350)', text:'András herceg – Lajos öccse – a nápolyi trón várományosa volt, de felesége, Johanna megfojtatta 1345-ben. Lajos két bosszúhadjáratot indított: 1347–48-ban diadalmenetben vonult végig Itálián, és Nápolyban királyként üdvözölték. A hatalmas távolság, a pápa ellenállása és a kitörő pestis miatt végül le kellett mondania a nápolyi trónról.'},
+  dalmacia:     {color:'#60a8f8', border:'rgba(96,168,248,.5)',  bg:'rgba(96,168,248,.07)',  title:'⛵ Dalmácia és a zárai béke (1358) – valódi tengeri kapcsolat ✔', text:'Lajos legfontosabb külpolitikai célja az Adriai-tenger partvidékének visszaszerzése volt Velencétől. 1357-ben háborút indított, amelyet megnyert. Az 1358-as zárai béke értelmében a teljes dalmát partvidék visszakerült a Magyar Királysághoz. Ez az EGYETLEN valódi tengeri kapcsolat: az Adriai-tenger ténylegesen mosta a Magyar Királyság partjait.'},
+  lengyelorszag:{color:'#4ade80', border:'rgba(74,222,128,.5)',  bg:'rgba(74,222,128,.07)',  title:'👑 Lengyel perszonálunió (1370) – Balti-tenger? Legenda ✘', text:'1370-ben Lajos örökölte a lengyel trónt. Ez azonban perszonálunió volt: a két ország teljesen független maradt, csak az uralkodó személye volt közös – a Magyar Királyság nem szerezte meg Lengyelországot. Ráadásul Lengyelországnak ebben az időszakban egyáltalán nem volt tengerpartja: Pomerániát teljes egészében a Német Lovagrend uralta, így az ország el volt zárva a Balti-tengertől. A „Balti-tenger mossa partjait" állítás ezért kétszeresen is téves.'},
+  balkan:       {color:'#fcd34d', border:'rgba(252,211,77,.5)',  bg:'rgba(252,211,77,.07)',  title:'🛡️ Balkáni ütközőzóna – Fekete-tenger? Legenda ✘', text:'Lajos hűbéri függésbe vonta Havasalföldet, Moldvát, Szerbiát és Boszniát. Ezek önálló fejedelemségek maradtak – a hűbéri viszony nem jelent területi uralmat. Ráadásul Havasalföldnek egyáltalán nem volt fekete-tengeri partszakasza, Moldva déli határvidéke pedig ebben a korban még vitatott, mocsaras átmeneti terület volt, nem valódi tengerpart. A Magyar Királyság határa így soha nem érte el a Fekete-tengert.'},
 };
 function t5Show(key) {
   var d = t5data[key];
   var box = document.getElementById('t5map-info');
   if(!box) return;
-  box.style.borderColor = d.color;
-  box.style.background = d.szin;
-  box.innerHTML = '<strong style="color:'+d.color+';font-size:1rem;">'+d.title+'</strong><br><span style="color:#c8d4e8;font-size:.9rem;">'+d.text+'</span>';
-  document.querySelectorAll('.t5-region').forEach(function(el){ el.style.transform=''; el.style.boxShadow=''; });
-  var clicked = document.querySelector('.t5-region:focus,.t5-region:active');
+  box.style.borderColor = d.border;
+  box.style.background = d.bg;
+  box.innerHTML = '<div style="font-family:\'Share Tech Mono\',monospace;font-size:.8rem;color:'+d.color+';font-weight:700;letter-spacing:.06em;margin-bottom:8px;">'+d.title+'</div><div style="font-size:.88rem;color:#ccd4e8;line-height:1.7;">'+d.text+'</div>';
+  document.querySelectorAll('.t5-region').forEach(function(el){ el.style.opacity='0.7'; el.style.transform=''; });
+  var active = document.querySelector('.t5-region[data-key="'+key+'"]');
+  if(active){ active.style.opacity='1'; active.style.transform='translateY(-2px)'; }
 }
 
 function t5AnimateBars(){

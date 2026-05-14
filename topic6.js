@@ -61,7 +61,7 @@ function buildTopic6Content(){
     <h3>📖 Vereségek és tanulságok</h3>
     <p>A sikerek után a keresztény sereg (pápai bíztatása és az itáliai segítség ígérete miatt) megszegte a törökkel kötött békét.</p>
     <ol style="margin-top:8px;padding-left:20px;">
-      <li><strong>Várnai csata (1444):</strong> A segítség elmaradt, sőt, a genovaiak pénzért szállították át a szultán seregét Európába. A kétszeres túlerővel szemben a sereg elbukott, Ulászló király pedig életét vesztette.</li>
+      <li><strong>Várnai csata (1444):</strong> A segítség elmaradt, sőt, a genovaiak pénzért szállították át a szultán seregét Európába. A kétszeres túlerővel szemben a sereg elbukott, Ulászló király pedig életét vesztette. <em>(+ a csata az 1444-es drinápolyi békekötés ellenére zajlott le – a pápai és itáliai szövetségesek nyomására a magyarok felrúgták a törökkel kötött békét)</em></li>
       <li><strong>Második rigómezei csata (1448):</strong> Hunyadi, immár az ország kormányzójaként, ismét támadott, de a szerb despota árulása és az albán segítség elmaradása miatt vereséget szenvedett. Ekkor jött rá, hogy európai segítség nélkül nem lehet kiűzni a törököt a Balkánról.</li>
     </ol>
     <p style="margin-top:10px;">Hunyadi János <strong>1446–1453</strong> között töltött be kormányzói tisztséget. Ennek keretében tulajdonképpen ő irányította az országot. Ennek oka az volt, hogy a király (V. László) ekkor még kiskorú volt.</p>
@@ -82,7 +82,7 @@ function buildTopic6Content(){
     <p>II. Mohamed szultán 1456 nyarán Nándorfehérvár, a „Magyarország kapujának" tartott vár elfoglalására indult egy hatalmas, kb. <strong>100 ezer fős</strong> sereggel. A vár azért volt kulcsfontosságú, mert a Duna és a Száva összefolyásánál állt: ha elesik, a török hadsereg előtt egyenes út nyílt volna a magyar Alföld és Buda felé.</p>
     <p style="margin-top:12px;"><strong>Az összecsapás menete</strong></p>
     <ul style="margin-top:8px;padding-left:20px;">
-      <li><strong>A védelem:</strong> A várat Szilágyi Mihály védte 7 ezer katonával. Hunyadi 12 ezer fős seregével közeledett, míg Kapisztrán János, a ferences szerzetes, kb. 25-30 ezer lelkes, de képzetlen keresztes parasztot gyűjtött össze.</li>
+      <li><strong>A védelem:</strong> A várat Szilágyi Mihály védte 7 ezer katonával. Hunyadi 12 ezer fős seregével közeledett, míg Kapisztrán János, az itáliai ferences szerzetes, kb. 25-30 ezer lelkes, de képzetlen keresztes parasztot gyűjtött össze.</li>
       <li><strong>A hajózár áttörése:</strong> Július 14-én Hunyadi hajóival szétzúzta a Dunán felállított török flottát, így utánpótlást tudott bevinni a várba.</li>
       <li><strong>A döntő nap:</strong> Július 22-én a keresztesek váratlanul átkeltek a Száván, és oldalba kapták a törököket. A magyarok elfoglalták a török ágyúállásokat, és saját ágyúikkal lőtték tovább az ostromlókat. A szultán megsemmisítő vereséget szenvedett és elmenekült.</li>
     </ul>
@@ -94,6 +94,74 @@ function buildTopic6Content(){
     <p style="margin-top:12px;"><strong>Következmények</strong></p>
     <p>A győzelem <strong>65 évre</strong> megállította a török terjeszkedést Magyarország felé. A diadal emlékére a pápa elrendelte a déli harangszót, amely eredetileg a harcosokért való imára szólított fel, de a köztudatban a győzelem jelképévé vált.</p>
     <p style="margin-top:10px;">Hunyadi János nem sokkal a diadal után, <strong>1456. augusztus 11-én</strong> hunyt el a táborban pusztító pestisjárvány következtében. Gyulafehérváron temették el. Idősebb fiát, <strong>Hunyadi Lászlót</strong> 1457-ben V. László király lefejeztette. Kisebbik fia, <strong>Mátyás</strong> azonban szerencsésebb sorsra jutott: rövidesen Magyarország királya lett.</p>
+  </div>
+
+  <div class="info-card" style="border-color:rgba(212,175,55,.4);">
+    <h3>📊 Csataatlasz – Hunyadi 5 döntő ütközete</h3>
+    <p style="font-size:.83rem;color:var(--muted);margin-bottom:14px;">Kattints egy csatára az erőviszonyok és a kulcsmozzanatok megtekintéséhez!</p>
+
+    <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px;">
+
+      <button data-h6="szeben" onclick="h6Show('szeben')" class="h6-btn" style="background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.28);border-radius:8px;padding:11px 14px;cursor:pointer;text-align:left;width:100%;transition:.2s;display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:1.3rem;line-height:1;">⚔️</span>
+          <div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:#22c55e;letter-spacing:.12em;font-weight:700;">1442 · SZEBEN</div>
+            <div style="font-size:.85rem;color:#f0f0f8;font-weight:700;">Szebeni csata</div>
+          </div>
+        </div>
+        <span style="background:#052e16;border:1px solid #22c55e;color:#22c55e;font-family:'Share Tech Mono',monospace;font-size:.6rem;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.08em;white-space:nowrap;">✔ GYŐZELEM</span>
+      </button>
+
+      <button data-h6="hosszu" onclick="h6Show('hosszu')" class="h6-btn" style="background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.28);border-radius:8px;padding:11px 14px;cursor:pointer;text-align:left;width:100%;transition:.2s;display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:1.3rem;line-height:1;">🏔️</span>
+          <div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:#22c55e;letter-spacing:.12em;font-weight:700;">1443–1444 · BALKÁN</div>
+            <div style="font-size:.85rem;color:#f0f0f8;font-weight:700;">Hosszú hadjárat</div>
+          </div>
+        </div>
+        <span style="background:#052e16;border:1px solid #22c55e;color:#22c55e;font-family:'Share Tech Mono',monospace;font-size:.6rem;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.08em;white-space:nowrap;">✔ SIKER</span>
+      </button>
+
+      <button data-h6="varna" onclick="h6Show('varna')" class="h6-btn" style="background:rgba(224,92,122,.06);border:1px solid rgba(224,92,122,.28);border-radius:8px;padding:11px 14px;cursor:pointer;text-align:left;width:100%;transition:.2s;display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:1.3rem;line-height:1;">💀</span>
+          <div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:#e05c7a;letter-spacing:.12em;font-weight:700;">1444 · VÁRNA</div>
+            <div style="font-size:.85rem;color:#f0f0f8;font-weight:700;">Várnai csata</div>
+          </div>
+        </div>
+        <span style="background:#2d0a13;border:1px solid #e05c7a;color:#e05c7a;font-family:'Share Tech Mono',monospace;font-size:.6rem;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.08em;white-space:nowrap;">✘ VERESÉG</span>
+      </button>
+
+      <button data-h6="rigomezo" onclick="h6Show('rigomezo')" class="h6-btn" style="background:rgba(224,92,122,.06);border:1px solid rgba(224,92,122,.28);border-radius:8px;padding:11px 14px;cursor:pointer;text-align:left;width:100%;transition:.2s;display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:1.3rem;line-height:1;">⚔️</span>
+          <div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:#e05c7a;letter-spacing:.12em;font-weight:700;">1448 · RIGÓMEZŐ</div>
+            <div style="font-size:.85rem;color:#f0f0f8;font-weight:700;">Második rigómezei csata</div>
+          </div>
+        </div>
+        <span style="background:#2d0a13;border:1px solid #e05c7a;color:#e05c7a;font-family:'Share Tech Mono',monospace;font-size:.6rem;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.08em;white-space:nowrap;">✘ VERESÉG</span>
+      </button>
+
+      <button data-h6="nandfeh" onclick="h6Show('nandfeh')" class="h6-btn" style="background:rgba(212,175,55,.07);border:1px solid rgba(212,175,55,.45);border-radius:8px;padding:11px 14px;cursor:pointer;text-align:left;width:100%;transition:.2s;display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:1.3rem;line-height:1;">🔔</span>
+          <div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:#d4af37;letter-spacing:.12em;font-weight:700;">1456 · NÁNDORFEHÉRVÁR</div>
+            <div style="font-size:.85rem;color:#f0f0f8;font-weight:700;">Nándorfehérvári diadal</div>
+          </div>
+        </div>
+        <span style="background:#1e1a0a;border:1px solid #d4af37;color:#d4af37;font-family:'Share Tech Mono',monospace;font-size:.6rem;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.08em;white-space:nowrap;">★ DIADAL</span>
+      </button>
+
+    </div>
+
+    <div id="h6detail" style="background:rgba(212,175,55,.04);border:1px solid rgba(212,175,55,.18);border-radius:8px;padding:14px;min-height:70px;transition:border-color .3s,background .3s;">
+      <span style="color:#8898bb;font-family:'Share Tech Mono',monospace;font-size:.78rem;">👆 Kattints egy csatára a részletekhez!</span>
+    </div>
   </div>
 
   <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
@@ -258,6 +326,119 @@ function showResult6(){
     ${unlockHtml}
     <button class="retry-btn" onclick="initQuiz6()">🔄 Újra próbálom</button>`;
 }
+// ===== TOPIC 6 CSATAATLASZ =====
+var h6data = {
+  szeben: {
+    title:'⚔️ Szebeni csata (1442)',
+    color:'#22c55e', border:'rgba(34,197,94,.5)', bg:'rgba(34,197,94,.07)',
+    magyar:8, torok:17,
+    magyarLabel:'~8 000 magyar (Hunyadi János)',
+    torokLabel:'~17 000 török (Mezid bég)',
+    events:[
+      'Mezid bég kétszeres túlerővel tört be Erdélybe',
+      'Hunyadi páncélját Kemény Simonra adta – a törökök őt hitték a vezérnek',
+      'Kemény Simon hősi halálával elvonta az ellenség figyelmét',
+      'Hunyadi ezután a főerővel bekerítette és megsemmisítette a törököket'
+    ],
+    consequence:'Hunyadi első nagy diadala – neve egész Európában ismertté vált'
+  },
+  hosszu: {
+    title:'🏔️ Hosszú hadjárat (1443–1444)',
+    color:'#22c55e', border:'rgba(34,197,94,.5)', bg:'rgba(34,197,94,.07)',
+    magyar:35, torok:50,
+    magyarLabel:'~35 000 keresztény (Hunyadi + Ulászló király)',
+    torokLabel:'~50 000 török (több seregtest)',
+    events:[
+      'Téli betörés a Balkánra – meglepő és szokatlan taktika',
+      'Szerbia és Bulgária nagy részét felszabadították',
+      'Egészen Szófiáig jutottak előre',
+      'Utánpótlás hiánya és a kemény tél miatt visszavonultak'
+    ],
+    consequence:'Hunyadi híre egész Európában elterjedt – a pápa és a keresztény udvarok ünnepelték'
+  },
+  varna: {
+    title:'💀 Várnai csata (1444)',
+    color:'#e05c7a', border:'rgba(224,92,122,.5)', bg:'rgba(224,92,122,.07)',
+    magyar:20, torok:60,
+    magyarLabel:'~20 000 keresztény',
+    torokLabel:'~60 000 török (II. Murád szultán)',
+    events:[
+      'A drinápolyi béke ellenére – pápai nyomásra – megtámadták a törököt',
+      'Az ígért itáliai segítség teljesen elmaradt',
+      'A genovaiak pénzért szállították át a szultán seregét Európába',
+      'Ulászló király meggondolatlan rohama végzetesnek bizonyult – életét vesztette'
+    ],
+    consequence:'Súlyos vereség – a déli védelmi vonal meggyengült, Hunyadi egyedül maradt'
+  },
+  rigomezo: {
+    title:'⚔️ Második rigómezei csata (1448)',
+    color:'#e05c7a', border:'rgba(224,92,122,.5)', bg:'rgba(224,92,122,.07)',
+    magyar:24, torok:60,
+    magyarLabel:'~24 000 magyar (Hunyadi, mint kormányzó)',
+    torokLabel:'~60 000 török (II. Murád szultán)',
+    events:[
+      'Hunyadi kormányzóként ismét offenzívába lendült',
+      'Brankovics György szerb despota elárulta – nem csatlakozott a szövetséghez',
+      'Az albán Szkander bég segítsége szintén elmaradt',
+      'A háromnapos csata végén a túlerő legyűrte a magyar sereget'
+    ],
+    consequence:'Hunyadi levonta a tanulságot: európai összefogás nélkül nem lehet kiűzni a törököt'
+  },
+  nandfeh: {
+    title:'🔔 Nándorfehérvári diadal (1456)',
+    color:'#d4af37', border:'rgba(212,175,55,.5)', bg:'rgba(212,175,55,.07)',
+    magyar:44, torok:100,
+    magyarLabel:'~44 000 fő: Szilágyi (7e) + Hunyadi (12e) + Kapisztrán keresztesei (25e)',
+    torokLabel:'~100 000 török + folyami flotta (II. Mohamed szultán)',
+    events:[
+      'Szilágyi Mihály 7 000 katonával tartotta a várat az ostrom alatt',
+      'Hunyadi július 14-én hajóival áttörte a Dunán felállított török flottát',
+      'Kapisztrán János itáliai ferences szerzetes 25–30 ezer keresztes parasztot gyűjtött',
+      'A keresztesek váratlan kirohanása megzavarta az ostromlókat',
+      'II. Mohamed súlyos sebet kapott – az oszmán sereg visszavonult'
+    ],
+    consequence:'65 évre megállt a török terjeszkedés · A pápa elrendelte a déli harangszót'
+  }
+};
+
+function h6Show(key) {
+  var d = h6data[key];
+  var box = document.getElementById('h6detail');
+  if(!box) return;
+  var maxT = Math.max(d.magyar, d.torok);
+  var pM = Math.round((d.magyar / maxT) * 100);
+  var pT = 100;
+  var eventsHtml = d.events.map(function(e){ return '<li style="margin-bottom:5px;">'+e+'</li>'; }).join('');
+  box.style.borderColor = d.border;
+  box.style.background = d.bg;
+  box.innerHTML =
+    '<div style="font-family:\'Share Tech Mono\',monospace;font-size:.82rem;color:'+d.color+';font-weight:700;letter-spacing:.06em;margin-bottom:12px;">'+d.title+'</div>'+
+    '<div style="margin-bottom:14px;">'+
+      '<div style="font-family:\'Share Tech Mono\',monospace;font-size:.62rem;color:#8898bb;letter-spacing:.1em;margin-bottom:7px;">ERŐVISZONYOK</div>'+
+      '<div style="margin-bottom:7px;">'+
+        '<div style="display:flex;justify-content:space-between;font-size:.74rem;margin-bottom:3px;"><span style="color:#60a8f8;font-weight:700;">⚔ Magyar / Keresztény</span><span style="color:#60a8f8;">'+d.magyarLabel+'</span></div>'+
+        '<div style="background:rgba(96,168,248,.12);border-radius:4px;height:11px;overflow:hidden;">'+
+          '<div style="width:'+pM+'%;background:linear-gradient(90deg,#2563eb,#60a8f8);height:100%;border-radius:4px;"></div>'+
+        '</div>'+
+      '</div>'+
+      '<div>'+
+        '<div style="display:flex;justify-content:space-between;font-size:.74rem;margin-bottom:3px;"><span style="color:#f87171;font-weight:700;">☾ Oszmán Török</span><span style="color:#f87171;">'+d.torokLabel+'</span></div>'+
+        '<div style="background:rgba(248,113,113,.12);border-radius:4px;height:11px;overflow:hidden;">'+
+          '<div style="width:'+pT+'%;background:linear-gradient(90deg,#b91c1c,#f87171);height:100%;border-radius:4px;"></div>'+
+        '</div>'+
+      '</div>'+
+    '</div>'+
+    '<div style="font-family:\'Share Tech Mono\',monospace;font-size:.62rem;color:#8898bb;letter-spacing:.1em;margin-bottom:6px;">KULCSMOZZANATOK</div>'+
+    '<ul style="font-size:.83rem;color:#ccd4e8;line-height:1.75;padding-left:18px;margin-bottom:12px;">'+eventsHtml+'</ul>'+
+    '<div style="border-left:3px solid '+d.color+';padding:8px 12px;background:rgba(0,0,0,.2);border-radius:0 6px 6px 0;font-size:.83rem;color:#f0f0f8;">'+
+      '<span style="font-family:\'Share Tech Mono\',monospace;font-size:.62rem;color:'+d.color+';letter-spacing:.08em;display:block;margin-bottom:3px;">KÖVETKEZMÉNY</span>'+
+      d.consequence+
+    '</div>';
+  document.querySelectorAll('.h6-btn').forEach(function(el){ el.style.opacity='0.6'; el.style.transform=''; });
+  var active = document.querySelector('.h6-btn[data-h6="'+key+'"]');
+  if(active){ active.style.opacity='1'; active.style.transform='translateX(5px)'; }
+}
+
 function buildTopic6Concepts(){
   const concepts=[
     {c:'purple',e:'🌙',t:'Oszmán Török Birodalom',d:"A 13. század végén I. Oszmán által alapított, Kis-Ázsiából kiinduló iszlám birodalom hatalma csúcsát I. Szulejmán uralkodása (1520–1566) alatt érte el. Katonai sikereit elsősorban kiválóan szervezett haderejének, a janicsár gyalogságnak és a szpáhi lovasságnak köszönhette."},
@@ -266,9 +447,9 @@ function buildTopic6Concepts(){
     {c:'rose',e:'🛡️',t:'Szekérvár',d:"Hunyadi János által is alkalmazott harci taktika: szekereket kötöttek össze lánccal védelmi sánc gyanánt, mögé rejtve a tüzérséget és a gyalogságot."},
     {c:'blue',e:'👑',t:'Kormányzó',d:"Az 1446–1453 között betöltött tisztség, amelyet Hunyadi János viselt. A kiskorú V. László helyett ő irányította az országot. A király jogköréhez hasonló hatalommal rendelkezett."},
     {c:'green',e:'🏆',t:'Hosszú hadjárat',d:"Az 1443–44-es téli hadjárat a Balkánra, amelyen Hunyadi egészen Szófiáig nyomult előre. Európai hírnevet szerzett, de végül utánpótlás hiányában visszavonultak."},
-    {c:'purple',e:'💀',t:'Várnai csata (1444)',d:"Súlyos magyar vereség a törökökkel szemben. A keresztény sereg felrúgta a korábban kötött békét, a szultán főseregét pedig a genovaiak pénzért szállították át Európába. A csatában I. Ulászló király is életét vesztette."},
+    {c:'purple',e:'💀',t:'Várnai csata (1444)',d:"Súlyos magyar vereség a törökökkel szemben. A keresztény sereg az 1444-es drinápolyi békekötés ellenére indított támadást – a pápai és itáliai szövetségesek nyomására felrúgták a törökkel kötött békét. A szultán főseregét ráadásul a genovaiak pénzért szállították át Európába. A csatában I. Ulászló király is életét vesztette."},
     {c:'amber',e:'🔔',t:'Nándorfehérvár',d:"Stratégiai fontosságú vár a Duna és Száva összefolyásánál, Magyarország kapuja. 1456-ban itt győzte le Hunyadi a hatalmas oszmán sereget."},
-    {c:'teal',e:'⛪',t:'Kapisztrán János',d:"Ferences szerzetes, aki 25-30 ezer keresztes parasztot gyűjtött össze a nándorfehérvári ostrom idején. A hit katonái döntő szerepet játszottak a győzelemben."},
+    {c:'teal',e:'⛪',t:'Kapisztrán János',d:"Itáliai ferences szerzetes, aki 25-30 ezer keresztes parasztot gyűjtött össze a nándorfehérvári ostrom idején. A hit katonái döntő szerepet játszottak a győzelemben."},
     {c:'rose',e:'🛡️',t:'Szilágyi Mihály',d:"Hunyadi sógora, aki 7 ezer katonával védte Nándorfehérvár várát az ostrom idején. Később Hunyadi Mátyás trónra jutásában is kulcsszerepet játszott."},
     {c:'blue',e:'🕌',t:'Rigómező (1389)',d:"A szerbek döntő veresége a törökökkel szemben, amely után Szerbia oszmán befolyás alá került. Ezzel a török közvetlen szomszédja lett a Magyar Királyságnak."},
     {c:'green',e:'🕌',t:'Konstantinápoly eleste (1453)',d:"II. Mohamed szultán elfoglalta a Bizánci Birodalom fővárosát, Konstantinápolyt, a mai Isztambult. Ezzel a győzelemmel a város az Oszmán Birodalom új fővárosává vált, és végleg megszűnt a Keletrómai Birodalom."}

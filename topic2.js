@@ -1,5 +1,5 @@
 ﻿const topic2={
-  title:'2. Tétel – István az államalapító',
+  title:'2. Tétel – István, az államalapító',
   subtitle:'A keresztény Magyar Királyság megalapítása',
   emoji:'👑',
   content: buildTopic2Content,
@@ -18,7 +18,7 @@ function buildTopic2Content(){
       <li><strong>Kereszténység felvétele:</strong> Ő maga is megkeresztelkedett.</li>
       <li><strong>Külpolitika:</strong> 973-ban követeket küldött a német-római császárhoz (Ottóhoz) Quedlinburgba, és hittérítőket kért.</li>
       <li><strong>Dinasztikus házasság:</strong> Fiát, Vajkot (aki a keresztségben az <em>István</em> nevet kapta), a bajor hercegnővel, <strong>Gizellával</strong> házasította össze – így az Árpád-ház rokonságba került a császári uralkodócsaláddal.</li>
-      <li><strong>Pannonhalma:</strong> 996-ban bencés szerzeteseket hívott be, és megalapította a pannonhalmi apátságot.</li>
+      <li><strong>Pannonhalma:</strong> 996-ban bencés szerzeteseket hívott be, és megkezdte a pannonhalmi apátság építését. 💡 <em>Érdekesség: az építkezést Géza kezdi el, de István fejezi be 1002-ben.</em></li>
     </ul>
 <div class="content-img-wrap" style="max-width:320px;margin:16px auto 0;">
   <img src="images/topic2_img0.png" alt="Keresztelési jelenet"/>
@@ -32,7 +32,7 @@ function buildTopic2Content(){
     <p>997-ben, Géza halála után <strong>kétféle öröklési rend</strong> feszült egymásnak – ez kulcskérdés volt az ország jövője szempontjából:</p>
     <table class="data-table">
       <tr><th>István</th><th>Koppány</th></tr>
-      <tr><td>Az elsőszülött fiú örököl</td><td>A legidősebb rokon örököl</td></tr>
+      <tr><td>Az elsőszülött fiú örököl (primogenitúra)</td><td>A legidősebb rokon örököl (szeniorátus)</td></tr>
       <tr><td>Keresztény királyság felépítése</td><td>A régi nomád, pogány hagyomány folytatása</td></tr>
       <tr><td>Gizellával érkezett német lovagok támogatják</td><td>A pogány törzsek támogatják</td></tr>
     </table>
@@ -54,11 +54,38 @@ function buildTopic2Content(){
     <div class="highlight-box">🏅 Ez volt az egyik legokosabb politikai húzás: a pápai korona révén Magyarország <strong>független, egyenrangú európai állammá</strong> vált!</div>
   </div>
 
+  <div class="info-card" style="border-color:rgba(212,175,55,.5);">
+    <h3>🔍 Érdekesség: A Szent Korona titkai</h3>
+    <p style="margin-bottom:14px;">Hazánk legfontosabb történelmi jelképe, amellyel évszázadokon át koronázták a magyar királyokat – de a koronának meglepően izgalmas titkai vannak.</p>
+
+    <div style="background:rgba(212,175,55,.06);border-left:3px solid #d4af37;border-radius:0 8px 8px 0;padding:12px 15px;margin-bottom:8px;">
+      <div style="font-family:'Share Tech Mono',monospace;font-size:.72rem;color:#d4af37;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;">⚙️ Felépítés és fizikai érdekességek</div>
+      <p style="font-size:.9rem;color:#ccd4e8;line-height:1.7;">A korona két régebbi, különálló részből lett összeillesztve: az alsó, görög feliratos abroncsból (<strong>Corona Graeca</strong>) és a felső, latin feliratos pántokból (<strong>Corona Latina</strong>). Súlya: pontosan <strong>2056 gramm</strong> – több mint 2 kilogramm!<br>
+      A tetején látható <strong>ferde kereszt</strong> egy régi baleset emléke: a 17. században egy sietős menekítés során rosszul zárták le a vasládáját, és a nehéz fedél rácsapódott.</p>
+    </div>
+
+    <div style="background:rgba(96,168,248,.05);border-left:3px solid #60a8f8;border-radius:0 8px 8px 0;padding:12px 15px;margin-bottom:8px;">
+      <div style="font-family:'Share Tech Mono',monospace;font-size:.72rem;color:#60a8f8;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;">⚖️ A három feltétel – csak ez számított törvényes koronázásnak</div>
+      <p style="font-size:.9rem;color:#ccd4e8;line-height:1.7;">A középkori Magyarországon csak azt fogadták el törvényes királynak, akinek koronázása egyszerre teljesített három feltételt:</p>
+      <ul style="font-size:.9rem;color:#ccd4e8;line-height:1.8;padding-left:18px;margin-top:6px;">
+        <li><strong>Székesfehérváron</strong> történt,</li>
+        <li>az <strong>esztergomi érsek</strong> végezte,</li>
+        <li>kizárólag <strong>ezzel a konkrét Szent Koronával</strong> hajtották végre.</li>
+      </ul>
+      <p style="font-size:.9rem;color:#ccd4e8;line-height:1.7;margin-top:8px;">E szabályt olyan komolyan vették, hogy <strong>Károly Róbertet háromszor kellett megkoronázni!</strong> Az első két alkalommal nem a Szent Koronát használták (az épp Kán László erdélyi vajda kezében volt), így a rendek nem ismerték el hatalmát egészen az <strong>1310-es, mindhárom feltételt teljesítő</strong> harmadik koronázásig.</p>
+    </div>
+
+    <div style="background:rgba(34,211,160,.05);border-left:3px solid #22d3a0;border-radius:0 8px 8px 0;padding:12px 15px;">
+      <div style="font-family:'Share Tech Mono',monospace;font-size:.72rem;color:#22d3a0;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;">🌍 Kalandos történelem – elásva, Fort Knoxban, majd haza</div>
+      <p style="font-size:.9rem;color:#ccd4e8;line-height:1.7;">Az 1848–49-es szabadságharc leverése után <strong>titokban elásták Orsovánál</strong>. A második világháború után évtizedekig az <strong>amerikai Fort Knoxban</strong> őrizték az aranytartalékkal együtt. A többször megmentett nemzeti kincs <strong>1978-ban tért haza</strong>, ma pedig Budapesten, az Országházban látható – ahol a nap 24 órájában fegyveres koronaőrök vigyázzák.</p>
+    </div>
+  </div>
+
   <div class="info-card">
     <h3>🗺️ Az ország egységének megteremtése</h3>
     <p>A koronázás után Istvánnak le kellett győznie a még ellenálló törzsfőket, hogy az egész ország felett valódi hatalma legyen:</p>
     <ul>
-      <li><strong>Erdély:</strong> Legyőzte a terület urát, <strong>Gyulát</strong> (anyai nagybátyját).</li>
+      <li><strong>Erdély:</strong> Legyőzte a terület urát, <strong>gyulát</strong> (tisztség) (anyai nagybátyját).</li>
       <li><strong>Maros-vidék:</strong> Legyőzte <strong>Ajtonyt</strong>.</li>
       <li><strong>Külső védekezés:</strong> 1030-ban II. Konrád német császár támadását a „felégetett föld" taktikájával verte vissza a magyar haderő.</li>
     </ul>
@@ -81,7 +108,7 @@ function buildTopic2Content(){
     <h3>⛪ Az egyházszervezés és a hitélet</h3>
     <p>István felismerte, hogy a kereszténység az új állam alapja. Ezért szisztematikusan kiépítette az egyházi szervezetet:</p>
     <ul>
-      <li><strong>Püspökségek:</strong> 10 püspökséget alapított (pl. Veszprém, Győr, Pécs).</li>
+      <li><strong>Püspökségek:</strong> 8 püspökséget alapított (pl. Veszprém, Győr, Pécs).</li>
       <li><strong>Érsekségek:</strong> Az egyház központja <strong>Esztergom</strong> lett, emellett <strong>Kalocsa</strong> is érseki rangot kapott. (A független egyházszervezet kialakítása fontos volt a szuverenitás szempontjából.)</li>
     </ul>
     <p style="margin-top:10px;">Törvényei a keresztény életmódot kötelezővé tették:</p>
@@ -94,7 +121,7 @@ function buildTopic2Content(){
   <img src="images/topic2_img2.png" alt="Szent István egyházmegyéi térkép"/>
   <div class="content-img-caption">🗺️ Szent István egyházmegyéi – narancssárga: érseki székhelyek (Esztergom, Kalocsa), sárga: püspöki székhelyek. Piros pont: Fehérvár (a koronázó város) és Pannonhalma.</div>
 </div>
-    <div class="highlight-box">⛪ István 10 püspökséget és 2 érsekséget alapított – ezzel kiépült Magyarország önálló egyházi szervezete.</div>
+    <div class="highlight-box">⛪ István 8 püspökséget és 2 érsekséget alapított – ezzel kiépült Magyarország önálló egyházi szervezete.</div>
   </div>
 
   <div class="info-card">
@@ -131,12 +158,12 @@ function buildTopic2Content(){
   <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
     <h3 style="color:#4ade80;">📋 Összefoglaló vázlat</h3>
     <ul>
-      <li>🌍 <strong>Géza (972–997):</strong> Külpolitikai nyitás nyugat felé, István + Gizella házassága, Pannonhalma alapítása</li>
+      <li>🌍 <strong>Géza (972–997):</strong> Külpolitikai nyitás nyugat felé, István + Gizella házassága, Pannonhalma építésének megkezdése (996, István fejezi be 1002-ben)</li>
       <li>⚔️ <strong>997 – Koppány legyőzése:</strong> Kereszténység győz a pogányság felett – István lesz az örökös</li>
       <li>👑 <strong>István fejedelem, majd király (997/1000–1038):</strong> Az első magyar király, a keresztény állam megalapítója</li>
       <li>👑 <strong>1000/1001 – Koronázás:</strong> Pápától kapott korona → szuverén, független Magyarország</li>
       <li>🏛️ <strong>Államszervezet:</strong> Vármegyék + ispánok + nádor + dénár</li>
-      <li>⛪ <strong>Egyház:</strong> 10 püspökség, Esztergom érseki székhely, tized, templomépítési kötelezettség</li>
+      <li>⛪ <strong>Egyház:</strong> 8 püspökség, Esztergom érseki székhely, tized, templomépítési kötelezettség</li>
       <li>😢 <strong>1031 – Imre halála:</strong> Dinasztikus válság, Vazul kizárása, Orseolo Péter az utód</li>
       <li>✨ <strong>1083 – Szentté avatás:</strong> Augusztus 20. = nemzeti ünnep</li>
     </ul>
@@ -145,7 +172,7 @@ function buildTopic2Content(){
 function buildTopic2Concepts(){
   const concepts=[
     {c:'purple',e:'⛪',t:'Érsek',d:'Az egyházi hierarchia legmagasabb rangú főpapja Magyarországon. István két érsekséget alapított: Esztergom (a főérsek székhelye) és Kalocsa. Az érsek több püspökség felett felügyel.'},
-    {c:'amber',e:'🙏',t:'Püspök',d:'Egy egyházmegye (püspökség) vezetője. István 10 püspökséget alapított (pl. Veszprém, Győr, Pécs). A püspök felügyeli a templomokat és a papokat a saját területén.'},
+    {c:'amber',e:'🙏',t:'Püspök',d:'Egy egyházmegye (püspökség) vezetője. István 8 püspökséget alapított (pl. Veszprém, Győr, Pécs). A püspök felügyeli a templomokat és a papokat a saját területén.'},
     {c:'teal',e:'🏛️',t:'Vármegye',d:'István által létrehozott közigazgatási egység. Minden vármegye élén egy ispán állt. A rendszer az egész ország felügyeletét lehetővé tette a király számára.'},
     {c:'rose',e:'⚔️',t:'Ispán',d:'A király által kinevezett vezető, aki a vármegyét irányította. Feladata: adószedés, bíráskodás és a katonaság irányítása.'},
     {c:'blue',e:'🎖️',t:'Nádor',d:'A király után a legfontosabb világi méltóság az országban. Bírói és katonai feladatai országos szintűek voltak.'},
@@ -155,7 +182,7 @@ function buildTopic2Concepts(){
     {c:'teal',e:'🏅',t:'Szuverenitás',d:'Egy állam teljes függetlenségét és önállóságát jelenti. Leegyszerűsítve azt fejezi ki, hogy egy ország a „saját ura": maga hozza a törvényeit, maga dönt a sorsáról, és más államok nem parancsolhatnak neki.'},
     {c:'rose',e:'👨‍👦',t:'Orseolo Péter',d:'István unokaöccse, velencei származású. Imre halála és Vazul kizárása után ő lett a trónörökös. István halála után (1038) ő követte Istvánt a trónon.'},
     {c:'blue',e:'🙏',t:'II. Szilveszter pápa',d:'A pápa, aki a koronát küldte Istvánnak. Fontos: III. Ottó császár beleegyezésével történt, így mindkét nagyhatalom elismerte a Magyar Királyságot. A pápai korona révén Magyarország elkerülte a hűbéri függőséget.'},
-    {c:'green',e:'🏰',t:'Pannonhalma',d:'996-ban Géza fejedelem által alapított bencés apátság. Az ország egyik legrégebbi és legfontosabb egyházi intézménye, ma is működik és UNESCO-védelem alatt áll.'},
+    {c:'green',e:'🏰',t:'Pannonhalma',d:'Bencés apátság, amelyet Géza fejedelem kezdett el építeni 996-ban, és István király fejezett be 1002-ben. Az ország egyik legrégebbi és legfontosabb egyházi intézménye, ma is működik és UNESCO-védelem alatt áll.'},
   ];
   return `<h2 style="font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--purple);margin-bottom:16px;">💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
   <div class="concepts-grid">${concepts.map(c=>`
@@ -173,7 +200,7 @@ const questions2=[
   {q:'Kitől kapta István király a koronáját?',a:['A bizánci császártól','Csak II. Szilveszter pápától, a császár tudta nélkül','II. Szilveszter pápától, III. Ottó császár beleegyezésével'],correct:2},
   {q:'Miért volt fontos, hogy a korona a pápától érkezett és nem a császártól?',a:['Mert a pápa gazdagabb volt','Mert így Magyarország szuverén állam maradt, és nem vált hűbéressé','Mert a császár nem volt hajlandó koronát küldeni'],correct:1},
   {q:'Mi volt az ispán feladata a vármegyében?',a:['Csak templomokat épített','Adószedés, bíráskodás és a katonaság vezetése','Kizárólag egyházi ügyeket intézett'],correct:1},
-  {q:'Hány püspökséget alapított Szent István?',a:['5 püspökséget','10 püspökséget','15 püspökséget'],correct:1},
+  {q:'Hány püspökséget alapított Szent István?',a:['5 püspökséget','8 püspökséget','15 püspökséget'],correct:1},
   {q:'Mit jelent a tized?',a:['A termény tizedrészét az egyháznak kellett adni','Tíz naponta kellett templomba menni','Minden tizedik falut fel kellett menteni az adó alól'],correct:0},
   {q:'Mi történt Imre herceggel 1031-ben?',a:['Ellenségei megölték','Vadkanbalesetben elhunyt','Külföldi hadjáraton esett el'],correct:1},
   {q:'Ki lett István trónörököse Imre herceg halála után?',a:['Vazul, a pogány unokatestvér','Orseolo Péter, az itáliai unokaöccs','Gyula, az erdélyi törzsfő'],correct:1},

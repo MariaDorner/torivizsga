@@ -3,7 +3,7 @@ function buildTopic3Concepts(){
   const concepts=[
     {c:'purple',e:'👑',t:'IV. Béla',d:'Magyar király 1235–1270 között. Apja, II. András politikájával szakítva visszavette az eladományozott királyi birtokokat, ami konfliktushoz vezetett a nemesekkel. A tatárjárás után reformjaival újjáépítette az országot – ezért nevezi az utókor a "második honalapítónak".'},
     {c:'amber',e:'🗺️',t:'Julianus barát',d:'Domonkos rendi szerzetes, aki 1236-ban megtalálta az őshazában maradt magyarokat a Volga mentén (Magna Hungaria). 1237-es második útján már csak a pusztítás hírét hozta, és Batu kán fenyegető levelét adta át IV. Bélának.'},
-    {c:'teal',e:'🏹',t:'Kunok',d:'Nomád lovasnép, akiket IV. Béla 1239-ben fogadott be a tatárok elől menekülve. Vezérük Kötöny volt. A pesti tömeg meggyilkolta Kötönyt, mire a kunok kivonultak az országból – Béla így elvesztette legfontosabb szövetségesét.'},
+    {c:'teal',e:'🏹',t:'Kunok',d:'Nomád lovasnép, akiket IV. Béla 1239-ben fogadott be a tatárok elől menekülve. Vezérük Kötöny volt. A pesti tömeg meggyilkolta Kötönyt, mire a kunok kivonultak az országból – Béla így elvesztette legfontosabb szövetségesét. A tatárjárás után visszahívta és az Alföldön telepítette le őket – máig él a nyomuk: Kiskunság és Nagykunság.'},
     {c:'rose',e:'👤',t:'Batu kán',d:'A mongol (tatár) fősereg vezére, Dzsingisz kán unokája. Az ő serege törte be a Vereckei-hágón 1241-ben, és vívta meg a muhi csatát. 1242 tavaszán – részben Ögödej nagykán halála miatt – kivonult Magyarországról.'},
     {c:'blue',e:'⚔️',t:'Muhi csata (1241. ápr. 11.)',d:'A tatárjárás döntő ütközete a Sajó folyó mentén. A magyarok szekérvárat építettek, de a tatárok éjszaka átkeltek a folyón és bekerítették a tábort. A vereség megsemmisítő volt: szinte a teljes magyar haderő elpusztult.'},
     {c:'green',e:'🛡️',t:'Szekérvár',d:'Védelmi taktika: szorosan egymás mellé állított szekerekből alkotott kerítés, amely mögé a hadsereg visszavonult. A muhi csatánál alkalmazták, de kelepcévé vált, mert a tatárok bekerítették, és a szűk helyen a lovasság nem tudott manőverezni.'},
@@ -108,7 +108,7 @@ function buildTopic3Content(){
       <li>A szűk helyen a magyar lovasság nem tudott rendesen felállni – a tábor <strong>kelepcévé vált</strong>.</li>
       <li>A vereség megsemmisítő volt: szinte a teljes magyar haderő elpusztult, érsekek és püspökök is életüket vesztették.</li>
     </ul></div>
-    <p style="margin-top:12px;">IV. Béla elmenekült: előbb az osztrák herceghez ment (aki megzsarolta), majd az Adria-tenger partjára, <strong>Trau (Trogir)</strong> várába vonult vissza. A tatárok 1241–42 telén a befagyott Dunán átkelve a Dunántúlt is lerohanták. Csak a jól védhető <strong>kővárak</strong> (pl. Esztergom, Székesfehérvár, Pannonhalma) tudtak ellenállni.</p>
+    <p style="margin-top:12px;">IV. Béla elmenekült: előbb az osztrák herceghez ment (aki megzsarolta – területeket követelt tőle), majd az Adria-tenger partjára, <strong>Trau (Trogir)</strong> várába vonult vissza. A tatárok 1241–42 telén a befagyott Dunán átkelve a Dunántúlt is lerohanták. Csak a jól védhető <strong>kővárak</strong> (pl. Esztergom, Székesfehérvár, Pannonhalma) tudtak ellenállni.</p>
     <div class="highlight-box" style="margin-top:8px;">🔍 <strong>Érdekesség:</strong> Esztergom városa leégett és elpusztult a tatárok kezén – de a folyó fölé magasodó <strong>várhegy erődje</strong> sikeresen visszaverte az ostromot. Ez is megmutatta, hogy a kőből épített, jól védhető vár és a nyílt város között hatalmas különbség van.</div>
     <div class="highlight-box">💀 A pusztítás óriási volt: a lakosság <strong>15–25%-a</strong> meghalt, falvak százai égtek le, és éhínség követte a dúlást.</div>
   </div>
@@ -135,13 +135,13 @@ function buildTopic3Content(){
       <tr><th>Intézkedés</th><th>Részletek</th></tr>
       <tr><td>🏰 <strong>Várépítések</strong></td><td>Engedélyezte a várépítést, maga is több mint 60 erődítményt emelt (pl. Visegrád, Buda).</td></tr>
       <tr><td>🌾 <strong>Birtokadományozás</strong></td><td>Földet adományozott a nemeseknek, feltétel: kővárat építsenek és nehézpáncélos lovasságot állítsanak fel.</td></tr>
-      <tr><td>👥 <strong>Betelepítések</strong></td><td>Visszahívta a kunokat (Alföld), jászokat és német telepeseket (hospeseket) hívott be.</td></tr>
+      <tr><td>👥 <strong>Betelepítések</strong></td><td>Visszahívta a kunokat az Alföldre (máig él a nyomuk: <strong>Kiskunság, Nagykunság</strong>), jászokat és német telepeseket (hospeseket) hívott be.</td></tr>
       <tr><td>🏙️ <strong>Városfejlesztés</strong></td><td>Számos településnek adott városi rangot és kiváltságokat (falépítés joga, önkormányzat).</td></tr>
     </table>
   </div>
 
-  <div class="info-card" style="background:linear-gradient(135deg,#FFF7ED,#FEF3C7);border:2px solid #FCD34D;">
-    <h3 style="color:#B45309;">⚠️ A királyi hatalom gyengülése</h3>
+  <div class="info-card" style="border-color:rgba(212,175,55,.4);">
+    <h3>⚠️ A királyi hatalom gyengülése</h3>
     <p>A 13. század második felében a királyi hatalom rohamosan gyengült. Trónharcok törtek ki – IV. Béla és saját fia, V. István között. Az évtizedekig tartó belviszály alatt a bárói réteg tovább erősödött, és az adományozások révén kiterjedt birtokokra tett szert. IV. Béla utódai már nem tudták megakadályozni a <strong>királyi vármegyerendszer szétesését</strong> és a bárók önkényeskedését.</p>
   </div>
 

@@ -28,7 +28,7 @@ function buildTopic1Content(){
       <tr><th>Állomáshely</th><th>Helyszín</th><th>Fontos események és jellemzők</th></tr>
       <tr><td><strong>Magna Hungaria</strong></td><td>Az Urál-hegység nyugati lába</td><td>Az „ősi Magyarország". 1236-ban Julianus barát itt talált rá az ott maradt magyarokra, akikkel megértették egymást.</td></tr>
       <tr><td><strong>Levédia</strong></td><td>A Don és a Dnyeper közötti terület</td><td>A terület nevét Levedi törzsfőről kapta. A magyarok a Kazár Birodalom fennhatósága alatt éltek itt, átvéve a kettős fejedelemséget.</td></tr>
-      <tr><td><strong>Etelköz</strong></td><td>A Dnyeper és az Al-Duna közötti terület</td><td>Jelentése: „Folyóköz". Itt történt a vérszerződés, a hét törzs szövetsége, és itt választották Árpádot fejedelemmé.</td></tr>
+      <tr><td><strong>Etelköz</strong></td><td>A Dnyeper és az Al-Duna közötti terület</td><td>Jelentése: „Folyóköz". Itt történt a vérszerződés, a hét törzs szövetsége, és itt választották Álmost fejedelemmé. Árpád Álmos halálát követően lett a vezér.</td></tr>
     </table>
 <div class="content-img-wrap" style="margin:20px 0;">
   <img src="images/topic1_img0.png" alt="A magyarok vándorlása térkép"/>
@@ -74,6 +74,67 @@ function buildTopic1Content(){
       <li><strong>Taktika:</strong> Kerülték a közvetlen közelharcot a páncélos lovasokkal. Nyílzáporral bontották meg az ellenség rendjét, majd színlelt megfutamodással csalták tőrbe őket. Amikor az ellenség alakzata felbomlott, hirtelen visszafordultak és szablyával támadtak.</li>
       <li><strong>Felszerelés:</strong> Használták a kengyelt, ami lehetővé tette, hogy lóháton hátrafelé is tudjanak nyilazni. Jellegzetes kiegészítőjük volt a tarsoly, amelyben az eszközöket tartották.</li>
     </ul>
+  </div>
+
+  <div class="info-card" style="border-color:rgba(212,175,55,.35);">
+    <h3>🏰 Kárpát-medence dióhéjban – Ki volt itt előttünk? (5. sz. – 895)</h3>
+    <p style="margin-bottom:16px;">A magyarok nem üres földet foglaltak el. Öt korszak, öt nép – íme a medence rövid előtörténete!</p>
+    <div style="display:flex;flex-direction:column;gap:5px;">
+
+      <div style="background:rgba(212,175,55,.06);border-left:3px solid #d4af37;border-radius:0 8px 8px 0;padding:11px 15px;display:flex;gap:12px;align-items:flex-start;">
+        <div style="font-size:1.4rem;line-height:1;flex-shrink:0;">⚔️</div>
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.68rem;color:#d4af37;font-weight:700;text-transform:uppercase;letter-spacing:.1em;">5. század első fele</div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.85rem;font-weight:700;color:#f0c840;margin:3px 0;">A HUNOK KORA</div>
+          <div style="font-size:.88rem;color:#ccd4e8;line-height:1.6;">Attila király hatalmas birodalmat épít ki. Halálával (453) a birodalom azonnal szétesik.</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;color:rgba(212,175,55,.35);font-family:'Share Tech Mono',monospace;font-size:.75rem;letter-spacing:.15em;">▼</div>
+
+      <div style="background:rgba(34,211,160,.05);border-left:3px solid #22d3a0;border-radius:0 8px 8px 0;padding:11px 15px;display:flex;gap:12px;align-items:flex-start;">
+        <div style="font-size:1.4rem;line-height:1;flex-shrink:0;">🛡️</div>
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.68rem;color:#22d3a0;font-weight:700;text-transform:uppercase;letter-spacing:.1em;">453 – 568</div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.85rem;font-weight:700;color:#6ee7ca;margin:3px 0;">A GERMÁNOK KORA</div>
+          <div style="font-size:.88rem;color:#ccd4e8;line-height:1.6;">A gepidák és a longobárdok harcolnak a területért. A longobárdok 568-ban továbbállnak Itáliába.</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;color:rgba(212,175,55,.35);font-family:'Share Tech Mono',monospace;font-size:.75rem;letter-spacing:.15em;">▼</div>
+
+      <div style="background:rgba(224,92,122,.05);border-left:3px solid #e05c7a;border-radius:0 8px 8px 0;padding:11px 15px;display:flex;gap:12px;align-items:flex-start;">
+        <div style="font-size:1.4rem;line-height:1;flex-shrink:0;">🐎</div>
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.68rem;color:#e05c7a;font-weight:700;text-transform:uppercase;letter-spacing:.1em;">568 – 8. század vége</div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.85rem;font-weight:700;color:#f9a8bb;margin:3px 0;">AZ AVAROK KORA</div>
+          <div style="font-size:.88rem;color:#ccd4e8;line-height:1.6;">Egy nomád lovasnép, az avarok uralják a medencét több mint 200 évig. Birodalmukat a 790-es években a frankok (Nagy Károly) verik szét.</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;color:rgba(212,175,55,.35);font-family:'Share Tech Mono',monospace;font-size:.75rem;letter-spacing:.15em;">▼</div>
+
+      <div style="background:rgba(96,168,248,.05);border-left:3px solid #60a8f8;border-radius:0 8px 8px 0;padding:11px 15px;display:flex;gap:12px;align-items:flex-start;">
+        <div style="font-size:1.4rem;line-height:1;flex-shrink:0;">👑</div>
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.68rem;color:#60a8f8;font-weight:700;text-transform:uppercase;letter-spacing:.1em;">9. század</div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.85rem;font-weight:700;color:#a5c8ff;margin:3px 0;">A MEGOSZTOTTSÁG KORA</div>
+          <div style="font-size:.88rem;color:#ccd4e8;line-height:1.6;">Nincs egyetlen nagy úr: <strong>nyugaton a frankok</strong>, <strong>délkeleten a bolgárok</strong>, <strong>északon a szlávok</strong> (Nagymorva Birodalom) a befolyásosak.</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;color:rgba(212,175,55,.35);font-family:'Share Tech Mono',monospace;font-size:.75rem;letter-spacing:.15em;">▼</div>
+
+      <div style="background:rgba(34,197,94,.07);border-left:3px solid #22c55e;border:1px solid rgba(34,197,94,.25);border-left:3px solid #22c55e;border-radius:0 8px 8px 0;padding:11px 15px;display:flex;gap:12px;align-items:flex-start;">
+        <div style="font-size:1.4rem;line-height:1;flex-shrink:0;">🇭🇺</div>
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.68rem;color:#22c55e;font-weight:700;text-transform:uppercase;letter-spacing:.1em;">895</div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.85rem;font-weight:700;color:#86efad;margin:3px 0;">A MAGYAR HONFOGLALÁS</div>
+          <div style="font-size:.88rem;color:#ccd4e8;line-height:1.6;">Árpád vezetésével a magyar törzsek megérkeznek, és az egymással is vetélkedő birodalmakat kiszorítva <strong style="color:#4ade80;">véglegesen birtokba veszik a Kárpát-medencét.</strong></div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <div class="info-card">
@@ -138,7 +199,7 @@ function buildTopic1Content(){
     <h3 style="color:#4ade80;">📋 Történeti Gyorsvázlat (Szigorúan kulcsszavak)</h3>
     <ul>
       <li>🌍 <strong>Őshaza &amp; eredet:</strong> Urálon túli sztyeppe → ugor népektől való elkülönülés → türk hatás (szó- és tárgykölcsönzések)</li>
-      <li>🗺️ <strong>Vándorlás:</strong> Magna Hungaria → Levédia (kettős fejedelemség: Kende + Gyula) → Etelköz (vérszerződés, Árpád)</li>
+      <li>🗺️ <strong>Vándorlás:</strong> Magna Hungaria → Levédia (kettős fejedelemség: Kende + Gyula) → Etelköz (vérszerződés, Álmos → Árpád)</li>
       <li>👥 <strong>Törzsszövetség:</strong> 7 magyar törzs + kabarok → Kende (szakrális/vallási) + Gyula (katonai/tényleges vezető)</li>
       <li>🏕️ <strong>Életmód:</strong> Félnomád (állattartás + földművelés), jurta, visszacsapó íj, kengyel, tarsoly</li>
       <li>🏹 <strong>Harcmodor:</strong> Könnyűlovas, visszacsapó íj, színlelt megfutamodás</li>
@@ -153,7 +214,7 @@ const mapActive=new Set();
 const mapInfo={
   1:'<strong>1. Magna Hungaria</strong> – Az „ősi Magyarország" az Urál-hegység nyugati lábánál. 1236-ban Julianus barát megtalálta az ott maradt rokon magyarokat, akikkel megértették egymást!',
   2:'<strong>2. Levédia</strong> – A Don és a Dnyeper folyók közötti terület. A Kazár Birodalom fennhatósága alatt éltek itt, és átvettük tőlük a kettős fejedelemség rendszerét.',
-  3:'<strong>3. Etelköz</strong> – A Dnyeper és az Al-Duna közötti terület. Jelentése: „Folyóköz". Itt történt a vérszerződés és itt választották Árpádot fejedelemmé!',
+  3:'<strong>3. Etelköz</strong> – A Dnyeper és az Al-Duna közötti terület. Jelentése: „Folyóköz". Itt történt a vérszerződés és itt választották Álmost fejedelemmé! Árpád Álmos halálát követően lett a vezér.',
   4:'<strong>4. Honfoglalás (895)</strong> – A Kárpát-medence elfoglalása besenyő nyomásra. Árpád a Vereckei-hágón vezette be seregeit. A záróakkord: 907-es pozsonyi győzelem!',
   5:'<strong>5. Kalandozások</strong> – Magyar seregek Hispániától Bizáncig pusztítottak. Vége: 955 Augsburg (nyugat), 970 Arkadiopolisz (délkelet).',
 };
@@ -191,7 +252,7 @@ function buildTopic1Concepts(){
     {c:'purple',e:'🗣️',t:'Finnugor',d:'Nyelvcsalád, amelyhez a magyar is tartozik. Legközelebbi rokonaink: vogulok és osztjákok az Urál vidékéről.'},
     {c:'amber',e:'⚔️',t:'Türk jövevényszavak',d:'A török (türk) népektől átvett szavak, pl. ló, tinó, ökör, gyümölcs. Ezek is igazolják a szoros türk kapcsolatot.'},
     {c:'teal',e:'👑',t:'Kettős fejedelemség',d:'Kazároktól átvett hatalmi rendszer: Kende (szakrális vezető) + Gyula (katonai-bírói vezető).'},
-    {c:'rose',e:'🤝',t:'Vérszerződés',d:'A 7 törzs szövetsége Etelközben. Árpádot fejedelemmé választják – ezzel létrejön a Magyar Nagyfejedelemség.'},
+    {c:'rose',e:'🤝',t:'Vérszerződés',d:'A 7 törzs szövetsége Etelközben. Álmost fejedelemmé választják – Árpád Álmos halálát követően lesz a vezér. Ezzel jön létre a Magyar Nagyfejedelemség.'},
     {c:'blue',e:'🏕️',t:'Félnomád életmód',d:'Olyan életforma, amelyben egy nép a legeltető állattenyésztés miatt még vándorol (általában a téli és nyári szálláshelyek között), de az év egy részében már letelepedve, egyszerű földműveléssel is foglalkozik. A vándorló magyarság is ezt az életmódot folytatta a honfoglalás előtt.'},
     {c:'green',e:'🏹',t:'Reflex íj',d:'A visszacsapó (reflex) íj 300-400 méterről is átütötte a páncélt. Ez volt a magyarok legfélelmetesebb fegyvere.'},
     {c:'purple',e:'🔮',t:'Táltos',d:'Az ősmagyarok vallási vezetője (kb.: papja) és gyógyítója. Foggal vagy hat ujjal született – már születésekor kiválasztott volt.'},
@@ -215,7 +276,7 @@ function buildTopic1Concepts(){
 // ===== QUIZ =====
 const questions=[
   {q:'Melyik két népesség keveredéséből jöhetett létre a magyar nép a tudósok szerint?',a:['Szláv és germán népekből','Finnugor és türk (török) népekből','Kelta és frank népekből'],correct:1},
-  {q:'Melyik állomáshelyen történt a vérszerződés és Árpád fejedelemmé választása?',a:['Magna Hungaria','Levédia','Etelköz'],correct:2},
+  {q:'Melyik állomáshelyen történt a vérszerződés és Álmos fejedelemmé választása?',a:['Magna Hungaria','Levédia','Etelköz'],correct:2},
   {q:'A kettős fejedelemség idején mi volt a Gyula feladata?',a:['Ő volt a tényleges katonai parancsnok és bíró.','Ő volt a vallási vezető az égiek felé.','Ő felelt az adóbeszedésért.'],correct:0},
   {q:'Ki volt az ősmagyarok vallási vezetője és gyógyítója, akiről úgy hitték, hogy foggal vagy hat ujjal született?',a:['A kende','A táltos','A gyula'],correct:1},
   {q:'Milyen életmódot folytattak a magyarok a sztyeppén?',a:['Teljesen letelepedett, csak földművelésből éltek.','Kizárólag vadászatból éltek.','Félnomád életmódot, ami állattenyésztés és földművelés ötvözete volt.'],correct:2},

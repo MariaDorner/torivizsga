@@ -43,11 +43,11 @@ function buildTopic7Content(){
   <div class="info-card">
     <h3>⚔️ Külpolitika és hadviselés</h3>
     <p>Mátyás külpolitikáját két irány határozta meg: a <strong>török elleni védekezés délen</strong> és a <strong>hatalmi terjeszkedés nyugaton</strong>.</p>
-    <p style="margin-top:12px;"><strong>A Fekete Sereg</strong></p>
-    <p>A királyi hatalom legfőbb támasza a kor legmodernebb zsoldoshadserege, a <strong>Fekete Sereg</strong> volt. Ez egy állandó, fegyelmezett sereg volt, amely nehézlovasságból, gyalogságból és tüzérségből állt. Fenntartása rendkívül drága volt (évi 250–500 ezer forint), de lehetővé tette, hogy Mátyás ne függjön a bárók csapataitól. Vezetője <strong>Kinizsi Pál</strong> volt, aki egyetlen csatát sem vesztett élete során.</p>
+    <p style="margin-top:12px;"><strong>A fekete sereg</strong></p>
+    <p>A királyi hatalom legfőbb támasza a kor legmodernebb zsoldoshadserege, a <strong>fekete sereg</strong> volt. Ez egy állandó, fegyelmezett sereg volt, amely nehézlovasságból, gyalogságból és tüzérségből állt. Fenntartása rendkívül drága volt (évi 250–500 ezer forint), de lehetővé tette, hogy Mátyás ne függjön a bárók csapataitól. Vezetője <strong>Kinizsi Pál</strong> volt, aki egyetlen csatát sem vesztett élete során.</p>
 <div style="float:right;margin:0 0 12px 16px;max-width:170px;clear:right;">
       <img src="images/topic7_img2.png" alt="Kinizsi Pál" style="width:100%;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.18);border:3px solid #A83407;">
-      <p style="font-size:.75rem;color:var(--muted);margin-top:4px;text-align:center;font-style:italic;">Kinizsi Pál – a Fekete Sereg vezére</p>
+      <p style="font-size:.75rem;color:var(--muted);margin-top:4px;text-align:center;font-style:italic;">Kinizsi Pál – a fekete sereg vezére</p>
     </div>
     <p style="margin-top:12px;"><strong>Harcok a törökkel: Az aktív védelem</strong></p>
     <p>Mátyás belátta, hogy Magyarország egyedül nem tudja kiűzni a törököket Európából. Ezért az <strong>aktív védelem</strong> politikáját választotta:</p>
@@ -81,17 +81,17 @@ function buildTopic7Content(){
       <p style="font-size:.75rem;color:var(--muted);margin-top:4px;text-align:center;font-style:italic;">Aragóniai Beatrix – Mátyás felesége</p>
     </div>    <p>Mátyás igazi reneszánsz uralkodó volt, aki Itálián kívül az elsők között honosította meg az új stílust Európában. Második felesége, a nápolyi <strong>Aragóniai Beatrix</strong> érkezése tovább erősítette az itáliai hatást.</p>
     <ul style="margin-top:8px;padding-left:20px;">
-      <li><strong>Építészet:</strong> Átépíttette a budai várat és a visegrádi palotát. Visegrádon a vörös márványból készült Herkules-kútból az ünnepségeken bor folyt.</li>
+      <li><strong>Építészet:</strong> Átépíttette a budai várat és a visegrádi palotát. Visegrádon a vörös márványból készült Herkules-kútból az ünnepségeken bor folyt (vörösbor és fehérbor).</li>
       <li><strong>Tudomány és művészet:</strong> Udvarában olyan híres humanisták fordultak meg, mint a történetíró Antonio Bonfini vagy a könyvtáros Galeotto Marzio. Mátyás kiválóan beszélt latinul és érdeklődött a csillagászat iránt.</li>
-      <li><strong>Bibliotheca Corviniana:</strong> Mátyás budai könyvtára európai hírű volt. A díszes, kézzel írott kódexeket <strong>corvináknak</strong> nevezzük (melyek nevüket a Hunyadi-címerben látható hollóról, latinul Corvus-ról kapták). A könyvtár 2000–2500 kötetével a Vatikán után a legnagyobb volt a kontinensen.</li>
+      <li><strong>Bibliotheca Corviniana:</strong> Mátyás budai könyvtára európai hírű volt. A díszes, kézzel írott kódexeket <strong>corvináknak</strong> nevezzük (melyek nevüket a Hunyadi-címerben látható hollóról, latinul corvus-ról kapták). A könyvtár 2000–2500 kötetével a Vatikán után a legnagyobb volt a kontinensen.</li>
       <li><strong>Oktatás:</strong> Pozsonyban egyetemet alapított (Academia Istropolitana), és Budán működött az ország első könyvnyomdája is (Hess András műhelye).</li>
     </ul>
   </div>
 
   <div class="info-card">
     <h3>🕊️ Az utódlás és Mátyás öröksége</h3>
-    <p>Mátyás legnagyobb bánata az volt, hogy <strong>törvényes fia nem született</strong>. (Podjebrád) Katalin és (Aragóniai) Beatrix házassága is gyermektelen maradt (Katalin gyermekével együtt meghalt a szüléskor). Mátyás ezért házasságon kívül született fiát, <strong>Corvin Jánost</strong> próbálta utódjául elismertetni. Hatalmas birtokokat adományozott neki, és törvényekkel próbálta biztosítani a trónját.</p>
-    <p style="margin-top:10px;">Mátyás <strong>1490-es halála</strong> után azonban a bárók nem Corvin Jánost, hanem a gyengébb kezű II. Ulászlót választották királlyá. Mátyás központosított rendszere és a Fekete Sereg hamarosan összeomlott. Az utókor emlékezetében azonban ő maradt az „Igazságos" király, akinek haláláról azt tartják: <em>„Meghalt Mátyás, oda az igazság!"</em></p>
+    <p>Mátyás legnagyobb bánata az volt, hogy <strong>törvényes fia nem született</strong>. (Podjebrád) Katalin és (Aragóniai) Beatrix házassága is gyermektelen maradt (Katalin a szülés után halt meg gyermekével együtt). Mátyás ezért házasságon kívül született fiát, <strong>Corvin Jánost</strong> próbálta utódjául elismertetni. <em>(Corvin János anyja <strong>Edelpeck Borbála</strong> volt, egy bécsi polgárcsalád leánya – érdekesség, hogy Mátyás soha nem vette feleségül, mégis gondoskodott róla és fiukról is.)</em> Hatalmas birtokokat adományozott neki, és törvényekkel próbálta biztosítani a trónját.</p>
+    <p style="margin-top:10px;">Mátyás <strong>1490-es halála</strong> után azonban a bárók nem Corvin Jánost, hanem a gyengébb kezű II. Ulászlót választották királlyá. Mátyás központosított rendszere és a fekete sereg hamarosan összeomlott. Az utókor emlékezetében azonban ő maradt az „Igazságos" király, akinek haláláról azt tartják: <em>„Meghalt Mátyás, oda az igazság!"</em></p>
   </div>
 
   <div class="info-card" style="background:linear-gradient(135deg,#14532d,#052e16);border:2px solid #4ade80;color:#d1fae5;">
@@ -100,7 +100,7 @@ function buildTopic7Content(){
       <li>👑 <strong>Trónra kerülés (1458):</strong> Testvérét, Hunyadi Lászlót kivégzik, Mátyást Prágában fogják – de a Duna jegén a rendek megválasztják királynak</li>
       <li>⚖️ <strong>Belpolitika:</strong> Központosítás – tanult szakemberek a bárók helyett, kancellária, bárók visszaszorítása (pl. Szilágyi Mihály börtönbe)</li>
       <li>💰 <strong>Adóreform:</strong> Füstpénz + koronavám + rendkívüli hadiadó → királyi bevételek megháromszorozódnak (500–750 ezer aranyforint/év)</li>
-      <li>⚔️ <strong>Fekete Sereg:</strong> Állandó, korszerű zsoldoshadsereg – nehézlovasság, gyalogság, tüzérség. Vezére: Kinizsi Pál</li>
+      <li>⚔️ <strong>fekete sereg:</strong> Állandó, korszerű zsoldoshadsereg – nehézlovasság, gyalogság, tüzérség. Vezére: Kinizsi Pál</li>
       <li>🛡️ <strong>Törökpolitika (aktív védelem):</strong> Jajca (1463), Szabács (1476) visszafoglalása; Kenyérmező (1479): Kinizsi és Báthori győzelme</li>
       <li>🌍 <strong>Nyugati hódítások:</strong> Cseh háborúk → Morvaország, Szilézia, cseh királyi cím; Bécs elfoglalása (1485) – cél a császári korona</li>
       <li>📚 <strong>Reneszánsz udvar:</strong> Aragóniai Beatrix, Bibliotheca Corviniana (2000+ corvina), humanisták (Bonfini, Galeotto), Academia Istropolitana Pozsonyban</li>
@@ -126,7 +126,7 @@ function buildTopic7Content(){
 function buildTopic7Videos(){
   const vids=[
     {e:'⚡',level:'alap',lt:'Beavatás – Legkönnyebb',title:'I. Mátyás uralkodása – Gyorstalpaló',desc:'Rendkívül rövid, alig háromperces pörgős animáció, ami villámgyors és érthető áttekintést ad az uralkodásról. Tökéletes kiindulópont, hogy a fiatal ügynökök figyelmét azonnal megragadjuk a témával kapcsolatban.',url:'https://www.youtube.com/watch?v=rkP7_zzk5qs'},
-    {e:'😄',level:'alap',lt:'Kezdő – Könnyed',title:'Hunyadi Mátyás Belpolitikája – Tökéletlen Történelem [TT]',desc:'Fiatalos, humoros és internetes utalásokkal teli videó az adózásról és a zsoldoshadseregről. Remekül oldja a téma szárazságát, szórakoztatva adja át a Fekete Sereggel és a kincstárral kapcsolatos alapvető infókat.',url:'https://www.youtube.com/watch?v=AHOKGU00VlU'},
+    {e:'😄',level:'alap',lt:'Kezdő – Könnyed',title:'Hunyadi Mátyás Belpolitikája – Tökéletlen Történelem [TT]',desc:'Fiatalos, humoros és internetes utalásokkal teli videó az adózásról és a zsoldoshadseregről. Remekül oldja a téma szárazságát, szórakoztatva adja át a fekete sereggel és a kincstárral kapcsolatos alapvető infókat.',url:'https://www.youtube.com/watch?v=AHOKGU00VlU'},
     {e:'😄',level:'alap',lt:'Kezdő – Könnyed',title:'Hunyadi Mátyás Külpolitikája És Reneszánsz Udvara – Tökéletlen Történelem [TT]',desc:'Az előző epizód testvére, hasonlóan laza és diákbarát stílusban, amely a hódításokra és a kultúrára fókuszál. Játékosan és logikusan építi fel a cseh és osztrák hadjáratok, valamint a reneszánsz udvar kapcsolatát.',url:'https://www.youtube.com/watch?v=ka1abEKho4E'},
     {e:'📚',level:'kozepes',lt:'Középhaladó',title:'Hunyadi Mátyás uralkodása és reneszánsz udvara',desc:'A Videotanár letisztult, nagyon jól tagolt és gazdagon illusztrált digitális tananyaga. Egy könnyen követhető, tízperces áttekintés, ami kifejezetten hasznos egy dolgozat előtti otthoni ismétléshez.',url:'https://www.youtube.com/watch?v=0FEd1iJze6w'},
     {e:'🎬',level:'kozepes',lt:'Haladó',title:'Hunyadi Mátyás király reformai és külpolitikája | Kulcsár Árpád',desc:'Klasszikus, frontális tanári magyarázat (kicsit hosszabb, fél órás anyag). Vizuális trükkök helyett a megbízható részletességen van a hangsúly, így a füzetvázlat pótlására vagy komolyabb felkészüléshez javasolt.',url:'https://www.youtube.com/watch?v=PWMNyiK-AdQ'},
@@ -148,13 +148,13 @@ function buildTopic7Videos(){
 const topic7={title:'7. Tétel – Hunyadi Mátyás',subtitle:'A reneszánsz király',emoji:'📚',content:buildTopic7Content,concepts:buildTopic7Concepts,quiz:buildTopic7Quiz,videos:buildTopic7Videos};
 const questions7=[
   {q:'Hogyan jutott Mátyás a trónra 1458-ban?',a:['Örökölte apjától, Hunyadi Jánostól', 'A Duna jegén megválasztották a rendek, miután V. László váratlanul meghalt', 'Háborúban szerezte meg a hatalmat a Habsburgoktól'],correct:1},
-  {q:'Mi volt a Fekete Sereg?',a:['Mátyás állandó zsoldoshadserege, a kor legjobban felszerelt katonai ereje', 'A törökök különleges egysége', 'A nemesi felkelés gúnyneve'],correct:0},
+  {q:'Mi volt a fekete sereg?',a:['Mátyás állandó zsoldoshadserege, a kor legjobban felszerelt katonai ereje', 'A törökök különleges egysége', 'A nemesi felkelés gúnyneve'],correct:0},
   {q:'Mit jelent a füstpénz Mátyás adórendszerében?',a:['Az iparosok céhadója', 'Háztartásonként szedett adó, ami több bevételt hozott a régi kapuadónál', 'A kereskedők vámja'],correct:1},
   {q:'Mi volt a Bibliotheca Corviniana?',a:['Mátyás által alapított pécsi könyvtár', 'Mátyás budai könyvtára, Európa második legnagyobb könyvgyűjteménye', 'A nagyszombati egyetem könyvtára'],correct:1},
   {q:'Melyik várat foglalta vissza Mátyás a törököktől 1463-ban?',a:['Nándorfehérvárat', 'Jajcát', 'Egert'],correct:1},
   {q:'Melyik várost foglalta el Mátyás 1485-ben?',a:['Prágát', 'Bécset', 'Krakkót'],correct:1},
-  {q:'Ki volt Kinizsi Pál?',a:['Mátyás kancellárja', 'A Fekete Sereg vezére, aki egyetlen csatát sem vesztett', 'A pécsi püspök'],correct:1},
-  {q:'Mi az 1479-es kenyérmezei csata jelentősége?',a:['Mátyás elfoglalta Bécset', 'Kinizsi Pál súlyos vereséget mért a betörő török seregre', 'A Fekete Sereg legyőzte a cseh királyságot'],correct:1},
+  {q:'Ki volt Kinizsi Pál?',a:['Mátyás kancellárja', 'A fekete sereg vezére, aki egyetlen csatát sem vesztett', 'A pécsi püspök'],correct:1},
+  {q:'Mi az 1479-es kenyérmezei csata jelentősége?',a:['Mátyás elfoglalta Bécset', 'Kinizsi Pál súlyos vereséget mért a betörő török seregre', 'A fekete sereg legyőzte a cseh királyságot'],correct:1},
   {q:'Miért nem lett Corvin János király Mátyás halála után?',a:['Mert még kiskorú volt', 'A bárók nem fogadták el, helyette II. Ulászlót választották', 'Mert a törökök megakadályozták'],correct:1},
   {q:'Milyen stílus honosodott meg Mátyás udvarában?',a:['A gótika', 'A reneszánsz', 'A barokk'],correct:1},
   {q:'Ki volt Aragóniai Beatrix?',a:['Mátyás nővére', 'Mátyás második felesége, aki az itáliai reneszánszt is erősítette az udvarban', 'Mátyás anyja'],correct:1},
@@ -265,14 +265,14 @@ function showResult7(){
 function buildTopic7Concepts(){
   const concepts=[
     {c:'purple',e:'👑',t:'Reneszánsz',d:"A reneszánsz a 14–16. században Észak-Itáliából elterjedő kulturális és művészeti mozgalom, melynek elnevezése az ókori görög-római értékek újjászületését jelenti. A középkori vallásközpontú világnézet helyett az egyént, az emberi alkotóképességet és a földi élet szépségét állította a fókuszba. A korszakot a művészetekben a természethű ábrázolás és a harmónia keresése, a tudományokban pedig a tapasztalati megfigyelés jellemezte."},
-    {c:'amber',e:'⚔️',t:'Fekete Sereg',d:"Mátyás állandó zsoldoshadserege, amelyből a kor legmodernebb, legjobban felszerelt katonai ereje volt. Nehézlovasságból, gyalogságból és tüzérségből állt. Vezére Kinizsi Pál volt."},
+    {c:'amber',e:'⚔️',t:'fekete sereg',d:"Mátyás állandó zsoldoshadserege, amelyből a kor legmodernebb, legjobban felszerelt katonai ereje volt. Nehézlovasságból, gyalogságból és tüzérségből állt. Vezére Kinizsi Pál volt."},
     {c:'teal',e:'💰',t:'Füstpénz',d:"Mátyás által bevezetett adótípus, amelyet háztartásonként (kéményenként) szedtek, nem telkenként. Ezzel több pénz folyt be, hiszen egy telken sokszor több család élt."},
     {c:'rose',e:'📚',t:'Bibliotheca Corviniana',d:"Mátyás budai könyvtára, amely 2000–2500 díszes kézírásos kódexet tartalmazott. Európa második legnagyobb könyvtára volt a Vatikán után. A könyveket corvináknak nevezzük."},
     {c:'blue',e:'🌍',t:'Humanizmus',d:"Reneszánsz szellemi irányzat, amely az embert és képességeit helyezte a középpontba, szemben a középkori Isten-központú gondolkodással. Mátyás udvarában humanista tudósok (Bonfini, Galeotto) éltek."},
     {c:'green',e:'📜',t:'Koronavám',d:"A harmincadvám helyett bevezetett kereskedelmi adó. Az átnevezéssel Mátyás törölte a régi mentességeket, így mindenki – nemesek is – köteles volt fizetni."},
     {c:'amber',e:'🏰',t:'Aktív védelem',d:"Mátyás törökpolitikájának alapelve: nem a kiűzés, hanem a határok megerősítése és kisebb visszafoglalások. Ennek jegyében vette vissza Jajcát (1463) és Szabácsot (1476)."},
     {c:'rose',e:'🏆',t:'Kenyérmezei csata (1479)',d:"Kinizsi Pál és Báthori István közös győzelme az Erdélybe betörő, Ali Kodzsa bég vezette török sereg felett. Ez volt az egyik legnagyobb magyar katonai diadal Mátyás király uralkodása idején."},
-    {c:'blue',e:'💛',t:'Corvin János',d:"Mátyás törvénytelen fia, akit apja utódjává szeretett volna tenni. A bárók azonban halála után nem fogadták el királynak, helyette II. Ulászlót választották."}
+    {c:'blue',e:'💛',t:'Corvin János',d:"Mátyás törvénytelen fia, akit apja utódjává szeretett volna tenni. Anyja Edelpeck Borbála, egy bécsi polgárcsalád leánya volt – Mátyás soha nem vette feleségül, mégis gondoskodott róla és fiukról. A bárók Mátyás halála után nem fogadták el Corvin Jánost királynak, helyette II. Ulászlót választották."}
   ];
   return `<h2 style=font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--purple);margin-bottom:16px;>💡 Kulcsfogalmak – Kattints rá a fogalomra a magyarázathoz!</h2>
   <div class=concepts-grid>${concepts.map(c=>`
@@ -300,7 +300,7 @@ function buildMatyasTimeline(){
     {year:'1477-87',side:'right',color:'#D85A30',title:'Osztrák háborúk',cat:'Hadjárat - nagy győzelem',detail:'Mátyás III. Frigyes császárral vívott háborúinak sorozata. Legyőzte a császárt, és 1485-ben elfoglalta Bécset, ahová át is tette székhelyét.'},
     {year:'1479',side:'left',color:'#D85A30',title:'Kenyérmezei csata',cat:'Hadjárat - győzelem',detail:'Kinizsi Pál és Báthori István együttes csapást mér a betörő oszmán seregre. Kinizsi egyetlen csatát sem vesztett élete során.'},
     {year:'1485',side:'right',color:'#D85A30',title:'Bécs elfoglalása',cat:'Hadjárat - nagy győzelem',detail:'Mátyás elfoglalja Bécset és oda teszi székhelyét. Ez a középkori Magyar Királyság területi csúcspontja. 5 évig magyar kézen marad.'},
-    {year:'1490',side:'left',color:'#534AB7',title:'Mátyás halála - Oda az igazság',cat:'Örökség',detail:'Mátyás Bécsben hal meg, törvényes utód nélkül. A bárók II. Ulászlót választják, a Fekete Sereg feloszlik.'},
+    {year:'1490',side:'left',color:'#534AB7',title:'Mátyás halála - Oda az igazság',cat:'Örökség',detail:'Mátyás Bécsben hal meg, törvényes utód nélkül. A bárók II. Ulászlót választják, a fekete sereg feloszlik.'},
   ];
   var openEl=null;
   events.forEach(function(e,i){
